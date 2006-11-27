@@ -10,6 +10,10 @@
   
   (define (link txt tgt)
     `(a ((href ,tgt)) ,txt))
+
+  (define (link/nav txt tgt)
+    `(a ((class "nav") (href ,tgt)) ,txt))
+
   
   (define (link/svn txt path)
     (link txt (string-append "http://svn.plt-scheme.org/plt/trunk/" path)))
@@ -29,19 +33,33 @@
       (hash-table-put! the-table key
                        (make-sect title fname link-title content))))
   
-  (define (links current-key)
+  (define (links/table current-key)
     (hash-table-map the-table
                     (lambda (k v)
                       (if (eq? current-key k)
                           "" #;`(td nbsp) #;`(td (h1 ,(sect-title v)))
-                          `(td (h2 ,(link (sect-lnk v) (sect-fname v))))))))
+                          `(td ((class "navlinks")) (h2 ,(link (sect-lnk v) (sect-fname v))))))))
+  
+  (define (links/list current-key)
+    (hash-table-map the-table
+                    (lambda (k v)
+                      (if (eq? current-key k)
+                          "" 
+                          `(li (h2 ,(link/nav (sect-lnk v) (sect-fname v))))))))
   
   (define (complete-page sect cur-key)
     (define table-size (number->string (+ 2 (hash-table-count the-table))))
     (define title (sect-title sect))
-    `(html (head (title ,title))
-           (body (table (tr (td (h1 ,title)) (td 'nbsp 'nbsp) ,@(links cur-key))
-                        (tr (td ((colspan ,table-size)) ,@(sect-content sect)))))))
+    `(html (head (title ,title)
+                 (link ((rel "stylesheet") (type "text/css")
+                                           (href "style.css"))))
+           (body 
+            (ul ((class "nav"))
+                (li ((class "nav")) (h1 ((class "title")) ,title))
+                ,@(links/list cur-key))
+            (div ((class "bodypart")) ,@(sect-content sect)))
+            #;(table (tr (td (h1 ((class "pagetile")) ,title)) (td 'nbsp 'nbsp) ,@(links/table cur-key))
+                     (tr (td ((colspan ,table-size)) ,@(sect-content sect))))))
 
   (define (write-xexpr e fname) (with-output-to-file fname 
                                   (lambda () (display-xml/content (xexpr->xml e))) 'replace))
@@ -54,6 +72,7 @@
     (hash-table-for-each  the-table render-sect))
   
   (define papers (list 
+                  `(p "I have written two peer-reviewed papers, and am a co-author of the Fortress language spec.")
                   (paper "Sam Tobin-Hochstadt and Matthias Felleisen" 
                          "Interlanguage Migration: From Scripts to Programs" "tmp/dls.pdf"
                          "To appear in Dynamic Languages Symposium, October 2006")
@@ -68,9 +87,15 @@
                      `(ul ,@papers)))
   
   (define soft (page 'soft "Software" "Software"
+                     `(p "I'm the maintainer of a few parts of the PLT software ecosystem.")
                      `(ul (li (b "Pattern Matching:") "I am the maintainer of the" ,(link/mzlib "match.ss" ) "and" 
                               ,(link/mzlib "plt-match.ss") 
-                              "libraries in PLT Scheme, which provide a convenient syntax for pattern matching on values."))))
+                              "libraries in PLT Scheme, which provide a convenient syntax for pattern matching on values.")
+                          (li (b "Typed Scheme:")
+                                     "Typed Scheme is a typed dialect of PLT Scheme, with a novel type system"
+                                     "that supports common Scheme idioms."  "To use it, install" 
+                                     ,(link "this PLT file" "tmp/typed-scheme.plt") "while in DrScheme."))))
+                     
   
   (define body 
     (page 'index "Sam Tobin-Hochstadt" "Home"

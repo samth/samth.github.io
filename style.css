@@ -1,0 +1,23 @@
+ul.nav
+{
+float:left;
+width:100%;
+padding:0;
+margin:0;
+list-style-type:none;
+}
+a.nav
+{
+font-variant: small-caps;
+float:right;
+text-decoration:none;
+padding:0;
+padding-right: 0.6em;
+border-right:25px solid white;
+}
+a:link { color : #0000FF; text-decoration : none; }
+a:visited { color : #0000FF; text-decoration : none; }
+a:hover { color : #FF0000; text-decoration : none; }
+a:active { color : #FF0000; text-decoration : none; }
+div.bodypart { border-top:75px solid white; width: 70% }
+h1.title { font-variant: small-caps; display:inline ; float:left;padding:0;margin:0;border-right: 3em solid white; }
