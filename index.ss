@@ -88,13 +88,16 @@
   
   (define soft (page 'soft "Software" "Software"
                      `(p "I'm the maintainer of a few parts of the PLT software ecosystem.")
-                     `(ul (li (b "Pattern Matching:") "I am the maintainer of the" ,(link/mzlib "match.ss" ) "and" 
-                              ,(link/mzlib "plt-match.ss") 
-                              "libraries in PLT Scheme, which provide a convenient syntax for pattern matching on values.")
+                     `(ul 
                           (li (b "Typed Scheme:")
-                                     "Typed Scheme is a typed dialect of PLT Scheme, with a novel type system"
-                                     "that supports common Scheme idioms."  "To use it, install" 
-                                     ,(link "this PLT file" "tmp/typed-scheme.plt") "while in DrScheme."))))
+                                     ,(link "Typed Scheme" "typed-scheme") 
+                                     "is a typed dialect of PLT Scheme, with a novel type system"
+                                     "that supports common Scheme idioms."  "It is available from" 
+                                     ,(link "PLaneT" "http://planet.plt-scheme.org/#typed-scheme.plt")
+                                     ".")
+                          (li (b "Pattern Matching:") "I am the maintainer of the" ,(link/mzlib "match.ss" ) "and" 
+                              ,(link/mzlib "plt-match.ss") 
+                              "libraries in PLT Scheme, which provide a convenient syntax for pattern matching on values."))))
                      
   
   (define body 
