@@ -90,7 +90,7 @@
                      `(p "I'm the maintainer of a few parts of the PLT software ecosystem.")
                      `(ul 
                           (li (b "Typed Scheme:")
-                                     ,(link "Typed Scheme" "typed-scheme") 
+                                     ,(link "Typed Scheme" "typed-scheme.html") 
                                      "is a typed dialect of PLT Scheme, with a novel type system"
                                      "that supports common Scheme idioms."  "It is available from" 
                                      ,(link "PLaneT" "http://planet.plt-scheme.org/#typed-scheme.plt")
@@ -99,6 +99,34 @@
                               ,(link/mzlib "plt-match.ss") 
                               "libraries in PLT Scheme, which provide a convenient syntax for pattern matching on values."))))
                      
+  
+  (define typed-scheme
+    `(html (head (title "Typed Scheme")
+                 (link ((rel "stylesheet") (type "text/css")
+                                           (href "style.css"))))
+           (body
+            (h1 "Typed Scheme")
+            (p "Typed Scheme is a typed dialect of PLT Scheme.  It integrates with modules written in"
+               "other PLT dialects, and provides a type system designed to support common Scheme idioms."
+               )
+            (h3 "Installation")
+            (p "Typed Scheme is available as a package from" 
+               ,(link "PLaneT" "http://planet.plt-scheme.org/#typed-scheme.plt") "."
+               "It can be installed with the following require statement:"
+               (br)
+               (code "(require (\"install.ss\" (\"plt\" \"typed-scheme.plt\" 1)))"))
+            (h3 "Documentation")
+            (p "The" ,(link "manual" "typed-scheme/") "provides an introduction and reference for Typed Scheme.")
+            (h3 "Features")
+            (p
+             "In this screenshot, we can see the definition of a typed factorial function."
+             (br)
+             (img ((src "typed-scheme/factorial.png")))
+             (br)
+             "In this screenshot, we have an error flagged by the type checker."
+             (br)
+             (img ((src "typed-scheme/factorial-wrong.png"))))
+            )))
   
   (define body 
     (page 'index "Sam Tobin-Hochstadt" "Home"
@@ -126,5 +154,7 @@
     (write-xexpr body "index.html"))
   
   (go)
+  
+  (write-xexpr typed-scheme "typed-scheme.html")
   
   )
