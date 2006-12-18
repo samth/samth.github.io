@@ -100,6 +100,10 @@
                               "libraries in PLT Scheme, which provide a convenient syntax for pattern matching on values."))))
                      
   
+  (define (imglink str)
+    `(a ((href ,(string-append str ".png")))
+        (img ((src ,(string-append str "-small.png"))))))
+  
   (define typed-scheme
     `(html (head (title "Typed Scheme")
                  (link ((rel "stylesheet") (type "text/css")
@@ -121,11 +125,11 @@
             (p
              "In this screenshot, we can see the definition of a typed factorial function."
              (br)
-             (img ((src "typed-scheme/factorial.png")))
+             (center,(imglink "typed-scheme/factorial"))
              (br)
              "In this screenshot, we have an error flagged by the type checker."
              (br)
-             (img ((src "typed-scheme/factorial-wrong.png"))))
+             (center,(imglink "typed-scheme/factorial-wrong")))
             )))
   
   (define body 
