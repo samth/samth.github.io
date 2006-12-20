@@ -119,7 +119,9 @@
                ,(link "PLaneT" "http://planet.plt-scheme.org/#typed-scheme.plt") "."
                "It can be installed with the following require statement:"
                (br)
-               (code "(require (planet \"info.ss\" (\"plt\" \"typed-scheme.plt\")))"))
+               (code "(require (planet \"info.ss\" (\"plt\" \"typed-scheme.plt\")))")
+               (br)
+               "DrScheme should then be restarted after installation.")
             (h3 "Documentation")
             (p "The" ,(link "manual" "typed-scheme/") "provides an introduction and reference for Typed Scheme.")
             (h3 "Features")
