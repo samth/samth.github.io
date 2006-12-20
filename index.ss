@@ -92,7 +92,8 @@
                           (li (b "Typed Scheme:")
                                      ,(link "Typed Scheme" "typed-scheme.html") 
                                      "is a typed dialect of PLT Scheme, with a novel type system"
-                                     "that supports common Scheme idioms."  "It is available from" 
+                                     "that supports common Scheme idioms."  
+                                     "Typed Scheme is available as a package from" 
                                      ,(link "PLaneT" "http://planet.plt-scheme.org/#typed-scheme.plt")
                                      ".")
                           (li (b "Pattern Matching:") "I am the maintainer of the" ,(link/mzlib "match.ss" ) "and" 
