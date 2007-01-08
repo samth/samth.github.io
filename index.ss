@@ -75,7 +75,9 @@
                   `(p "I have written two peer-reviewed papers, and am a co-author of the Fortress language spec.")
                   (paper "Sam Tobin-Hochstadt and Matthias Felleisen" 
                          "Interlanguage Migration: From Scripts to Programs" "tmp/dls.pdf"
-                         "To appear in Dynamic Languages Symposium, October 2006")
+                         `(div "In the Dynamic Languages Symposium, October 2006"
+                              (br)
+                              "Slides from the talk are available" ,(link "here" "dls-slides.pdf")))
                   (paper "Sam Tobin-Hochstadt and Eric Allen"
                          "A Core Calculus of Metaclasses" "http://research.sun.com/projects/plrg/fool2005.pdf"
                          "In Foundations of Object Oriented Languages, January 2005")
