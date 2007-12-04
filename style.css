@@ -6,6 +6,7 @@ body {
     width: 62%;
     margin: 20px auto;
     padding-right: 200px;
+    font: serif;
 }
 
 .box {
@@ -29,7 +30,8 @@ img.validator { border: none; }
 
 h1 {
     margin: 0px;
-    font: 160%, sans-serif;
+    font: 160% serif;
+
 }
 
 img.new {
