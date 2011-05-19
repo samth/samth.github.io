@@ -1,5 +1,5 @@
 body {
-    background-color: #D3D3D3;
+    background-color: white;
 }
 
 #contents {
@@ -18,17 +18,45 @@ body {
 }
 
 .boxtitle {
-    text-align: right;
+    text-align: left;
     padding-right: 0px;
 }
 
+
+.project {
+    margin: 30px 0;
+    padding: 20px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-width: 1px;
+    border-style: solid;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+}
+
+.projecttitle {
+    text-align: right;
+    font: 130% 'Nobile';
+    font-family: 'Nobile' serif;    
+}
+
+.projectdesc {
+    text-align: justify;
+}
+
+h2.subproject {
+    font: 100% 'Nobile';
+    font-weight: bold;
+    font-family: 'Nobile' serif;    
+}
 
 
 ul { padding-left: 1em; }
 li { margin-bottom: 1ex; }
 img.validator { border: none; }
 .clear { clear: both; }
-.pub .title { font-weight: bold; }
+.pub .title { font-style: italic; }
 #name #photo { float: right; }
 
 
@@ -36,6 +64,7 @@ h1#topname {
     margin: 0px;
     font: 240% 'Nobile';
     font-family: 'Nobile' serif;
+    text-align: right;
 }
 
 h1 {
@@ -61,6 +90,7 @@ img.new {
     border: dotted 1px lightgray;
     padding: 5px;
 }
+
 .refType {
     font-weight: bold;
     color: gray;
@@ -69,5 +99,11 @@ img.new {
 
 a:link { color : #0000FF; text-decoration : none; }
 a:visited { color : #0000FF; text-decoration : none; }
+
+a.refType {
+    font-weight: bold;
+    color: gray;
+}
+
 a:hover { color : #FF0000; text-decoration : none; }
 a:active { color : #FF0000; text-decoration : none; }
