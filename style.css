@@ -5,7 +5,6 @@ body {
 #contents {
     width: 71%;
     margin: 20px auto;
-    padding-right: 200px;
     font-family:  serif;
 }
 
@@ -64,7 +63,7 @@ h1#topname {
     margin: 0px;
     font: 240% 'Nobile';
     font-family: 'Nobile' serif;
-    text-align: right;
+    text-align: left;
 }
 
 h1 {
