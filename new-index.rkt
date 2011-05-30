@@ -262,7 +262,7 @@ function toggleBibTeX(elt) {
       @a[href: "http://wiki.ecmascript.org/doku.php?id=harmony:module_loaders"]{Module Loaders}. 
       With @|dherman|.
      @~ Drafts from March 2011.}
-  @p{@a[href: "http://wiki.ecmascript.org/doku.php?id=harmony:private_names"]{Private Names}. 
+  @p{@a[href: "http://wiki.ecmascript.org/doku.php?id=harmony:private_name_objects"]{Private Names}. 
       With @dherman and Allen Wirfs-Brock.
      @~ Draft from March 2011.}
   }}
