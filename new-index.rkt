@@ -80,8 +80,7 @@
            "January 2008"
            `(,(neu "popl08-thf") 
              ,(acm "1328486")
-             ("Isabelle Model" "TypedScheme.thy")
-             ("Redex Model" "ts-redex.tgz")))
+             ("Formal Models" "https://github.com/samth/popl08-model")))
     (paper "Interlanguage Migration: From Scripts to Programs"
            (list MF)
            @a[href: "http://www.dcl.hpi.uni-potsdam.de/dls2006/openconf.php"]{Dynamic Languages Symposium (DLS)}
