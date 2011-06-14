@@ -164,8 +164,20 @@
               "April 2011"
               `(["PDF" "js-modules.pdf"]))))
 
+@(define analysis-talks
+    (list
+      (talk "Semantic Solutions to Program Analysis Problems"
+            "fit11-talk.pdf"
+            @a[href: "https://engineering.purdue.edu/~milind/pldi11fit/"]{Fun Ideas and Thoughts Session at the Conference on Programming Language Design and Implementation}
+            "San Jose, CA" "June 2011")))
+
 @(define macro-talks
    (list 
+     (talk "Languages as Libraries"
+               "pldi-2011.pdf"
+           @a[href: "http://pldi11.cs.utah.edu/"]{Conference on Programming Language Design and Implementation (PLDI)}
+               "San Jose, MA" "June 2011")
+
      (talk "Languages as Libraries"
                "mit-may-2011.pdf"
                @a[href: "http://www.csail.mit.edu/events/eventcalendar/calendar.php?show=event&id=2978"]{MIT
@@ -359,7 +371,9 @@ function toggleBibTeX(elt) {
 @project['analysis "Analysis and Verification"]{
       @pdesc{I am developing  analysis and verification
       techniques for modular programs with rich specifications.}
-       @(papers analysis-papers)}
+       @(papers analysis-papers)
+       @(talks analysis-talks)}
+
 
 @project['javascript "JavaScript"]{
  @pdesc{In collaboration
