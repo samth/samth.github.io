@@ -47,6 +47,13 @@
 
 @(define tr-papers
    (list 
+    (preprint "The Design and Implementation of Typed Scheme"
+              (list MF)
+              @span{Accepted for publication in @a[href: "http://www.brics.dk/~hosc/"]{Higher-Order and Symbolic Computation}}
+              "September 2010"
+              `(("PDF" "refinement-mitchfest.pdf"))
+              )
+
     (paper "Logical Types for Untyped Languages"
            (list MF)
            @a[href: "http://www.icfpconference.org/icfp2010/index.html"]{International Conference on Functional Programming (ICFP)}
@@ -95,9 +102,14 @@
    (list
     (paper "Languages as Libraries"
            (list stamourv rmc mflatt MF)
-           @a[href: "http://pldi11.cs.utah.edu/"]{PLDI}
+           @a[href: "http://pldi11.cs.utah.edu/"]{Conference on Programming Language Design and Implementation (PLDI)}
            "June 2011"
            `(,(neu "pldi11-thacff")))
+    (preprint "Extensible Pattern Matching in an Extensible Language"
+              null
+              ""
+              "October 2010"
+              `(("PDF" "match-ifl-full.pdf")))
     (abstract "Extensible Pattern Matching in an Extensible Language"
               null
               @a[href: "http://www.cs.uu.nl/wiki/bin/view/IFL2010/WebHome"]{Symposium on Implementation and Application of Functional Languages}
