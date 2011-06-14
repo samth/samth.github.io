@@ -47,6 +47,12 @@
 
 @(define tr-papers
    (list 
+    (paper "Logical Types for Untyped Languages"
+           (list MF)
+           @a[href: "http://www.icfpconference.org/icfp2010/index.html"]{International Conference on Functional Programming (ICFP)}
+           "September 2010"
+           `(,(neu "icfp10-thf") ,(acm "1863561")))
+
     (preprint "The Design and Implementation of Typed Scheme"
               (list MF)
               @span{Accepted for publication in @a[href: "http://www.brics.dk/~hosc/"]{Higher-Order and Symbolic Computation}}
@@ -54,11 +60,6 @@
               `(("PDF" "refinement-mitchfest.pdf"))
               )
 
-    (paper "Logical Types for Untyped Languages"
-           (list MF)
-           @a[href: "http://www.icfpconference.org/icfp2010/index.html"]{International Conference on Functional Programming (ICFP)}
-           "September 2010"
-           `(,(neu "icfp10-thf") ,(acm "1863561")))
     (paper "Functional Data Structures for Typed Racket"
            (list krhari)
            @a[href: "http://www.iro.umontreal.ca/~sfp2010/"]{Workshop on Scheme and Functional Programming}
