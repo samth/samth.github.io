@@ -57,7 +57,8 @@
               (list MF)
               @span{Accepted for publication in @a[href: "http://www.brics.dk/~hosc/"]{Higher-Order and Symbolic Computation}}
               "September 2010"
-              `(("PDF" "refinement-mitchfest.pdf"))
+              `(("PDF" "refinement-mitchfest.pdf")
+                ("arXiv" "http://arxiv.org/abs/1106.2575"))
               )
 
     (paper "Functional Data Structures for Typed Racket"
@@ -105,27 +106,32 @@
            (list stamourv rmc mflatt MF)
            @a[href: "http://pldi11.cs.utah.edu/"]{Conference on Programming Language Design and Implementation (PLDI)}
            "June 2011"
-           `(,(neu "pldi11-thacff")))
+           `(,(neu "pldi11-thacff")
+             ,(acm "1993514")))
     (preprint "Extensible Pattern Matching in an Extensible Language"
               null
               ""
               "October 2010"
-              `(("PDF" "match-ifl-full.pdf")))
+              `(("PDF" "match-ifl-full.pdf")
+                ("arXiv" "http://arxiv.org/abs/1106.2578")))
     (abstract "Extensible Pattern Matching in an Extensible Language"
               null
               @a[href: "http://www.cs.uu.nl/wiki/bin/view/IFL2010/WebHome"]{Symposium on Implementation and Application of Functional Languages}
               "September 2010"
-              `(("PDF" "ifl-2010-abstract.pdf")))
+              `(("PDF" "ifl-2010-abstract.pdf")
+                ("Utrecht Technical Report" "http://www.cs.uu.nl/research/techreps/UU-CS-2010-020.html")))
     (abstract "Where are you going with those types?"
               (list stamourv mflatt MF)
               @a[href: "http://www.cs.uu.nl/wiki/bin/view/IFL2010/WebHome"]{Symposium on Implementation and Application of Functional Languages}
               "September 2010"
-              `(("PDF" "http://www.ccs.neu.edu/home/stamourv/ifl10.pdf")))
+              `(("PDF" "http://www.ccs.neu.edu/home/stamourv/ifl10.pdf")                
+                ("Utrecht Technical Report" "http://www.cs.uu.nl/research/techreps/UU-CS-2010-020.html")))
     (paper "Advanced Macrology and the Implementation of Typed Scheme"
            (list rmc mflatt)
            @a[href: "http://www.schemeworkshop.org/2007/"]{Workshop on Scheme and Functional Programming}
            "September 2007"
-           `(,(neu "scheme2007-cft")))
+           `(,(neu "scheme2007-cft")
+             ("Proceedings" "http://www.schemeworkshop.org/2007/programme.html")))
     ))
 
 @(define fortress-papers
@@ -139,22 +145,24 @@
            @list["Eric Allen"]
            @a[href: "http://homepages.inf.ed.ac.uk/wadler/fool/"]{Workshop on Foundations of Object-Oriented Languages (FOOL)}
            "January 2005"
-           `(("PDF" "http://research.sun.com/projects/plrg/fool2005.pdf")))))
+           `(("PDF" "http://research.sun.com/projects/plrg/fool2005.pdf")
+             ("Proceedings" "http://homepages.inf.ed.ac.uk/wadler/fool/program/7.html")))))
 
 @(define analysis-papers
    (list 
+    (preprint "Abstract Reduction Semantics for Modular Higher-Order Contract Verification"
+              (list dvh)
+              ""
+              "July 2011"
+              `(("PDF" "http://www.ccs.neu.edu/home/dvanhorn/pubs/tobin-hochstadt-vanhorn-preprint11.pdf")
+                ("arXiv" "http://arxiv.org/abs/1103.1362")))
     (paper "Semantic Solutions to Program Analysis Problems"
            (list dvh)
            @a[href: "https://engineering.purdue.edu/~milind/pldi11fit/"]{Fun Ideas and Thoughts Session at the Conference on Programming Language Design and Implementation}
            "June 2011"
            `(["PDF" "http://www.ccs.neu.edu/home/dvanhorn/pubs/tobin-hochstadt-vanhorn-preprint11-2.pdf"]
-             ["arXiv" "http://arxiv.org/abs/1105.0106"]))
-    (preprint "Modular Analysis via Abstract Reduction Semantics"
-              (list dvh)
-              ""
-              "March 2011"
-              `(("PDF" "http://www.ccs.neu.edu/home/dvanhorn/pubs/tobin-hochstadt-vanhorn-preprint11.pdf")
-                ("arXiv" "http://arxiv.org/abs/1103.1362")))))
+             ["arXiv" "http://arxiv.org/abs/1105.0106"]))))
+             
 
 @(define js-papers
    (list
@@ -294,10 +302,10 @@
 
 @(define racket @a[href: "http://racket-lang.org"]{Racket})
 
-@html{       
+@html{
  @head{
    @title[sth]
-   @meta[name: "verify-v1" content: "1VWrH93RsveZVebOS9YtZ9P8a6r4e2syuwL80ueE4+0="] 
+   @meta[name: "verify-v1" content: "1VWrH93RsveZVebOS9YtZ9P8a6r4e2syuwL80ueE4+0="]
    @meta[http-equiv: "Content-Type" content: "text/html" charset: "UTF-8"]
    @css{http://fonts.googleapis.com/css?family=Nobile}
    @css{style.css}
@@ -328,7 +336,7 @@ function toggleBibTeX(elt) {
 @box['name sth]{
  @p{@img[id: "photo" src: "tree.jpg" alt: "Tree" title:"Winter"]
    @;@img[id: "photo" width: "200" src: "plt-logo-red-diffuse.png" alt: "Racket" title:"Racket"]
-    @p{@a[href: "https://mozillalabs.com/"]{Mozilla Research Fellow} @~
+    @p{Research Assistant Professor @~
        @a[href: "http://www.ccs.neu.edu/scheme/"]{PLT} @"@"
        @a[href: "http://www.ccs.neu.edu/research/prl/"]{Programming Research Lab}@~
        @a[href: "http://www.ccs.neu.edu/"]{College of Computer and Information Science}@~
@@ -336,11 +344,11 @@ function toggleBibTeX(elt) {
  @p{Office: @a[href:"http://www.northeastern.edu/campusmap/"]{West Village H}, Room 308@~
     Email: @a[href:"mailto:samth@ccs.neu.edu" "samth@ccs.neu.edu"]@~
     Microblogging: @a[href: "http://twitter.com/samth/" "@samth"]}
- @p{Papers: @a[href: "http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/t/Tobin=Hochstadt:Sam.html"]{DBLP}, 
+ @p{Papers: @a[href: "http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/t/Tobin=Hochstadt:Sam.html"]{DBLP},
             @a[href: "http://arxiv.org/a/tobinhochstadt_s_1"]{arXiv},
             @a[href: "http://portal.acm.org/author_page.cfm?id=81319502825"]{ACM}}
- @p{Come to @a[href: "http://con.racket-lang.org/"]{RacketCon}!
-    Submit to @a[href: "http://scheme2011.ucombinator.org/"]{Scheme 2011}! @~}
+ @p{Thansk for coming to @a[href: "http://con.racket-lang.org/2011/"]{RacketCon}!
+    Come to @a[href: "http://scheme2011.ucombinator.org/"]{Scheme 2011}! @~}
 }
 
 
@@ -348,7 +356,9 @@ function toggleBibTeX(elt) {
 
 @p{My research focuses on the design and implementation of programming
   systems.  I'm particularly interested in programming languages that
-  support the evolution of software.}
+  support the evolution of software.  I'm currently working with the
+ @a[href: "http://www.darpa.mil/Our_Work/I2O/Programs/Clean-slate_design_of_Resilient_Adaptive_Secure_Hosts_%28CRASH%29.aspx"]{DARPA CRASH} program on @a[href: "http://racket-lang.org"]{Racket} and with
+@a[href: "https://mozillalabs.com/"]{Mozilla Labs} on @a[href: "http://ecmascript.org"]{JavaScript}.}
 
 @project['typed "Typed Racket"]{
 @pdesc{I created and
