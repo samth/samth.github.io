@@ -341,12 +341,13 @@ function toggleBibTeX(elt) {
        @a[href: "http://www.ccs.neu.edu/research/prl/"]{Programming Research Lab}@~
        @a[href: "http://www.ccs.neu.edu/"]{College of Computer and Information Science}@~
        @a[href: "http://www.northeastern.edu/"]{Northeastern University}}}
- @p{Office: @a[href:"http://www.northeastern.edu/campusmap/"]{West Village H}, Room 308@~
+ @p{Office: @a[href:"http://www.northeastern.edu/campusmap/"]{West Village H}, Room 322@~
     Email: @a[href:"mailto:samth@ccs.neu.edu" "samth@ccs.neu.edu"]@~
     Microblogging: @a[href: "http://twitter.com/samth/" "@samth"]}
  @p{Papers: @a[href: "http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/t/Tobin=Hochstadt:Sam.html"]{DBLP},
             @a[href: "http://arxiv.org/a/tobinhochstadt_s_1"]{arXiv},
             @a[href: "http://portal.acm.org/author_page.cfm?id=81319502825"]{ACM}}
+ @p{Software: @a[href: "http://github.com/samth/"]{GitHub}}
  @p{Thansk for coming to @a[href: "http://con.racket-lang.org/2011/"]{RacketCon}!
     Come to @a[href: "http://scheme2011.ucombinator.org/"]{Scheme 2011}! @~}
 }
