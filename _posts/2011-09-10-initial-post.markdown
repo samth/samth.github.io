@@ -3,4 +3,4 @@ layout: post
 title: Yet another blog
 ---
 
-Hello world
+Hello to the world
