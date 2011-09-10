@@ -1,0 +1,8 @@
+---
+title: Chapter 1
+permalink: none
+category: book
+layout: book
+---
+
+This is the body of chapter 1.
