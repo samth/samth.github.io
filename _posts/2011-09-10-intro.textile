@@ -1,0 +1,25 @@
+---
+title: Introduction
+permalink: /book/intro/
+categories: [ book ]
+layout: book
+---
+
+This book (well, pre-book, at this point) is an introduction to
+programming in [Racket](http://racket-lang.org). It's intentionally
+aimed at people who already know how to program.  There are many
+excellent ways to learn programming if you don't already know how; I
+personally recommend [How to Design Programs](http://htdp.org).
+
+Let's start right in with some code:
+
+@
+;; Is n prime?
+(define (is-prime? n)
+  (for/and ([i (in-range 2 n)])
+     (not (zero? (modulo n i)))))
+@
+
+This function, called @is-prime?@, implements a rather inefficient
+primality test.  We simply iterate over all the numbers between @2@
+and @n@, and check if any of them is a factor of @n@.  
