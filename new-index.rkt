@@ -348,7 +348,7 @@ function toggleBibTeX(elt) {
             @a[href: "http://arxiv.org/a/tobinhochstadt_s_1"]{arXiv},
             @a[href: "http://portal.acm.org/author_page.cfm?id=81319502825"]{ACM}}
  @p{Software: @a[href: "http://github.com/samth/"]{GitHub}}
- @p{Thansk for coming to @a[href: "http://con.racket-lang.org/2011/"]{RacketCon}!
+ @p{Thanks for coming to @a[href: "http://con.racket-lang.org/2011/"]{RacketCon}!
     Come to @a[href: "http://scheme2011.ucombinator.org/"]{Scheme 2011}! @~}
 }
 
