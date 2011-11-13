@@ -1,2 +1,2 @@
 all:
-	racket new-index.rkt > index.html
+	racket main.rkt > index.html
