@@ -1,6 +1,0 @@
----
-title: Another blog on the internet
-layout: post
----
-
-There's so much to say, so little time.
