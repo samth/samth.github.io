@@ -36,6 +36,9 @@
 @(define dvh @a[href: "http://www.ccs.neu.edu/home/dvanhorn"]{David Van Horn})
 @(define rmc @a[href: "http://www.cs.utah.edu/~ryan"]{Ryan Culpepper})
 @(define robby @a[href: "http://www.eecs.northwestern.edu/~robby"]{Robert Bruce Findler})
+@(define chrdimo @a[href: "http://www.ccs.neu.edu/~chrdimo"]{Christos Dimoulas})
+@(define cce @a[href: "http://www.ccs.neu.edu/~cce"]{Carl Eastlund})
+@(define jay @a[href: "http://faculty.cs.byu.edu/~jay/home/"]{Jay McCarthy})
 
 @(define (acm id)
    `("ACM DL"
@@ -43,10 +46,15 @@
 
 @(define (neu id)
    `("PDF"
-     ,(string-append "http://www.ccs.neu.edu/scheme/pubs/" id ".pdf")))
+     ,(string-append "http://www.ccs.neu.edu/racket/pubs/" id ".pdf")))
 
 @(define tr-papers
    (list 
+    (paper "Typing the Numeric Tower"
+           (list stamourv mflatt MF)
+           @a[href: "http://research.microsoft.com/en-us/um/people/crusso/padl12/"]{Symposium on Practical Aspects of Declarative Languages (PADL)}
+           "January 2012"
+           `(,(neu "padl12-stff")))
     (paper "Logical Types for Untyped Languages"
            (list MF)
            @a[href: "http://www.icfpconference.org/icfp2010/index.html"]{International Conference on Functional Programming (ICFP)}
@@ -102,6 +110,12 @@
 
 @(define macro-papers
    (list
+    (paper "Run Your Research: On the Effectiveness of Lightweight Mechanization"
+           (list "Casey Klein" "John Clements" chrdimo cce MF mflatt jay "Jon Rafkind" robby)
+           @a[href: "http://www.cse.psu.edu/popl/12/"]{Symposium on Principles of Programming Languages (POPL)}
+           "January 2012"
+           `(("PDF" "http://eecs.northwestern.edu/~robby/lightweight-metatheory/popl2012-kcdeffmrtf.pdf")
+             ("Models" "http://eecs.northwestern.edu/~robby/lightweight-metatheory/")))
     (paper "Languages as Libraries"
            (list stamourv rmc mflatt MF)
            @a[href: "http://pldi11.cs.utah.edu/"]{Conference on Programming Language Design and Implementation (PLDI)}
@@ -337,20 +351,29 @@ function toggleBibTeX(elt) {
  @p{@img[id: "photo" src: "tree.jpg" alt: "Tree" title:"Winter"]
    @;@img[id: "photo" width: "200" src: "plt-logo-red-diffuse.png" alt: "Racket" title:"Racket"]
     @p{Research Assistant Professor @~
-       @a[href: "http://www.ccs.neu.edu/scheme/"]{PLT} @"@"
+       @a[href: "http://www.ccs.neu.edu/racket/"]{PLT} @"@"
        @a[href: "http://www.ccs.neu.edu/research/prl/"]{Programming Research Lab}@~
        @a[href: "http://www.ccs.neu.edu/"]{College of Computer and Information Science}@~
        @a[href: "http://www.northeastern.edu/"]{Northeastern University}}}
  @p{Office: @a[href:"http://www.northeastern.edu/campusmap/"]{West Village H}, Room 322@~
     Email: @a[href:"mailto:samth@ccs.neu.edu" "samth@ccs.neu.edu"]@~
+    Blog: @a[href:"http://scriptstoprograms.wordpress.com/" "Scripts to Programs"]@~
     Microblogging: @a[href: "http://twitter.com/samth/" "@samth"]}
  @p{Papers: @a[href: "http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/t/Tobin=Hochstadt:Sam.html"]{DBLP},
             @a[href: "http://arxiv.org/a/tobinhochstadt_s_1"]{arXiv},
             @a[href: "http://portal.acm.org/author_page.cfm?id=81319502825"]{ACM}}
  @p{Software: @a[href: "http://github.com/samth/"]{GitHub}}
- @p{Thanks for coming to @a[href: "http://con.racket-lang.org/2011/"]{RacketCon}!
-    Come to @a[href: "http://scheme2011.ucombinator.org/"]{Scheme 2011}! @~}
+ @p{Thanks for coming to @a[href: "http://con.racket-lang.org/2011/"]{RacketCon}
+    and @a[href: "http://scheme2011.ucombinator.org/"]{Scheme 2011}! @~}
 }
+ 
+@box['news "News"]{
+@p{Our @a[href: "http://eecs.northwestern.edu/~robby/lightweight-metatheory/"]{paper} on lightweight metatheory
+    mechanization in Redex will appear at POPL'12 in Philadelphia.}
+ @p{Our @a[href: "http://www.ccs.neu.edu/racket/pubs/padl12-stff.pdf"]{paper} on Typed Racket's numeric tower 
+        will appear at PADL'12 in Philadelphia.}
+ @p{The @a[href: "http://ecoop12.cs.purdue.edu/content/script-program-evolution-stop"]{3rd International Workshop on Scripts to Programs} 
+     will be co-located with ECOOP and PLDI in Beijing in June 2012.}}
 
 
 @box['research "Research Projects"]{
@@ -397,10 +420,10 @@ function toggleBibTeX(elt) {
   @p{@a[href: "http://wiki.ecmascript.org/doku.php?id=harmony:modules"]{Modules} and
       @a[href: "http://wiki.ecmascript.org/doku.php?id=harmony:module_loaders"]{Module Loaders}. 
       With @|dherman|.
-     @~ Drafts from March 2011.}
+     @~ Drafts from September 2011.}
   @p{@a[href: "http://wiki.ecmascript.org/doku.php?id=harmony:private_name_objects"]{Private Names}. 
       With @dherman and Allen Wirfs-Brock.
-     @~ Draft from March 2011.}
+     @~ Draft from September 2011.}
   }}
 
 @project['fortress "Fortress"]{
@@ -445,4 +468,5 @@ function toggleBibTeX(elt) {
 
 
 @; the end
-}}}
+}
+}}
