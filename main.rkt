@@ -39,6 +39,7 @@
 @(define chrdimo @a[href: "http://www.ccs.neu.edu/~chrdimo"]{Christos Dimoulas})
 @(define cce @a[href: "http://www.ccs.neu.edu/~cce"]{Carl Eastlund})
 @(define jay @a[href: "http://faculty.cs.byu.edu/~jay/home/"]{Jay McCarthy})
+@(define jbc @a[href: "http://www.brinckerhoff.org/clements/"]{John Clements})
 
 @(define (acm id)
    `("ACM DL"
@@ -111,7 +112,7 @@
 @(define macro-papers
    (list
     (paper "Run Your Research: On the Effectiveness of Lightweight Mechanization"
-           (list "Casey Klein" "John Clements" chrdimo cce MF mflatt jay "Jon Rafkind" robby)
+           (list "Casey Klein" jbc chrdimo cce MF mflatt jay "Jon Rafkind" robby)
            @a[href: "http://www.cse.psu.edu/popl/12/"]{Symposium on Principles of Programming Languages (POPL)}
            "January 2012"
            `(("PDF" "http://eecs.northwestern.edu/~robby/lightweight-metatheory/popl2012-kcdeffmrtf.pdf")
@@ -345,7 +346,17 @@ function toggleBibTeX(elt) {
 }}}
 
 @body{
+
+@div[id: 'sidebar]{
+@div[id: 'sidebarcontent]{
+@a[href: "#news"]{News}@~
+@a[href: "#research"]{Research}@~
+@a[href: "#teaching"]{Teaching}@~
+@a[href: "#activities"]{Activities}@~
+}}
+
 @div[id: 'contents]{
+
 
 @box['name sth]{
  @p{@img[id: "photo" src: "tree.jpg" alt: "Tree" title:"Winter"]
@@ -368,10 +379,12 @@ function toggleBibTeX(elt) {
 }
  
 @box['news "News"]{
+@p{I've started blogging at 
+@a[href: "http://scriptstoprograms.wordpress.com/"]{Scripts to Programs}.}
 @p{Our @a[href: "http://eecs.northwestern.edu/~robby/lightweight-metatheory/"]{paper} on lightweight metatheory
-    mechanization in Redex will appear at POPL'12 in Philadelphia.}
+    mechanization in @a[href: "http://redex.racket-lang.org"]{Redex} will appear at @a[href: "http://www.cse.psu.edu/popl/12/"]{POPL'12} in Philadelphia.}
  @p{Our @a[href: "http://www.ccs.neu.edu/racket/pubs/padl12-stff.pdf"]{paper} on Typed Racket's numeric tower 
-        will appear at PADL'12 in Philadelphia.}
+        will appear at @a[href: "http://research.microsoft.com/en-us/um/people/crusso/padl12/"]{PADL'12} in Philadelphia.}
  @p{The @a[href: "http://ecoop12.cs.purdue.edu/content/script-program-evolution-stop"]{3rd International Workshop on Scripts to Programs} 
      will be co-located with ECOOP and PLDI in Beijing in June 2012.}}
 
