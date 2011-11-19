@@ -371,6 +371,7 @@ function toggleBibTeX(elt) {
     Blog: @a[href:"http://scriptstoprograms.wordpress.com/" "Scripts to Programs"]@~
     Microblogging: @a[href: "http://twitter.com/samth/" "@samth"]}
  @p{Papers: @a[href: "http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/t/Tobin=Hochstadt:Sam.html"]{DBLP},
+            @a[href: "http://scholar.google.com/citations?user=vMSSQbAAAAAJ"]{Google Scholar},
             @a[href: "http://arxiv.org/a/tobinhochstadt_s_1"]{arXiv},
             @a[href: "http://portal.acm.org/author_page.cfm?id=81319502825"]{ACM}}
  @p{Software: @a[href: "http://github.com/samth/"]{GitHub}}
