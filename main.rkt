@@ -380,6 +380,7 @@ function toggleBibTeX(elt) {
 }
  
 @box['news "News"]{
+@p{At @a[href: "http://splashcon.org/2011/"]{SPLASH}, I was interviewed by @a[href: "http://carmine.blogs.com/"]{Charles Torre} from @a[href: "http://channel9.msdn.com/"]{Microsoft Channel 9} about our design for @a[href: "http://wiki.ecmascript.org/doku.php?id=harmony:modules"]{JavaScript modules}.  You can watch the video @a[href: "http://bit.ly/jsmodch9"]{here}.}
 @p{I've started blogging at 
 @a[href: "http://scriptstoprograms.wordpress.com/"]{Scripts to Programs}.}
 @p{Our @a[href: "http://eecs.northwestern.edu/~robby/lightweight-metatheory/"]{paper} on lightweight metatheory
