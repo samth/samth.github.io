@@ -454,6 +454,7 @@ function toggleBibTeX(elt) {
 }
 
 @box['activities "Activities"]{
+@p{@a[href: "http://www.icfpconference.org/icfp2012/index.html"]{ICFP 2012}, Program Committee}
 @p{@a[href: "http://wrigstad.com/stop/"]{STOP 2012}, Chair}
 @p{@a[href: "http://scheme2011.ucombinator.org/"]{Scheme Workshop 2011}, Program Committee}
 @p{@a[href: "http://nepls.org/Events/25"]{NEPLS 25}, Chair}
