@@ -381,6 +381,7 @@ function toggleBibTeX(elt) {
  
 @box['news "News"]{
 @p{At @a[href: "http://splashcon.org/2011/"]{SPLASH}, I was interviewed by @a[href: "http://carmine.blogs.com/"]{Charles Torre} from @a[href: "http://channel9.msdn.com/"]{Microsoft Channel 9} about our design for @a[href: "http://wiki.ecmascript.org/doku.php?id=harmony:modules"]{JavaScript modules}.  You can watch the video @a[href: "http://bit.ly/jsmodch9"]{here}.}
+@p{I will be on the Program Committee for the @a[href: "http://www.icfpconference.org/icfp2012/index.html"]{International Conference on Functional Programming} in Copenhagen next year.}
 @p{I've started blogging at 
 @a[href: "http://scriptstoprograms.wordpress.com/"]{Scripts to Programs}.}
 @p{Our @a[href: "http://eecs.northwestern.edu/~robby/lightweight-metatheory/"]{paper} on lightweight metatheory
