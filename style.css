@@ -8,6 +8,17 @@ body {
     font-family:  serif;
 }
 
+@media handheld, screen and (max-width: 800px) {
+    #contents {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    div#sidebar {
+        display: none;
+    }
+}
+
 .box {
     margin: 30px 0;
     padding: 20px;
