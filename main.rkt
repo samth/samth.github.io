@@ -366,7 +366,7 @@ function toggleBibTeX(elt) {
        @a[href: "http://www.ccs.neu.edu/research/prl/"]{Programming Research Lab}@~
        @a[href: "http://www.ccs.neu.edu/"]{College of Computer and Information Science}@~
        @a[href: "http://www.northeastern.edu/"]{Northeastern University}}}
- @p{Office: @a[href:"http://www.northeastern.edu/campusmap/"]{West Village H}, Room 322@~
+ @p{Office: @a[href:"http://www.northeastern.edu/campusmap/"]{West Village H}, Room 358@~
     Email: @a[href:"mailto:samth@ccs.neu.edu" "samth@ccs.neu.edu"]@~
     Blog: @a[href:"http://scriptstoprograms.wordpress.com/" "Scripts to Programs"]@~
     Microblogging: @a[href: "http://twitter.com/samth/" "@samth"]}
