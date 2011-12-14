@@ -369,7 +369,8 @@ function toggleBibTeX(elt) {
  @p{Office: @a[href:"http://www.northeastern.edu/campusmap/"]{West Village H}, Room 358@~
     Email: @a[href:"mailto:samth@ccs.neu.edu" "samth@ccs.neu.edu"]@~
     Blog: @a[href:"http://scriptstoprograms.wordpress.com/" "Scripts to Programs"]@~
-    Microblogging: @a[href: "http://twitter.com/samth/" "@samth"]}
+    Microblogging: @a[href: "http://twitter.com/samth/" "@samth"]@~
+    Curriculum Vitae: @a[href: "cv.pdf"]{pdf}}
  @p{Papers: @a[href: "http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/t/Tobin=Hochstadt:Sam.html"]{DBLP},
             @a[href: "http://scholar.google.com/citations?user=vMSSQbAAAAAJ"]{Google Scholar},
             @a[href: "http://arxiv.org/a/tobinhochstadt_s_1"]{arXiv},
