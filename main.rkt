@@ -52,6 +52,11 @@
 @(define tr-papers
    (list 
     (paper "Typing the Numeric Tower"
+           (list chrdimo MF)
+           "European Symposium on Programming (ESOP)"
+           "March 2012"
+           `(,(neu "esop12-dthf")))
+    (paper "Typing the Numeric Tower"
            (list stamourv mflatt MF)
            @a[href: "http://research.microsoft.com/en-us/um/people/crusso/padl12/"]{Symposium on Practical Aspects of Declarative Languages (PADL)}
            "January 2012"
@@ -193,6 +198,14 @@
             "fit11-talk.pdf"
             @a[href: "https://engineering.purdue.edu/~milind/pldi11fit/"]{Fun Ideas and Thoughts Session at the Conference on Programming Language Design and Implementation}
             "San Jose, CA" "June 2011")))
+
+@(define js-talks
+    (list
+      (talk "The Future of the Web: It's coming!"
+             #f
+            "Childrens Hospital developers group"
+            "Boston, MA" "December 2011")))
+
 
 @(define macro-talks
    (list 
@@ -376,8 +389,7 @@ function toggleBibTeX(elt) {
             @a[href: "http://arxiv.org/a/tobinhochstadt_s_1"]{arXiv},
             @a[href: "http://portal.acm.org/author_page.cfm?id=81319502825"]{ACM}}
  @p{Software: @a[href: "http://github.com/samth/"]{GitHub}}
- @p{Thanks for coming to @a[href: "http://con.racket-lang.org/2011/"]{RacketCon}
-    and @a[href: "http://scheme2011.ucombinator.org/"]{Scheme 2011}! @~}
+ @p{Submit to @a[href: "http://www.dynamic-languages-symposium.org/"]{DLS 2012}!}
 }
  
 @box['news "News"]{
@@ -441,7 +453,8 @@ function toggleBibTeX(elt) {
   @p{@a[href: "http://wiki.ecmascript.org/doku.php?id=harmony:private_name_objects"]{Private Names}. 
       With @dherman and Allen Wirfs-Brock.
      @~ Draft from September 2011.}
-  }}
+  }
+ @(talks js-talks)}
 
 @project['fortress "Fortress"]{
     @pdesc{@literal{In conjunction with
