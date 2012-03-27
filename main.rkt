@@ -51,7 +51,7 @@
 
 @(define tr-papers
    (list 
-    (paper "Typing the Numeric Tower"
+    (paper "Complete Monitors for Behavioral Contracts"
            (list chrdimo MF)
            "European Symposium on Programming (ESOP)"
            "March 2012"
