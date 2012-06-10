@@ -51,6 +51,11 @@
 
 @(define tr-papers
    (list 
+    (paper "Proceedings of the Third Workshop on Script to Program Evolution"
+	   (list)
+	   "NU CCIS Technical Report NU-CCIS-12-02"
+	   "June 2012"
+	   `(("PDF" "stop2012-proceedings.pdf")))
     (paper "Complete Monitors for Behavioral Contracts"
            (list chrdimo MF)
            "European Symposium on Programming (ESOP)"
@@ -393,6 +398,7 @@ function toggleBibTeX(elt) {
 }
  
 @box['news "News"]{
+@p{The informal proceedings of STOP 2012 are now @a[href: "stop2012-proceedings.pdf"]{available}.}
 @p{At @a[href: "http://splashcon.org/2011/"]{SPLASH}, I was interviewed by @a[href: "http://carmine.blogs.com/"]{Charles Torre} from @a[href: "http://channel9.msdn.com/"]{Microsoft Channel 9} about our design for @a[href: "http://wiki.ecmascript.org/doku.php?id=harmony:modules"]{JavaScript modules}.  You can watch the video @a[href: "http://bit.ly/jsmodch9"]{here}.}
 @p{I will be on the Program Committee for the @a[href: "http://www.icfpconference.org/icfp2012/index.html"]{International Conference on Functional Programming} in Copenhagen next year.}
 @p{I've started blogging at 
