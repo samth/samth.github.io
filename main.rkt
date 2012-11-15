@@ -377,7 +377,9 @@ function toggleBibTeX(elt) {
 
 
 @box['name sth]{
- @p{@img[id: "photo" src: "tree.jpg" alt: "Tree" title:"Winter"]
+ @div{@div[id: "right"]{
+      @img[id: "photo" src: "tree.jpg" alt: "Tree" title:"Winter"]
+      @div{@p{"The most important decisions a scholar makes are what problems to work on." - James Tobin}}}
    @;@img[id: "photo" width: "200" src: "plt-logo-red-diffuse.png" alt: "Racket" title:"Racket"]
     @p{Research Assistant Professor @~
        @a[href: "http://www.ccs.neu.edu/racket/"]{PLT} @"@"
