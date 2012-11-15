@@ -5,7 +5,8 @@ body {
 #contents {
     width: 71%;
     margin: 20px auto;
-    font-family:  serif;
+    font-family:  'PT Sans', sans-serif;
+    font-size: 15pt;
 }
 
 @media handheld, screen and (max-width: 800px) {
@@ -19,11 +20,23 @@ body {
     }
 }
 
+ul { 
+    list-style-type: none;
+    
+}
+
+li { line-height: 12pt; }
+
+div#name.box {
+    background-color: lightgray;
+}
+
 .box {
     margin: 30px 0;
     padding: 20px;
     background-color: white;
     border-radius: 7px;
+    position: relative;
 }
 
 .boxtitle {
@@ -34,14 +47,10 @@ body {
 div#news.box {
     margin 20px 0;
     padding 10px;
-    background-color: lightgray;
     padding-left: 25px;
 }
 
 div#sidebar {
-    border-radius: 7px;
-    border-width: 1px;
-    border-style: solid;
     position: fixed;
     margin-left: auto;
     margin-right: auto;
@@ -87,30 +96,30 @@ h2.subproject {
     font-family: 'Nobile' serif;    
 }
 
-
 ul { padding-left: 1em; }
 li { margin-bottom: 1ex; }
 img.validator { border: none; }
 .clear { clear: both; }
 .pub .title { font-style: italic; }
-#name #photo { float: right; }
-
+.right { float: right;	 
+         width: 200px;
+	 margin-top: -10px;
+       }
+#photo { text-align: right; }
+#nameright { text-align: right; }
 
 h1#topname {
     margin: 0px;
-    font: 240% 'Nobile';
-    font-family: 'Nobile' serif;
+    font: 200% 'Paprika';
+    font-family: 'Paprika' serif;
     text-align: left;
 }
 
 h1 {
     margin: 0px;
-    font: 160% 'Nobile';
+    font: 140% 'Nobile';
     font-family: 'Nobile' serif;
 }
-
-
-
 
 img.new {
     position: relative;
@@ -129,11 +138,15 @@ img.new {
 
 .refType {
     font-weight: bold;
+    font-size: 90%;
     color: gray;
 }
 
 
 a:link { color : #0000FF; text-decoration : none; }
+
+
+
 a:visited { color : #0000FF; text-decoration : none; }
 
 a.refType {
@@ -143,3 +156,5 @@ a.refType {
 
 a:hover { color : #FF0000; text-decoration : none; }
 a:active { color : #FF0000; text-decoration : none; }
+
+ #sidebar a  { color : black; text-decoration : none; }
