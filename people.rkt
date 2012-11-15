@@ -15,6 +15,7 @@
 (define MF @a[href: "http://www.ccs.neu.edu/home/matthias"]{Matthias Felleisen})
 (define mflatt @a[href: "http://www.cs.utah.edu/~mflatt"]{Matthew Flatt})
 (define stamourv @a[href: "http://www.ccs.neu.edu/home/stamourv"]{Vincent St-Amour})
+(define asumu @a[href: "http://www.ccs.neu.edu/home/asumu"]{Asumu Takikawa})
 (define krhari @a[href: "http://www.ccs.neu.edu/home/krhari"]{Hari Prashanth K R})
 (define sstrickl @a[href: "http://www.ccs.neu.edu/home/sstrickl"]{T. Stephen Strickland})
 (define dherman @a[href: "http://www.ccs.neu.edu/home/dherman"]{Dave Herman})

@@ -6,26 +6,17 @@ body {
     width: 71%;
     margin: 20px auto;
     font-family:  'PT Sans', sans-serif;
-    font-size: 15pt;
+    font-size: 12pt;
+    line-height: 15pt;
 }
 
-@media handheld, screen and (max-width: 800px) {
-    #contents {
-        width: 95%;
-        margin: 10px auto;
-    }
-
-    div#sidebar {
-        display: none;
-    }
-}
 
 ul { 
     list-style-type: none;
     
 }
 
-li { line-height: 12pt; }
+li { line-height: 16pt; }
 
 div#name.box {
     background-color: lightgray;
@@ -97,7 +88,7 @@ h2.subproject {
 }
 
 ul { padding-left: 1em; }
-li { margin-bottom: 1ex; }
+li { margin-bottom: 0.5ex; }
 img.validator { border: none; }
 .clear { clear: both; }
 .pub .title { font-style: italic; }
@@ -158,3 +149,14 @@ a:hover { color : #FF0000; text-decoration : none; }
 a:active { color : #FF0000; text-decoration : none; }
 
  #sidebar a  { color : black; text-decoration : none; }
+
+@media (max-width: 900px) {
+    #contents {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    div#sidebar {
+        display: none;
+    }
+}
