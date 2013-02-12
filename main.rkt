@@ -96,15 +96,20 @@ function toggleBibTeX(elt) {
 }
  
 @box['news "News"]{
-@p{Our paper on @a[href: "#fcc"]{gradual typing for first-class classes} won best student paper at @a[href: "http://splashcon.org/2012/"]{OOPSLA 2012}.}
+@p{I will be on the Program Committee for @a[href: "http://splashcon.org/2013/cfp/618"]{OOPSLA 2013}.}
 
-@p{I presented a tutorial on Typed Racket at @a[href: "http://con.racket-lang.org/"]{RacketCon 2012}; both @a[href: "http://github.com/samth/tr-tutorial"]{code} and @a[href: "http://www.youtube.com/watch?v=w-fVHOxeEpM&feature=plcp"]{video} are available.}
+@p{Our paper on @a[href: "#cont"]{types and contracts for delimited control} will appear at @a[href: "http://www.ccs.neu.edu/esop2013/"]{ESOP 2013}.}
 
 @p{Our papers on @a[href: "#opt-coach"]{optimization coaching},
 @a[href: "#fcc"]{gradual typing for first-class classes}, @a[href:
 "#symexp"]{higher-order symbolic execution} and @a[href:
 "#chaperones"]{chaperones} were presented at @a[href:
-"http://splashcon.org/2012/"]{OOPSLA 2012}.}
+"http://splashcon.org/2012/"]{OOPSLA 2012}, and the paper on
+@a[href: "#fcc"]{gradual typing for first-class classes} won best
+student paper.}
+
+
+@p{I presented a tutorial on Typed Racket at @a[href: "http://con.racket-lang.org/"]{RacketCon 2012}; both @a[href: "http://github.com/samth/tr-tutorial"]{code} and @a[href: "http://www.youtube.com/watch?v=w-fVHOxeEpM&feature=plcp"]{video} are available.}
 
 @p{@a[href: "http://con.racket-lang.org/"]{RacketCon 2012} was held in Boston in October, and @a[href: "http://www.youtube.com/user/racketlang"]{videos} are now available.}
 @p{@a[href: "http://wrigstad.com/stop12/"]{Scripts to Programs 2012} was a success, and the informal proceeding are now @a[href: "stop2012-proceedings.pdf"]{available}.}

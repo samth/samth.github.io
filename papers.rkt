@@ -6,6 +6,9 @@
 @(define oopsla-12
    @a[href: "http://splashcon.org/2012/"]{Object Oriented Programming, Systems, Languages and Applications (OOPSLA)})
 
+@(define esop-13
+   @a[href: "http://http://www.ccs.neu.edu/esop2013/"]{European Symposium on Programming (ESOP)})
+
 @(define (acm id)
    `("ACM DL"
      ,(string-append "http://portal.acm.org/citation.cfm?id=" id)))
@@ -30,6 +33,13 @@
    title co loc date resources tag))
 
 (defpapers tr-papers
+  ("Constraining Delimited Control with Contracts"
+   (list asumu sstrickl)
+   esop-13
+   "March 2013"
+   (list (neu "esop13-tsth"))
+   #:tag 'cont)
+
   ("Gradual Typing for First-class Classes"
    (list asumu sstrickl chrdimo MF)
    oopsla-12
