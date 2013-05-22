@@ -16,6 +16,11 @@
 
 (define js-talks
     (list
+      (talk "Research meets Application: Life on the EcmaScript Committee"
+	    #f
+	    "Northeastern University Ph.D. Seminar"
+	    "Boston, MA" "2012")
+
       (talk "The Future of the Web: It's coming!"
              #f
             "Childrens Hospital developers group"
@@ -24,6 +29,13 @@
 
 (define macro-talks
    (list 
+
+    (talk "Languages as Libraries"
+	  #f
+	  "Dagstuhl meeting on Foundations of Scripting Languages"
+	  "Wadern, Germany" "January, 2012")
+
+
      (talk "Languages as Libraries"
                "pldi-2011.pdf"
            @a[href: "http://pldi11.cs.utah.edu/"]{Conference on Programming Language Design and Implementation (PLDI)}
@@ -42,6 +54,34 @@
 
 (define tr-talks
    (list
+    (talk "From Principles to Practice with Class in the First Year"
+          #f
+           "OOPLSA PC Meeting Workshop"
+           "Irvine, CA" "May 2013")
+
+    (talk "Evolving Software From Scripts to Programs"
+           #f
+           "ETH Zurich Department of Computer Science"
+           "Zurich, CH" "April, 2013")
+    (talk "Evolving Software From Scripts to Programs"
+           #f
+           "Indiana University Department of Computer Science"
+           "Bloomington, IN" "March, 2013")
+    (talk "Evolving Software From Scripts to Programs"
+           #f
+           "Iowa State University Software Engineering Seminar"
+           "Ames, IA" "March, 2013")
+    (talk "Evolving Software From Scripts to Programs"
+           #f
+           "University of Idaho Department of Computer Science"
+           "Moscow, ID" "March, 2013")
+    
+    (talk "Occurrence Typing"
+	  #f
+	  "Dagstuhl meeting on Foundations of Scripting Languages"
+	  "Wadern, Germany" "January, 2012")
+
+
     (talk "Growing Software: From Scripts to Programs"
           "osu-march-2011.pdf"
            @a[href: "http://eecs.oregonstate.edu/graduate/colloquium/"]{Oregon State University EECS Colloquium}
