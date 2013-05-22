@@ -96,7 +96,11 @@ function toggleBibTeX(elt) {
 }
  
 @box['news "News"]{
-@p{I will be on the Program Committee for @a[href: "http://splashcon.org/2013/cfp/618"]{OOPSLA 2013}.}
+@p{I will be joining the faculty of the 
+@a[href: "http://www.soic.indiana.edu/"]{Indiana
+ University Department of Computer Science} this fall.}
+
+@p{I was on the Program Committee for @a[href: "http://splashcon.org/2013/cfp/618"]{OOPSLA 2013}.}
 
 @p{Our paper on @a[href: "#cont"]{types and contracts for delimited control} will appear at @a[href: "http://www.ccs.neu.edu/esop2013/"]{ESOP 2013}.}
 
