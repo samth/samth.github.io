@@ -30,6 +30,12 @@
 (define macro-talks
    (list 
 
+    (talk "From Principles to Practice with Class in the First Year"
+          #f
+           "OOPLSA PC Meeting Workshop"
+           "Irvine, CA" "May 2013")
+
+
     (talk "Languages as Libraries"
 	  #f
 	  "Dagstuhl meeting on Foundations of Scripting Languages"
@@ -54,11 +60,6 @@
 
 (define tr-talks
    (list
-    (talk "From Principles to Practice with Class in the First Year"
-          #f
-           "OOPLSA PC Meeting Workshop"
-           "Irvine, CA" "May 2013")
-
     (talk "Evolving Software From Scripts to Programs"
            #f
            "ETH Zurich Department of Computer Science"
