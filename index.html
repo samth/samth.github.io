@@ -1,0 +1,334 @@
+<html> <head><title>Sam Tobin-Hochstadt</title>
+<meta name="verify-v1" content="1VWrH93RsveZVebOS9YtZ9P8a6r4e2syuwL80ueE4+0=" />
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+<link href="http://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=Paprika" rel="stylesheet" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19575479-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script></head>
+
+<body>
+<div id="sidebar"><div id="sidebarcontent"><h1><a href="#news">News</a></h1><br />
+<h1><a href="#research">Research</a></h1><br />
+<h1><a href="#activities">Activities</a></h1><br />
+<h1><a href="#teaching">Teaching</a></h1><br /></div></div>
+
+<div id="contents">
+<div id="name" class="box"><h1 id="topname" class="boxtitle">Sam Tobin-Hochstadt</h1><div class="right"><p><img id="photo" src="tree.jpg" alt="Tree" title="Winter" /></p>
+<div><p>The most important decisions a scholar makes are what problems to work on. <br /> <div id="nameright">- James Tobin</div></p></div></div>
+ <div>
+<p>Research Assistant Professor <br />
+<a href="http://www.ccs.neu.edu/racket/">PLT</a> @
+<a href="http://www.ccs.neu.edu/research/prl/">Programming Research Lab</a><br />
+<a href="http://www.ccs.neu.edu/">College of Computer and Information Science</a><br />
+<a href="http://www.northeastern.edu/">Northeastern University</a></p></div>
+ <p>Office: <a href="http://www.northeastern.edu/campusmap/">West Village H</a>, Room 358<br />
+Email: <a href="mailto:samth@ccs.neu.edu">samth@ccs.neu.edu</a><br />
+Blog: <a href="http://scriptstoprograms.wordpress.com/">Scripts to Programs</a><br />
+Microblogging: <a href="http://twitter.com/samth/">@samth</a><br />
+Curriculum Vitae: <a href="cv.pdf">pdf</a></p>
+ <p>Papers: <a href="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/t/Tobin=Hochstadt:Sam.html">DBLP</a>,
+        <a href="http://scholar.google.com/citations?user=vMSSQbAAAAAJ">Google Scholar</a>,
+        <a href="http://arxiv.org/a/tobinhochstadt_s_1">arXiv</a>,
+        <a href="http://portal.acm.org/author_page.cfm?id=81319502825">ACM</a></p>
+ <p>Software: <a href="http://github.com/samth/">GitHub</a></p></div>
+
+<div id="news" class="box"><h1 id="" class="boxtitle">News</h1><p>I will be joining the faculty of the
+<a href="http://www.soic.indiana.edu/">Indiana
+University Department of Computer Science</a> this fall.</p>
+
+<p>I was on the Program Committee for <a href="http://splashcon.org/2013/cfp/618">OOPSLA 2013</a>.</p>
+
+<p>Our paper on <a href="#cont">types and contracts for delimited control</a> will appear at <a href="http://www.ccs.neu.edu/esop2013/">ESOP 2013</a>.</p>
+
+<p>Our papers on <a href="#opt-coach">optimization coaching</a>,
+<a href="#fcc">gradual typing for first-class classes</a>, <a href="#symexp">higher-order symbolic execution</a> and <a href="#chaperones">chaperones</a> were presented at <a href="http://splashcon.org/2012/">OOPSLA 2012</a>, and the paper on
+<a href="#fcc">gradual typing for first-class classes</a> won best
+student paper.</p>
+
+
+<p>I presented a tutorial on Typed Racket at <a href="http://con.racket-lang.org/">RacketCon 2012</a>; both <a href="http://github.com/samth/tr-tutorial">code</a> and <a href="http://www.youtube.com/watch?v=w-fVHOxeEpM&amp;feature=plcp">video</a> are available.</p>
+
+<p><a href="http://con.racket-lang.org/">RacketCon 2012</a> was held in Boston in October, and <a href="http://www.youtube.com/user/racketlang">videos</a> are now available.</p>
+<p><a href="http://wrigstad.com/stop12/">Scripts to Programs 2012</a> was a success, and the informal proceeding are now <a href="stop2012-proceedings.pdf">available</a>.</p>
+<p>I was interviewed by <a href="http://carmine.blogs.com/">Charles Torre</a> from <a href="http://channel9.msdn.com/">Channel 9</a> about my work on <a href="http://wiki.ecmascript.org/doku.php?id=harmony:modules">JavaScript modules</a>.  You can watch the video <a href="http://bit.ly/jsmodch9">here</a>.</p></div>
+
+
+
+
+
+<div id="research" class="box"><h1 id="" class="boxtitle">Research Projects</h1>
+<p>My research focuses on the design and implementation of programming
+  systems.  I'm particularly interested in programming languages that
+  support the evolution of software.  I'm currently working with the
+ <a href="http://www.darpa.mil/Our_Work/I2O/Programs/Clean-slate_design_of_Resilient_Adaptive_Secure_Hosts_%28CRASH%29.aspx">DARPA CRASH</a> program on <a href="http://racket-lang.org">Racket</a> and with
+<a href="https://mozillalabs.com/">Mozilla Labs</a> on <a href="http://ecmascript.org">JavaScript</a>.</p>
+
+<div id="typed" class="project"><h1 class="projecttitle">Typed Racket</h1><p class="projectdesc">I created and
+  maintain <a href="http://docs.racket-lang.org/ts-guide/">Typed
+Racket</a>, a statically-typed dialect
+  of <a href="http://racket-lang.org">Racket</a> that allows
+  existing untyped Racket programs to be enriched with
+types.</p>
+<div><h2 class="subproject">Papers</h2> <a name="cont"><p class="pub"><span class="title">Constraining Delimited Control with Contracts</span>.
+     <span>With <a href="http://www.ccs.neu.edu/home/asumu">Asumu Takikawa</a> and <a href="http://www.ccs.neu.edu/home/sstrickl">T. Stephen Strickland</a>.</span> <br />
+     <a href="http://http://www.ccs.neu.edu/esop2013/">European Symposium on Programming (ESOP)</a>, March 2013.
+     <br />
+     <span class="paper-resource">[ 
+<a class="refType" href="http://www.ccs.neu.edu/racket/pubs/esop13-tsth.pdf">PDF</a>
+ ]</span></p></a><a name="fcc"><p class="pub"><span class="title">Gradual Typing for First-class Classes</span>.
+     <span>With <a href="http://www.ccs.neu.edu/home/asumu">Asumu Takikawa</a>, <a href="http://www.ccs.neu.edu/home/sstrickl">T. Stephen Strickland</a>, <a href="http://www.ccs.neu.edu/~chrdimo">Christos Dimoulas</a> and <a href="http://www.ccs.neu.edu/home/matthias">Matthias Felleisen</a>.</span> <br />
+     <a href="http://splashcon.org/2012/">Object Oriented Programming, Systems, Languages and Applications (OOPSLA)</a>, October 2012.
+     <br />
+     <span class="paper-resource">[ 
+<a class="refType" href="http://www.ccs.neu.edu/racket/pubs/oopsla12-tsdthf.pdf">PDF</a>
+ ]</span></p></a><p class="pub"><span class="title">Proceedings of the Third Workshop on Script to Program Evolution</span>.
+      <br />
+     NU CCIS Technical Report NU-CCIS-12-02, June 2012.
+     <br />
+     <span class="paper-resource">[ 
+<a class="refType" href="stop2012-proceedings.pdf">PDF</a>
+ ]</span></p><p class="pub"><span class="title">Complete Monitors for Behavioral Contracts</span>.
+     <span>With <a href="http://www.ccs.neu.edu/~chrdimo">Christos Dimoulas</a> and <a href="http://www.ccs.neu.edu/home/matthias">Matthias Felleisen</a>.</span> <br />
+     European Symposium on Programming (ESOP), March 2012.
+     <br />
+     <span class="paper-resource">[ 
+<a class="refType" href="http://www.ccs.neu.edu/racket/pubs/esop12-dthf.pdf">PDF</a>
+ ]</span></p><p class="pub"><span class="title">Typing the Numeric Tower</span>.
+     <span>With <a href="http://www.ccs.neu.edu/home/stamourv">Vincent St-Amour</a>, <a href="http://www.cs.utah.edu/~mflatt">Matthew Flatt</a> and <a href="http://www.ccs.neu.edu/home/matthias">Matthias Felleisen</a>.</span> <br />
+     <a href="http://research.microsoft.com/en-us/um/people/crusso/padl12/">Symposium on Practical Aspects of Declarative Languages (PADL)</a>, January 2012.
+     <br />
+     <span class="paper-resource">[ 
+<a class="refType" href="http://www.ccs.neu.edu/racket/pubs/padl12-stff.pdf">PDF</a>
+ ]</span></p><p class="pub"><span class="title">Logical Types for Untyped Languages</span>.
+     <span>With <a href="http://www.ccs.neu.edu/home/matthias">Matthias Felleisen</a>.</span> <br />
+     <a href="http://www.icfpconference.org/icfp2010/index.html">International Conference on Functional Programming (ICFP)</a>, September 2010.
+     <br />
+     <span class="paper-resource">[ 
+<a class="refType" href="http://www.ccs.neu.edu/racket/pubs/icfp10-thf.pdf">PDF</a> | <a class="refType" href="http://portal.acm.org/citation.cfm?id=1863561">ACM DL</a>
+ ]</span></p><p class="pub"><span class="title">The Design and Implementation of Typed Scheme (Preprint)</span>.
+     <span>With <a href="http://www.ccs.neu.edu/home/matthias">Matthias Felleisen</a>.</span> <br />
+     <span>Accepted for publication in <a href="http://www.brics.dk/~hosc/">Higher-Order and Symbolic Computation</a></span>, September 2010.
+     <br />
+     <span class="paper-resource">[ 
+<a class="refType" href="refinement-mitchfest.pdf">PDF</a> | <a class="refType" href="http://arxiv.org/abs/1106.2575">arXiv</a>
+ ]</span></p><p class="pub"><span class="title">Functional Data Structures for Typed Racket</span>.
+     <span>With <a href="http://www.ccs.neu.edu/home/krhari">Hari Prashanth K R</a>.</span> <br />
+     <a href="http://www.iro.umontreal.ca/~sfp2010/">Workshop on Scheme and Functional Programming</a>, August 2010.
+     <br />
+     <span class="paper-resource">[ 
+<a class="refType" href="http://www.ccs.neu.edu/racket/pubs/sfp10-kth.pdf">PDF</a> | <a class="refType" href="http://planet.racket-lang.org/display.ss?package=pfds.plt&amp;owner=krhari">PLaneT Package</a>
+ ]</span></p><p class="pub"><span class="title">Typed Scheme: From Scripts to Programs</span>.
+      <br />
+     PhD Dissertation, Northeastern University, January 2010.
+     <br />
+     <span class="paper-resource">[ 
+<a class="refType" href="http://www.ccs.neu.edu/racket/pubs/dissertation-tobin-hochstadt.pdf">PDF</a>
+ ]</span></p><p class="pub"><span class="title">Cycles without pollution: a gradual typing poem</span>.
+     <span>With <a href="http://www.eecs.northwestern.edu/~robby">Robert Bruce Findler</a>.</span> <br />
+     <a href="http://wrigstad.com/stop09/">1st International Workshop on Script to Program Evolution (STOP)</a>, July 2009.
+     <br />
+     <span class="paper-resource">[ 
+<a class="refType" href="http://www.ccs.neu.edu/racket/pubs/stop09-ft.pdf">PDF</a> | <a class="refType" href="http://portal.acm.org/citation.cfm?id=1570506.1570512">ACM DL</a>
+ ]</span></p><p class="pub"><span class="title">Practical Variable-Arity Polymorphism</span>.
+     <span>With <a href="http://www.ccs.neu.edu/home/sstrickl">T. Stephen Strickland</a> and <a href="http://www.ccs.neu.edu/home/matthias">Matthias Felleisen</a>.</span> <br />
+     <a href="http://esop09.pps.jussieu.fr/">European Symposium on Programming (ESOP)</a>, March 2009.
+     <br />
+     <span class="paper-resource">[ 
+<a class="refType" href="http://www.ccs.neu.edu/racket/pubs/esop09-sthf.pdf">PDF</a> | <a class="refType" href="http://www.springerlink.com/content/x4l6q4n112425081/">Springer</a>
+ ]</span></p><p class="pub"><span class="title">The Design and Implementation of Typed Scheme</span>.
+     <span>With <a href="http://www.ccs.neu.edu/home/matthias">Matthias Felleisen</a>.</span> <br />
+     <a href="http://www.cs.ucsd.edu/popl/08/">Symposium on Principles of Programming Languages (POPL)</a>, January 2008.
+     <br />
+     <span class="paper-resource">[ 
+<a class="refType" href="http://www.ccs.neu.edu/racket/pubs/popl08-thf.pdf">PDF</a> | <a class="refType" href="http://portal.acm.org/citation.cfm?id=1328486">ACM DL</a> | <a class="refType" href="https://github.com/samth/popl08-model">Formal Models</a>
+ ]</span></p><p class="pub"><span class="title">Interlanguage Migration: From Scripts to Programs</span>.
+     <span>With <a href="http://www.ccs.neu.edu/home/matthias">Matthias Felleisen</a>.</span> <br />
+     <a href="http://www.dcl.hpi.uni-potsdam.de/dls2006/openconf.php">Dynamic Languages Symposium (DLS)</a>, October 2006.
+     <br />
+     <span class="paper-resource">[ 
+<a class="refType" href="http://www.ccs.neu.edu/racket/pubs/dls06-thf.pdf">PDF</a> | <a class="refType" href="http://portal.acm.org/citation.cfm?id=1176617.1176755">ACM DL</a>
+ ]</span></p></div>
+<div><h2 class="subproject">Talks</h2> <p class="pub">Evolving Software From Scripts to Programs,
+ETH Zurich Department of Computer Science, Zurich, CH, April, 2013.</p><p class="pub">Evolving Software From Scripts to Programs,
+Indiana University Department of Computer Science, Bloomington, IN, March, 2013.</p><p class="pub">Evolving Software From Scripts to Programs,
+Iowa State University Software Engineering Seminar, Ames, IA, March, 2013.</p><p class="pub">Evolving Software From Scripts to Programs,
+University of Idaho Department of Computer Science, Moscow, ID, March, 2013.</p><p class="pub">Occurrence Typing,
+Dagstuhl meeting on Foundations of Scripting Languages, Wadern, Germany, January, 2012.</p><p class="pub"><a href="osu-march-2011.pdf" class="talktitle">Growing Software: From Scripts to Programs</a>,
+<a href="http://eecs.oregonstate.edu/graduate/colloquium/">Oregon State University EECS Colloquium</a>, Corvallis, Oregon, March 2011.</p><p class="pub">From Scripts to Programs,
+Indiana University Department of Computer Science, Bloomington, IN, November 2010.</p><p class="pub"><a href="icfp-2010-slides.pdf" class="talktitle">Logical Types for Untyped Languages</a>,
+<a href="http://www.icfpconference.org/icfp2010/index.html">International Conference on Functional Programming</a>, Baltimore, MD, September 2010.</p><p class="pub"><a href="nepls-2010-slides.pdf" class="talktitle">Logical Types for Scheme</a>,
+<a href="http://nepls.org/Events/24/">New England Programming Languages and Systems Symposium</a>, Yale University, April 2010.</p><p class="pub">Typed Scheme: From Scripts to Programs,
+<span><a href="http://www.eecs.harvard.edu/">Harvard University</a></span>, Cambridge, MA, February 2010.</p><p class="pub">Types for Scheme, in Scheme,
+<a href="http://fare.livejournal.com/149685.html">Boston Lisp Meeting</a>, Boston, MA, December 2009.</p><p class="pub"><a href="defense-slides.pdf" class="talktitle">Typed Scheme: From Scripts to Programs</a>,
+<span>Dissertation Defense, <a href="http://www.ccs.neu.edu/">Northeastern University</a></span>, Boston, MA, December 2009.</p><p class="pub">Typed Scheme: From Scripts to Programs,
+Sun Microsystems Laboratories, Burlington, MA, September 2009.</p><p class="pub"><a href="mitchfest-slides.pdf" class="talktitle">The Design and Implementation of Typed Scheme</a>,
+<a href="http://www.ccs.neu.edu/events/wand-symposium/">Symposium in
+Honor of Mitchell Wand</a>, Boston, MA, August 2009.</p><p class="pub"><a href="stop09-slides.pdf" class="talktitle">Cycles without pollution: a gradual typing poem</a>,
+<a href="http://wrigstad.com/stop09/">1st International Workshop on Script to Program Evolution</a>, Genoa, Italy, July 2009.</p><p class="pub">To Type or Not To Type,
+<span><a href="http://acm.ccs.neu.edu">Northeastern University ACM Speaker Series</a></span>, Boston, MA, April 2008.</p><p class="pub">Typed Scheme,
+<span><a href="http://www.ccs.neu.edu">Northeastern University CCIS Open House</a></span>, Boston, MA, March 2008.</p><p class="pub">The Design and Implementation of Typed Scheme,
+<a href="http://www.cs.ucsd.edu/popl/08/">Symposium on Principles of Programming Languages (POPL)</a>, San Fransisco, CA, January 2008.</p><p class="pub">Types for Untyped Languages,
+<span><a href="http://www.ccs.neu.edu">Northeastern University CCIS Open House</a></span>, Boston, MA, March 2007.</p><p class="pub"><a href="dls-slides.pdf" class="talktitle">Interlanguage Migration: From Scripts to Programs</a>,
+<a href="http://www.dcl.hpi.uni-potsdam.de/dls2006/openconf.php">Dynamic Languages Symposium (DLS)</a>, Portland, OR, October 2006.</p></div></div>
+
+<div id="metaprogramming" class="project"><h1 class="projecttitle">Building Languages</h1>      <p class="projectdesc">Developing <a href="http://racket-lang.org">Racket</a>, I have helped to build a programmable
+programming language that allows developers to create
+custom languages for everything from pattern matching
+to type checking.</p>
+<div><h2 class="subproject">Papers</h2> <a name="chaperones"><p class="pub"><span class="title">Chaperones and Impersonators: Runtime support for reasonable interposition</span>.
+     <span>With <a href="http://www.ccs.neu.edu/home/sstrickl">T. Stephen Strickland</a>, <a href="http://www.eecs.northwestern.edu/~robby">Robert Bruce Findler</a> and <a href="http://www.cs.utah.edu/~mflatt">Matthew Flatt</a>.</span> <br />
+     <a href="http://splashcon.org/2012/">Object Oriented Programming, Systems, Languages and Applications (OOPSLA)</a>, October 2012.
+     <br />
+     <span class="paper-resource">[ 
+<a class="refType" href="http://www.ccs.neu.edu/racket/pubs/oopsla12-sthff.pdf">PDF</a>
+ ]</span></p></a><a name="opt-coach"><p class="pub"><span class="title">Optimization Coaching</span>.
+     <span>With <a href="http://www.ccs.neu.edu/home/stamourv">Vincent St-Amour</a> and <a href="http://www.ccs.neu.edu/home/matthias">Matthias Felleisen</a>.</span> <br />
+     <a href="http://splashcon.org/2012/">Object Oriented Programming, Systems, Languages and Applications (OOPSLA)</a>, October 2012.
+     <br />
+     <span class="paper-resource">[ 
+<a class="refType" href="http://www.ccs.neu.edu/racket/pubs/oopsla12-stf.pdf">PDF</a>
+ ]</span></p></a><p class="pub"><span class="title">Run Your Research: On the Effectiveness of Lightweight Mechanization</span>.
+     <span>With Casey Klein, <a href="http://www.brinckerhoff.org/clements/">John Clements</a>, <a href="http://www.ccs.neu.edu/~chrdimo">Christos Dimoulas</a>, <a href="http://www.ccs.neu.edu/~cce">Carl Eastlund</a>, <a href="http://www.ccs.neu.edu/home/matthias">Matthias Felleisen</a>, <a href="http://www.cs.utah.edu/~mflatt">Matthew Flatt</a>, <a href="http://faculty.cs.byu.edu/~jay/home/">Jay McCarthy</a>, Jon Rafkind and <a href="http://www.eecs.northwestern.edu/~robby">Robert Bruce Findler</a>.</span> <br />
+     <a href="http://www.cse.psu.edu/popl/12/">Symposium on Principles of Programming Languages (POPL)</a>, January 2012.
+     <br />
+     <span class="paper-resource">[ 
+<a class="refType" href="http://eecs.northwestern.edu/~robby/lightweight-metatheory/popl2012-kcdeffmrtf.pdf">PDF</a> | <a class="refType" href="http://eecs.northwestern.edu/~robby/lightweight-metatheory/">Models</a>
+ ]</span></p><p class="pub"><span class="title">Languages as Libraries</span>.
+     <span>With <a href="http://www.ccs.neu.edu/home/stamourv">Vincent St-Amour</a>, <a href="http://www.cs.utah.edu/~ryan">Ryan Culpepper</a>, <a href="http://www.cs.utah.edu/~mflatt">Matthew Flatt</a> and <a href="http://www.ccs.neu.edu/home/matthias">Matthias Felleisen</a>.</span> <br />
+     <a href="http://pldi11.cs.utah.edu/">Conference on Programming Language Design and Implementation (PLDI)</a>, June 2011.
+     <br />
+     <span class="paper-resource">[ 
+<a class="refType" href="http://www.ccs.neu.edu/racket/pubs/pldi11-thacff.pdf">PDF</a> | <a class="refType" href="http://portal.acm.org/citation.cfm?id=1993514">ACM DL</a>
+ ]</span></p><p class="pub"><span class="title">Extensible Pattern Matching in an Extensible Language (Preprint)</span>.
+      <br />
+      October 2010.
+     <br />
+     <span class="paper-resource">[ 
+<a class="refType" href="match-ifl-full.pdf">PDF</a> | <a class="refType" href="http://arxiv.org/abs/1106.2578">arXiv</a>
+ ]</span></p><p class="pub"><span class="title">Extensible Pattern Matching in an Extensible Language (Abstract)</span>.
+      <br />
+     <a href="http://www.cs.uu.nl/wiki/bin/view/IFL2010/WebHome">Symposium on Implementation and Application of Functional Languages</a>, September 2010.
+     <br />
+     <span class="paper-resource">[ 
+<a class="refType" href="ifl-2010-abstract.pdf">PDF</a> | <a class="refType" href="http://www.cs.uu.nl/research/techreps/UU-CS-2010-020.html">Utrecht Technical Report</a>
+ ]</span></p><p class="pub"><span class="title">Where are you going with those types? (Abstract)</span>.
+     <span>With <a href="http://www.ccs.neu.edu/home/stamourv">Vincent St-Amour</a>, <a href="http://www.cs.utah.edu/~mflatt">Matthew Flatt</a> and <a href="http://www.ccs.neu.edu/home/matthias">Matthias Felleisen</a>.</span> <br />
+     <a href="http://www.cs.uu.nl/wiki/bin/view/IFL2010/WebHome">Symposium on Implementation and Application of Functional Languages</a>, September 2010.
+     <br />
+     <span class="paper-resource">[ 
+<a class="refType" href="http://www.ccs.neu.edu/home/stamourv/ifl10.pdf">PDF</a> | <a class="refType" href="http://www.cs.uu.nl/research/techreps/UU-CS-2010-020.html">Utrecht Technical Report</a>
+ ]</span></p><p class="pub"><span class="title">Advanced Macrology and the Implementation of Typed Scheme</span>.
+     <span>With <a href="http://www.cs.utah.edu/~ryan">Ryan Culpepper</a> and <a href="http://www.cs.utah.edu/~mflatt">Matthew Flatt</a>.</span> <br />
+     <a href="http://www.schemeworkshop.org/2007/">Workshop on Scheme and Functional Programming</a>, September 2007.
+     <br />
+     <span class="paper-resource">[ 
+<a class="refType" href="http://www.ccs.neu.edu/racket/pubs/scheme2007-cft.pdf">PDF</a> | <a class="refType" href="http://www.schemeworkshop.org/2007/programme.html">Proceedings</a>
+ ]</span></p></div> <div><h2 class="subproject">Talks</h2> <p class="pub">From Principles to Practice with Class in the First Year,
+OOPLSA PC Meeting Workshop, Irvine, CA, May 2013.</p><p class="pub">Languages as Libraries,
+Dagstuhl meeting on Foundations of Scripting Languages, Wadern, Germany, January, 2012.</p><p class="pub"><a href="pldi-2011.pdf" class="talktitle">Languages as Libraries</a>,
+<a href="http://pldi11.cs.utah.edu/">Conference on Programming Language Design and Implementation (PLDI)</a>, San Jose, MA, June 2011.</p><p class="pub"><a href="mit-may-2011.pdf" class="talktitle">Languages as Libraries</a>,
+<a href="http://www.csail.mit.edu/events/eventcalendar/calendar.php?show=event&amp;id=2978">MIT
+CSAIL Programming Languages Working Group</a>, Cambridge, MA, May 2011.</p><p class="pub"><a href="ifl2010-slides.pdf" class="talktitle">Extensible Pattern Matching in an Extensible Language</a>,
+<a href="http://www.cs.uu.nl/wiki/bin/view/IFL2010/WebHome">Implementation and Application of Functional Languages</a>, Alphen an der Rijn, Netherlands, September 2010.</p></div></div>
+
+<div id="analysis" class="project"><h1 class="projecttitle">Analysis and Verification</h1><p class="projectdesc">I am developing  analysis and verification
+techniques for modular programs with rich specifications.</p>
+ <div><h2 class="subproject">Papers</h2> <a name="symexp"><p class="pub"><span class="title">Higher-order Symbolic Execution via Contracts</span>.
+     <span>With <a href="http://www.ccs.neu.edu/home/dvanhorn">David Van Horn</a>.</span> <br />
+     <a href="http://splashcon.org/2012/">Object Oriented Programming, Systems, Languages and Applications (OOPSLA)</a>, October 2012.
+     <br />
+     <span class="paper-resource">[ 
+<a class="refType" href="http://www.ccs.neu.edu/racket/pubs/oopsla12-thvh.pdf">PDF</a> | <a class="refType" href="http://arxiv.org/abs/1103.1362">arXiv</a>
+ ]</span></p></a><p class="pub"><span class="title">Semantic Solutions to Program Analysis Problems</span>.
+     <span>With <a href="http://www.ccs.neu.edu/home/dvanhorn">David Van Horn</a>.</span> <br />
+     <a href="https://engineering.purdue.edu/~milind/pldi11fit/">Fun Ideas and Thoughts Session at the Conference on Programming Language Design and Implementation</a>, June 2011.
+     <br />
+     <span class="paper-resource">[ 
+<a class="refType" href="http://www.ccs.neu.edu/home/dvanhorn/pubs/tobin-hochstadt-vanhorn-preprint11-2.pdf">PDF</a> | <a class="refType" href="http://arxiv.org/abs/1105.0106">arXiv</a>
+ ]</span></p></div>
+ <div><h2 class="subproject">Talks</h2> <p class="pub"><a href="fit11-talk.pdf" class="talktitle">Semantic Solutions to Program Analysis Problems</a>,
+<a href="https://engineering.purdue.edu/~milind/pldi11fit/">Fun Ideas and Thoughts Session at the Conference on Programming Language Design and Implementation</a>, San Jose, CA, June 2011.</p></div></div>
+
+
+<div id="javascript" class="project"><h1 class="projecttitle">JavaScript</h1><p class="projectdesc">In collaboration
+with <a href="https://mozillalabs.com/">Mozilla Research</a> and ECMA Technical Committee 39, I
+am working on the next version of the JavaScript language,
+focusing on making JavaScript an effective language for building
+large-scale web applications.</p>
+ <div><h2 class="subproject">Papers</h2> <p class="pub"><span class="title">Modules for JavaScript (Preprint)</span>.
+     <span>With <a href="http://www.ccs.neu.edu/home/dherman">Dave Herman</a>.</span> <br />
+      April 2011.
+     <br />
+     <span class="paper-resource">[ 
+<a class="refType" href="js-modules.pdf">PDF</a>
+ ]</span></p></div>
+ <div><h2 class="subproject">Proposals</h2>
+<p><a href="http://wiki.ecmascript.org/doku.php?id=harmony:modules">Modules</a> and
+ <a href="http://wiki.ecmascript.org/doku.php?id=harmony:module_loaders">Module Loaders</a>.
+ With <a href="http://www.ccs.neu.edu/home/dherman">Dave Herman</a>.
+<br /> Drafts from September 2011.</p>
+<p><a href="http://wiki.ecmascript.org/doku.php?id=harmony:private_name_objects">Private Names</a>.
+ With <a href="http://www.ccs.neu.edu/home/dherman">Dave Herman</a> and Allen Wirfs-Brock.
+<br /> Draft from September 2011.</p></div>
+<div><h2 class="subproject">Talks</h2> <p class="pub">Research meets Application: Life on the EcmaScript Committee,
+Northeastern University Ph.D. Seminar, Boston, MA, 2012.</p><p class="pub">The Future of the Web: It's coming!,
+Childrens Hospital developers group, Boston, MA, December 2011.</p></div></div>
+
+<div id="fortress" class="project"><h1 class="projecttitle">Fortress</h1><p class="projectdesc">In conjunction with
+the <a href="http://labs.oracle.com/projects/plrg/">Sun Labs
+Programming Language Research Group</a>, I helped to
+develop <a href="http://projectfortress.java.net/">Fortress</a>, a
+new language for high-performance, multicore and scientific
+computing.</p>
+ <div><h2 class="subproject">Papers</h2> <p class="pub"><span class="title">The Fortress Language Specification</span>.
+     <span>With Eric Allen, David Chase, Joe Hallett, Victor Luchangco, Jan-Willem Maessen, Sukyoung Ryu and Guy Steele.</span> <br />
+     Sun Microsystems Technical Report, Version 1.0, 2008.
+     <br />
+     <span class="paper-resource">[ 
+<a class="refType" href="fortress-spec.pdf">PDF</a>
+ ]</span></p><p class="pub"><span class="title">A Core Calculus of Metaclasses</span>.
+     <span>With Eric Allen.</span> <br />
+     <a href="http://homepages.inf.ed.ac.uk/wadler/fool/">Workshop on Foundations of Object-Oriented Languages (FOOL)</a>, January 2005.
+     <br />
+     <span class="paper-resource">[ 
+<a class="refType" href="fool05-tha.pdf">PDF</a> | <a class="refType" href="http://homepages.inf.ed.ac.uk/wadler/fool/program/7.html">Proceedings</a>
+ ]</span></p></div></div></div>
+
+<div id="activities" class="box"><h1 id="" class="boxtitle">Activities</h1><ul><li><span>IFL 2014</span>, Chair</li>
+<li><a href="http://splashcon.org/2013/">OOPSLA 2013</a>, Program Committee</li>
+<li><a href="http://www.icfpconference.org/icfp2012/index.html">ICFP 2012</a>, Program Committee</li>
+<li><a href="http://wrigstad.com/stop/">STOP 2012</a>, Chair</li>
+<li><a href="http://scheme2011.ucombinator.org/">Scheme Workshop 2011</a>, Program Committee</li>
+<li><a href="http://nepls.org/Events/25">NEPLS 25</a>, Chair</li>
+<li><a href="http://www.mpi-sws.org/~dreyer/tldi2011/">TLDI 2011</a>, Program Committee</li>
+<li><a>FOOL 2010</a>, Program Committee</li>
+<li><a>TFP 2010</a>, Program Committee</li></ul></div>
+
+<div id="teaching" class="box"><h1 id="" class="boxtitle">Teaching</h1><ul><li> In Spring 2011 and Spring 2012, I taught a new honors section of
+<a href="http://www.ccs.neu.edu/course/cs2510h/">CS 2510</a> with
+<a href="http://www.ccs.neu.edu/home/dvanhorn/">David Van Horn</a>.</li>
+
+<li> In Spring 2009, I taught <a href="211-09/">CS U211</a>.  </li>
+
+<li> In Fall 2005, I taught CS U213.</li></ul></div>
+
+
+<div id="life" class="box"><h1 id="" class="boxtitle">Personal</h1><p>  In the rest of my life, I play <a href="http://www.upa.org/">Ultimate</a> and I
+<a href="http://www.outdoors.org">go outside</a>.  </p>
+
+<p>My wife, Katie Edmonds, is a post-doc in the
+<a href="http://www.bumc.bu.edu/phys-biophys/people/faculty/marintchev/">Marinchev lab</a> at the Boston University Medical Campus.</p></div>
+
+
+</div></body></html>
