@@ -183,13 +183,13 @@
    @list["Eric Allen" "David Chase" "Joe Hallett" "Victor Luchangco" "Jan-Willem Maessen" "Sukyoung Ryu" "Guy Steele"]
    "Sun Microsystems Technical Report, Version 1.0"
    "2008"
-   `(("PDF" "http://labs.oracle.com/projects/plrg/fortress.pdf")))
+   `(("PDF" "fortress-spec.pdf")))
 
   ("A Core Calculus of Metaclasses"
    @list["Eric Allen"]
    @a[href: "http://homepages.inf.ed.ac.uk/wadler/fool/"]{Workshop on Foundations of Object-Oriented Languages (FOOL)}
    "January 2005"
-   `(("PDF" "http://research.sun.com/projects/plrg/fool2005.pdf")
+   `(("PDF" "fool05-tha.pdf")
      ("Proceedings" "http://homepages.inf.ed.ac.uk/wadler/fool/program/7.html"))))
 
 (defpapers analysis-papers
