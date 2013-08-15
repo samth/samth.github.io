@@ -78,13 +78,13 @@ function toggleBibTeX(elt) {
       @div{@p{The most important decisions a scholar makes are what problems to work on. @|~| @div[id: "nameright"]{- James Tobin}}}}
  @div{
 
-    @p{Research Assistant Professor @~
-       @a[href: "http://www.ccs.neu.edu/racket/"]{PLT} @"@"
-       @a[href: "http://www.ccs.neu.edu/research/prl/"]{Programming Research Lab}@~
-       @a[href: "http://www.ccs.neu.edu/"]{College of Computer and Information Science}@~
-       @a[href: "http://www.northeastern.edu/"]{Northeastern University}}}
- @p{Office: @a[href:"http://www.northeastern.edu/campusmap/"]{West Village H}, Room 358@~
-    Email: @a[href:"mailto:samth@ccs.neu.edu" "samth@ccs.neu.edu"]@~
+    @p{Assistant Professor @~
+       PLT @"@"
+       @a[href: "https://www.soic.indiana.edu/computer-science/index.shtml"]{Department of Computer Science}@~
+       @a[href: "http://www.soic.indiana.edu/"]{School of Informatics & Computing}@~
+       @a[href: "http://www.indiana.edu/"]{Indiana University}}}
+ @p{Office: @a[href:"https://www.soic.indiana.edu/about/maps.shtml"]{Lindley Hall}, Room 215E@~
+    Email: @a[href:"mailto:samth@cs.indiana.edu" "samth@cs.indiana.edu"]@~
     Blog: @a[href:"http://scriptstoprograms.wordpress.com/" "Scripts to Programs"]@~
     Microblogging: @a[href: "http://twitter.com/samth/" "@samth"]@~
     Curriculum Vitae: @a[href: "cv.pdf"]{pdf}}
@@ -96,9 +96,9 @@ function toggleBibTeX(elt) {
 }
  
 @box['news "News"]{
-@p{I will be joining the faculty of the 
+@p{I have joinined the faculty of the 
 @a[href: "http://www.soic.indiana.edu/"]{Indiana
- University Department of Computer Science} this fall.}
+ University Department of Computer Science}.}
 
 @p{I was on the Program Committee for @a[href: "http://splashcon.org/2013/cfp/618"]{OOPSLA 2013}.}
 
