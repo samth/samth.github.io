@@ -96,7 +96,7 @@ function toggleBibTeX(elt) {
 }
  
 @box['news "News"]{
-@p{I have joinined the faculty of the 
+@p{I have joined the faculty of the 
 @a[href: "http://www.soic.indiana.edu/"]{Indiana
  University Department of Computer Science}.}
 
