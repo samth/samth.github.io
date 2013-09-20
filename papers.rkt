@@ -119,7 +119,7 @@
    (list MF)
    @a[href: "http://www.dcl.hpi.uni-potsdam.de/dls2006/openconf.php"]{Dynamic Languages Symposium (DLS)}
    "October 2006"
-   `(,(neu "dls06-thf") 
+   `(,(neu "dls06-tf") 
      ,(acm "1176617.1176755")))
   )
 
