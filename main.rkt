@@ -79,8 +79,8 @@ function toggleBibTeX(elt) {
  @div{
 
     @p{Assistant Professor @~
-       PLT @"@"
-       @a[href: "https://www.soic.indiana.edu/computer-science/index.shtml"]{Department of Computer Science}@~
+       @a[href: "http://racket-lang.org/people.html"]{PLT} &
+        @a[href: "http://lambda.soic.indiana.edu"]{PL} @"@"
        @a[href: "http://www.soic.indiana.edu/"]{School of Informatics & Computing}@~
        @a[href: "http://www.indiana.edu/"]{Indiana University}}}
  @p{Office: @a[href:"https://www.soic.indiana.edu/about/maps.shtml"]{Lindley Hall}, Room 215E@~
