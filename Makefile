@@ -1,5 +1,10 @@
-all:
+all: index.html
+
+index.html: compiled/main_rkt.zo
 	racket main.rkt > index.html
-push:
-	git status && git push
-	ssh tank 'cd html-pub && git pull'
+compiled/main_rkt.zo:
+	raco make -v main.rkt
+push: all
+	git push gh master
+	ssh tank.cs.indiana.edu 'cd html-pub && git pull'
+	ssh login.ccs.neu.edu 'cd .www && git pull'

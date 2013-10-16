@@ -210,14 +210,21 @@ Old news
 }}
 
 @box['teaching "Teaching"]{ 
+
+@ul{I'm teaching @a[href:
+"http://homes.soic.indiana.edu/classes/fall2013/csci/p532-samth/"]{P532} in Fall 2013.}
+
 @ul{
-@li{ In Spring 2011 and Spring 2012, I taught a new honors section of
+@li{ In Spring 2011, Spring 2012, and Spring 2013, I taught a new honors section of
 @a[href: "http://www.ccs.neu.edu/course/cs2510h/"]{CS 2510} with
 @a[href: "http://www.ccs.neu.edu/home/dvanhorn/"]{David Van Horn}.}
 
 @li{ In Spring 2009, I taught @a[href: "211-09/"]{CS U211}.  }
 
 @li{ In Fall 2005, I taught CS U213.}
+
+@(papers edu-papers)
+
 }}
 
 @;@box['software "Software"]{}

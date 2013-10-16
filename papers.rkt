@@ -217,6 +217,13 @@
    `(["PDF" "js-modules.pdf"])
    #:type 'preprint))
 
+(defpapers edu-papers
+  ("From Principles to Practice with Class in the First Year"
+   (list dvh)
+   "Trends in Functional Programming in Education"
+   "May 2013"
+   `(("PDF" "tfpie.pdf"))))
+
 (define (format-title pr)
    (match pr
      [(abstract title _ _ _ _ _) (list title " (Abstract)")]
