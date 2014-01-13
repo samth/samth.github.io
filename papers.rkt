@@ -9,6 +9,9 @@
 @(define esop-13
    @a[href: "http://http://www.ccs.neu.edu/esop2013/"]{European Symposium on Programming (ESOP)})
 
+@(define esop-14
+   @a[href: "http://flint.cs.yale.edu/esop2014/"]{European Symposium on Programming (ESOP)})
+
 @(define (acm id)
    `("ACM DL"
      ,(string-append "http://portal.acm.org/citation.cfm?id=" id)))
@@ -124,6 +127,12 @@
   )
 
 (defpapers macro-papers
+    ("The Network as a Language Construct"
+     (list tonyg MF)
+     esop-14
+     "April 2014"
+     `(("To Appear" #f))
+     #:tag 'network-calc)
     ("Chaperones and Impersonators: Runtime support for reasonable interposition"
      (list sstrickl robby mflatt)
      oopsla-12
@@ -222,7 +231,8 @@
    (list dvh)
    "Trends in Functional Programming in Education"
    "May 2013"
-   `(("PDF" "tfpie.pdf"))))
+   `(("PDF" "tfpie.pdf"))
+   #:tag "tfpie13"))
 
 (define (format-title pr)
    (match pr

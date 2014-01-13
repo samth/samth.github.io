@@ -98,11 +98,27 @@ function toggleBibTeX(elt) {
 @box['news "News"]{
 @p{I have joined the faculty of the 
 @a[href: "http://www.soic.indiana.edu/"]{Indiana
- University Department of Computer Science}.}
+ University Department of Computer Science}.  I'm looking for new Ph.D
+ students, please email me if you are interested. }
 
-@p{I was on the Program Committee for @a[href: "http://splashcon.org/2013/cfp/618"]{OOPSLA 2013}.}
+@p{I will be on the Program Committee for @;{@a[href: ""]{ILC 2014} and}
+     @a[href: "http://www.dynamic-languages-symposium.org/dls-14/"]{DLS 2014}@;{ and
+the External Review Committee for @a[href: ]{POPL 2015}}.}
 
-@p{Our paper on @a[href: "#cont"]{types and contracts for delimited control} will appear at @a[href: "http://www.ccs.neu.edu/esop2013/"]{ESOP 2013}.}
+@p{Our paper on the @a[href: "#network-calc"]{network calculus}, a
+formalization of the ideas behind
+@a[href: "http://tonyg.github.io/marketplace/"]{Marketplace}, will
+appear at @a[href: "http://flint.cs.yale.edu/esop2014/"]{ESOP 2014}}
+
+@p{Our paper on a @a[href: "#tfpie13"]{new approach} to teaching
+object-oriented programming in the first year was published in the
+proceedings of @a[href: "http://arxiv.org/html/1312.2216v1"]{TFPIE
+2013}.}
+
+
+@p{Our paper on @a[href: "#cont"]{types and contracts for delimited
+control} will appear at
+@a[href: "http://www.ccs.neu.edu/esop2013/"]{ESOP 2013}.}
 
 @p{Our papers on @a[href: "#opt-coach"]{optimization coaching},
 @a[href: "#fcc"]{gradual typing for first-class classes}, @a[href:
@@ -113,14 +129,20 @@ function toggleBibTeX(elt) {
 student paper.}
 
 
-@p{I presented a tutorial on Typed Racket at @a[href: "http://con.racket-lang.org/"]{RacketCon 2012}; both @a[href: "http://github.com/samth/tr-tutorial"]{code} and @a[href: "http://www.youtube.com/watch?v=w-fVHOxeEpM&feature=plcp"]{video} are available.}
-
-@p{@a[href: "http://con.racket-lang.org/"]{RacketCon 2012} was held in Boston in October, and @a[href: "http://www.youtube.com/user/racketlang"]{videos} are now available.}
-@p{@a[href: "http://wrigstad.com/stop12/"]{Scripts to Programs 2012} was a success, and the informal proceeding are now @a[href: "stop2012-proceedings.pdf"]{available}.}
-@p{I was interviewed by @a[href: "http://carmine.blogs.com/"]{Charles Torre} from @a[href: "http://channel9.msdn.com/"]{Channel 9} about my work on @a[href: "http://wiki.ecmascript.org/doku.php?id=harmony:modules"]{JavaScript modules}.  You can watch the video @a[href: "http://bit.ly/jsmodch9"]{here}.}}
+}
 
 @;{
 Old news
+
+@p{I was on the Program Committee for @a[href: "http://splashcon.org/2013/cfp/618"]{OOPSLA 2013}.}
+
+@p{I presented a tutorial on Typed Racket at @a[href: "http://con.racket-lang.org/"]{RacketCon 2012}; both @a[href: "http://github.com/samth/tr-tutorial"]{code} and @a[href: "http://www.youtube.com/watch?v=w-fVHOxeEpM&feature=plcp"]{video} are available.}
+
+@p{@a[href: "http://con.racket-lang.org/"]{RacketCon 2012} was held in Boston in October, and @a[href: "http://www.youtube.com/user/racketlang"]{videos} are now available.}
+
+@p{@a[href: "http://wrigstad.com/stop12/"]{Scripts to Programs 2012} was a success, and the informal proceeding are now @a[href: "stop2012-proceedings.pdf"]{available}.}
+
+@p{I was interviewed by @a[href: "http://carmine.blogs.com/"]{Charles Torre} from @a[href: "http://channel9.msdn.com/"]{Channel 9} about my work on @a[href: "http://wiki.ecmascript.org/doku.php?id=harmony:modules"]{JavaScript modules}.  You can watch the video @a[href: "http://bit.ly/jsmodch9"]{here}.}
 
 @p{I will be on the Program Committee for the @a[href: "http://www.icfpconference.org/icfp2012/index.html"]{International Conference on Functional Programming} in Copenhagen next year.}
 @p{I've started blogging at 

@@ -2,7 +2,7 @@ all: index.html
 
 index.html: compiled/main_rkt.zo
 	racket main.rkt > index.html
-compiled/main_rkt.zo:
+compiled/main_rkt.zo: *.rkt
 	raco make -v main.rkt
 push: all
 	git push gh master

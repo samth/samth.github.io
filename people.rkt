@@ -26,3 +26,4 @@
 (define cce @a[href: "http://www.ccs.neu.edu/~cce"]{Carl Eastlund})
 (define jay @a[href: "http://faculty.cs.byu.edu/~jay/home/"]{Jay McCarthy})
 (define jbc @a[href: "http://www.brinckerhoff.org/clements/"]{John Clements})
+(define tonyg @a[href: "http://homepages.kcbbs.gen.nz/tonyg/"]{Tony Garnock-Jones})
