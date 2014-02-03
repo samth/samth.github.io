@@ -75,7 +75,9 @@ function toggleBibTeX(elt) {
 @box['name sth]{
 @div[class: "right"]{
       @p{@img[id: "photo" src: "tree.jpg" alt: "Tree" title:"Winter"]}
-      @div{@p{The most important decisions a scholar makes are what problems to work on. @|~| @div[id: "nameright"]{- James Tobin}}}}
+      @div{@p{The most important decisions a scholar makes are what problems to work on. @|~| @div[id: "nameright"]{- James Tobin}}
+             @;{@p{Programming language semanticists should be the obstetricians of programming languages, not their coroners.
+ @|~| @div[id: "nameright"]{- John C. Reynolds}}}}}
  @div{
 
     @p{Assistant Professor @~
@@ -99,11 +101,15 @@ function toggleBibTeX(elt) {
 @p{I have joined the faculty of the 
 @a[href: "http://www.soic.indiana.edu/"]{Indiana
  University Department of Computer Science}.  I'm looking for new Ph.D
- students, please email me if you are interested. }
+ students, please @a[href: "mailto:samth@indiana.edu"]{email me} if you are interested. }
+
+@p{Our paper on @a[href: "http://www.cs.indiana.edu/~lkuper/papers/effectzoo-draft.pdf"]{extending LVars with new effects} will
+appear at @a[href: "http://conferences.inf.ed.ac.uk/pldi2014/"]{PLDI 2014}.}
+
 
 @p{I will be on the Program Committee for @;{@a[href: ""]{ILC 2014} and}
-     @a[href: "http://www.dynamic-languages-symposium.org/dls-14/"]{DLS 2014}@;{ and
-the External Review Committee for @a[href: ]{POPL 2015}}.}
+     @a[href: "http://www.dynamic-languages-symposium.org/dls-14/"]{DLS 2014} and
+the External Review Committee for @a[href: "http://popl.mpi-sws.org/2015/"]{POPL 2015}.}
 
 @p{Our paper on the @a[href: "#network-calc"]{network calculus}, a
 formalization of the ideas behind
@@ -117,8 +123,15 @@ proceedings of @a[href: "http://arxiv.org/html/1312.2216v1"]{TFPIE
 
 
 @p{Our paper on @a[href: "#cont"]{types and contracts for delimited
-control} will appear at
+control} appeared at
 @a[href: "http://www.ccs.neu.edu/esop2013/"]{ESOP 2013}.}
+
+
+
+}
+
+@;{
+Old news
 
 @p{Our papers on @a[href: "#opt-coach"]{optimization coaching},
 @a[href: "#fcc"]{gradual typing for first-class classes}, @a[href:
@@ -127,12 +140,6 @@ control} will appear at
 "http://splashcon.org/2012/"]{OOPSLA 2012}, and the paper on
 @a[href: "#fcc"]{gradual typing for first-class classes} won best
 student paper.}
-
-
-}
-
-@;{
-Old news
 
 @p{I was on the Program Committee for @a[href: "http://splashcon.org/2013/cfp/618"]{OOPSLA 2013}.}
 
