@@ -264,7 +264,7 @@ student paper.}
 @a[href:"http://www.outdoors.org"]{go outside}.  }
 
 @p{My wife, Katie Edmonds, is a post-doc in the 
-@a[href:"http://www.bumc.bu.edu/phys-biophys/people/faculty/marintchev/"]{Marinchev lab} at the Boston University Medical Campus.}}
+@a[href:"http://www.indiana.edu/~dpglab/"]{Giedroc lab} in the IU Chemistry Department.}}
 
 
 
