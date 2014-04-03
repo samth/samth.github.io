@@ -79,7 +79,7 @@ function toggleBibTeX(elt) {
 @box['name sth]{
 @div[class: "right"]{
       @p{@img[id: "photo" src: "tree.jpg" alt: "Tree" title:"Winter"]}
-      @div{@p[style: "font-size: 85%;"]{@i{The most important decisions a scholar makes are what problems to work on.}  - James Tobin}}}
+      @div{@p[style: "font-size: 85%;"]{@i{The most important decisions a scholar makes are what problems to work on.}  - @a[href: "http://www.tobinproject.org/about/james-tobin"]{James Tobin}}}}
  @div{
 
     @p{Assistant Professor @~
