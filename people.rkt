@@ -27,3 +27,10 @@
 (define jay @a[href: "http://faculty.cs.byu.edu/~jay/home/"]{Jay McCarthy})
 (define jbc @a[href: "http://www.brinckerhoff.org/clements/"]{John Clements})
 (define tonyg @a[href: "http://homepages.kcbbs.gen.nz/tonyg/"]{Tony Garnock-Jones})
+
+(define cfbolz "Carl-Friedrich Bolz")
+(define jseik "Jeremy Siek")
+(define rrnewton "Ryan Newton")
+(define lkuper "Lindsey Kuper")
+(define krono "Tobias Pape")
+(define atodd "Aaron Todd")

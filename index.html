@@ -24,8 +24,10 @@ _gaq.push(['_trackPageview']);
 <h1><a href="#teaching">Teaching</a></h1><br /></div></div>
 
 <div id="contents">
+
+
 <div id="name" class="box"><h1 id="topname" class="boxtitle">Sam Tobin-Hochstadt</h1><div class="right"><p><img id="photo" src="tree.jpg" alt="Tree" title="Winter" /></p>
-<div><p>The most important decisions a scholar makes are what problems to work on. <br /> <div id="nameright">- James Tobin</div></p></div></div>
+<div><p style="font-size: 85%;"><i>The most important decisions a scholar makes are what problems to work on.</i>  - James Tobin</p></div></div>
  <div>
 <p>Assistant Professor <br />
 <a href="http://racket-lang.org/people.html">PLT</a> &amp;
@@ -48,7 +50,15 @@ Curriculum Vitae: <a href="cv.pdf">pdf</a></p>
 University Department of Computer Science</a>.  I'm looking for new Ph.D
  students, please <a href="mailto:samth@indiana.edu">email me</a> if you are interested. </p>
 
-<p>Our paper on <a href="http://www.cs.indiana.edu/~lkuper/papers/effectzoo-draft.pdf">extending LVars with new effects</a> will
+<p>I'm organizing <a href="http://ifl2014.github.io/">IFL 2014</a> at
+Northeastern University in Boston.</p>
+
+<p>Our paper on <a href="#pycket-dyla">Pycket</a>, an experimental JIT
+compiler for Racket, will appear at
+<a href="http://www.lifl.fr/dyla14/">DYLA 2014</a>.</p>
+
+
+<p>Our paper on <a href="#effectzoo">extending LVars with new effects</a> will
 appear at <a href="http://conferences.inf.ed.ac.uk/pldi2014/">PLDI 2014</a>.</p>
 
 
@@ -91,19 +101,19 @@ Racket</a>, a statically-typed dialect
   of <a href="http://racket-lang.org">Racket</a> that allows
   existing untyped Racket programs to be enriched with
 types.</p>
-<div><h2 class="subproject">Papers</h2> <a name="cont"><p class="pub"><span class="title">Constraining Delimited Control with Contracts</span>.
+<div><h2 class="subproject">Papers</h2> <p class="pub"><span class="title"><a class="title" name="cont">Constraining Delimited Control with Contracts</a></span>.
      <span>With <a href="http://www.ccs.neu.edu/home/asumu">Asumu Takikawa</a> and <a href="http://www.ccs.neu.edu/home/sstrickl">T. Stephen Strickland</a>.</span> <br />
      <a href="http://http://www.ccs.neu.edu/esop2013/">European Symposium on Programming (ESOP)</a>, March 2013.
      <br />
      <span class="paper-resource">[ 
 <a class="refType" href="http://www.ccs.neu.edu/racket/pubs/esop13-tsth.pdf">PDF</a>
- ]</span></p></a><a name="fcc"><p class="pub"><span class="title">Gradual Typing for First-class Classes</span>.
+ ]</span></p><p class="pub"><span class="title"><a class="title" name="fcc">Gradual Typing for First-class Classes</a></span>.
      <span>With <a href="http://www.ccs.neu.edu/home/asumu">Asumu Takikawa</a>, <a href="http://www.ccs.neu.edu/home/sstrickl">T. Stephen Strickland</a>, <a href="http://www.ccs.neu.edu/~chrdimo">Christos Dimoulas</a> and <a href="http://www.ccs.neu.edu/home/matthias">Matthias Felleisen</a>.</span> <br />
      <a href="http://splashcon.org/2012/">Object Oriented Programming, Systems, Languages and Applications (OOPSLA)</a>, October 2012.
      <br />
      <span class="paper-resource">[ 
 <a class="refType" href="http://www.ccs.neu.edu/racket/pubs/oopsla12-tsdthf.pdf">PDF</a>
- ]</span></p></a><p class="pub"><span class="title">Proceedings of the Third Workshop on Script to Program Evolution</span>.
+ ]</span></p><p class="pub"><span class="title">Proceedings of the Third Workshop on Script to Program Evolution</span>.
       <br />
      NU CCIS Technical Report NU-CCIS-12-02, June 2012.
      <br />
@@ -197,30 +207,42 @@ Honor of Mitchell Wand</a>, Boston, MA, August 2009.</p><p class="pub"><a href="
 programming language that allows developers to create
 custom languages for everything from pattern matching
 to type checking.</p>
-<div><h2 class="subproject">Papers</h2> <a name="network-calc"><p class="pub"><span class="title">The Network as a Language Construct</span>.
+<div><h2 class="subproject">Papers</h2> <p class="pub"><span class="title"><a class="title" name="pycket-dyla">Meta-tracing makes a fast Racket</a></span>.
+     <span>With Carl-Friedrich Bolz, Tobias Pape and Jeremy Siek.</span> <br />
+     Workshop on Dynamic Languages and Applications (DYLA), June 2014.
+     <br />
+     <span class="paper-resource">[ 
+<a class="refType" href="pycket-dyla.pdf">PDF</a> | <a class="refType" href="https://github.com/samth/pycket">GitHub</a>
+ ]</span></p><p class="pub"><span class="title"><a class="title" name="effectzoo">Taming the Parallel Effect Zoo: Extensible Deterministic Parallelism with LVish</a></span>.
+     <span>With Lindsey Kuper, Aaron Todd and Ryan Newton.</span> <br />
+     Conference on Programming Languages Design and Implementation (PLDI), June 2014.
+     <br />
+     <span class="paper-resource">[ 
+<a class="refType" href="effectzoo-pldi14.pdf">PDF</a> | <a class="refType" href="https://hackage.haskell.org/package/lvish">LVish</a>
+ ]</span></p><p class="pub"><span class="title"><a class="title" name="network-calc">The Network as a Language Construct</a></span>.
      <span>With <a href="http://homepages.kcbbs.gen.nz/tonyg/">Tony Garnock-Jones</a> and <a href="http://www.ccs.neu.edu/home/matthias">Matthias Felleisen</a>.</span> <br />
      <a href="http://flint.cs.yale.edu/esop2014/">European Symposium on Programming (ESOP)</a>, April 2014.
      <br />
      <span class="paper-resource">[ 
-<a class="refType">To Appear</a>
- ]</span></p></a><a name="chaperones"><p class="pub"><span class="title">Chaperones and Impersonators: Runtime support for reasonable interposition</span>.
+<a class="refType" href="http://www.ccs.neu.edu/racket/pubs/esop14-gjthf.pdf">PDF</a> | <a class="refType" href="http://www.ccs.neu.edu/home/tonyg/esop2014/">Web Page</a> | <a class="refType" href="http://tonyg.github.io/marketplace/">Marketplace</a>
+ ]</span></p><p class="pub"><span class="title"><a class="title" name="chaperones">Chaperones and Impersonators: Runtime support for reasonable interposition</a></span>.
      <span>With <a href="http://www.ccs.neu.edu/home/sstrickl">T. Stephen Strickland</a>, <a href="http://www.eecs.northwestern.edu/~robby">Robert Bruce Findler</a> and <a href="http://www.cs.utah.edu/~mflatt">Matthew Flatt</a>.</span> <br />
      <a href="http://splashcon.org/2012/">Object Oriented Programming, Systems, Languages and Applications (OOPSLA)</a>, October 2012.
      <br />
      <span class="paper-resource">[ 
-<a class="refType" href="http://www.ccs.neu.edu/racket/pubs/oopsla12-sthff.pdf">PDF</a>
- ]</span></p></a><a name="opt-coach"><p class="pub"><span class="title">Optimization Coaching</span>.
+<a class="refType" href="http://www.ccs.neu.edu/racket/pubs/oopsla12-sthff.pdf">PDF</a> | <a class="refType" href="http://sstrickl.net/chaperones/">Web Page</a> | <a class="refType" href="http://docs.racket-lang.org/reference/chaperones.html">Documentation</a>
+ ]</span></p><p class="pub"><span class="title"><a class="title" name="opt-coach">Optimization Coaching</a></span>.
      <span>With <a href="http://www.ccs.neu.edu/home/stamourv">Vincent St-Amour</a> and <a href="http://www.ccs.neu.edu/home/matthias">Matthias Felleisen</a>.</span> <br />
      <a href="http://splashcon.org/2012/">Object Oriented Programming, Systems, Languages and Applications (OOPSLA)</a>, October 2012.
      <br />
      <span class="paper-resource">[ 
-<a class="refType" href="http://www.ccs.neu.edu/racket/pubs/oopsla12-stf.pdf">PDF</a>
- ]</span></p></a><p class="pub"><span class="title">Run Your Research: On the Effectiveness of Lightweight Mechanization</span>.
+<a class="refType" href="http://www.ccs.neu.edu/racket/pubs/oopsla12-stf.pdf">PDF</a> | <a class="refType" href="https://github.com/stamourv/optimization-coach">GitHub</a>
+ ]</span></p><p class="pub"><span class="title">Run Your Research: On the Effectiveness of Lightweight Mechanization</span>.
      <span>With Casey Klein, <a href="http://www.brinckerhoff.org/clements/">John Clements</a>, <a href="http://www.ccs.neu.edu/~chrdimo">Christos Dimoulas</a>, <a href="http://www.ccs.neu.edu/~cce">Carl Eastlund</a>, <a href="http://www.ccs.neu.edu/home/matthias">Matthias Felleisen</a>, <a href="http://www.cs.utah.edu/~mflatt">Matthew Flatt</a>, <a href="http://faculty.cs.byu.edu/~jay/home/">Jay McCarthy</a>, Jon Rafkind and <a href="http://www.eecs.northwestern.edu/~robby">Robert Bruce Findler</a>.</span> <br />
      <a href="http://www.cse.psu.edu/popl/12/">Symposium on Principles of Programming Languages (POPL)</a>, January 2012.
      <br />
      <span class="paper-resource">[ 
-<a class="refType" href="http://eecs.northwestern.edu/~robby/lightweight-metatheory/popl2012-kcdeffmrtf.pdf">PDF</a> | <a class="refType" href="http://eecs.northwestern.edu/~robby/lightweight-metatheory/">Models</a>
+<a class="refType" href="http://eecs.northwestern.edu/~robby/lightweight-metatheory/popl2012-kcdeffmrtf.pdf">PDF</a> | <a class="refType" href="http://eecs.northwestern.edu/~robby/lightweight-metatheory/">Models</a> | <a class="refType" href="http://redex.racket-lang.org/">Redex</a>
  ]</span></p><p class="pub"><span class="title">Languages as Libraries</span>.
      <span>With <a href="http://www.ccs.neu.edu/home/stamourv">Vincent St-Amour</a>, <a href="http://www.cs.utah.edu/~ryan">Ryan Culpepper</a>, <a href="http://www.cs.utah.edu/~mflatt">Matthew Flatt</a> and <a href="http://www.ccs.neu.edu/home/matthias">Matthias Felleisen</a>.</span> <br />
      <a href="http://pldi11.cs.utah.edu/">Conference on Programming Language Design and Implementation (PLDI)</a>, June 2011.
@@ -232,7 +254,7 @@ to type checking.</p>
       October 2010.
      <br />
      <span class="paper-resource">[ 
-<a class="refType" href="match-ifl-full.pdf">PDF</a> | <a class="refType" href="http://arxiv.org/abs/1106.2578">arXiv</a>
+<a class="refType" href="match-ifl-full.pdf">PDF</a> | <a class="refType" href="http://arxiv.org/abs/1106.2578">arXiv</a> | <a class="refType" href="http://docs.racket-lang.org/reference/match.html">Documentation</a>
  ]</span></p><p class="pub"><span class="title">Extensible Pattern Matching in an Extensible Language (Abstract)</span>.
       <br />
      <a href="http://www.cs.uu.nl/wiki/bin/view/IFL2010/WebHome">Symposium on Implementation and Application of Functional Languages</a>, September 2010.
@@ -261,13 +283,13 @@ CSAIL Programming Languages Working Group</a>, Cambridge, MA, May 2011.</p><p cl
 
 <div id="analysis" class="project"><h1 class="projecttitle">Analysis and Verification</h1><p class="projectdesc">I am developing  analysis and verification
 techniques for modular programs with rich specifications.</p>
- <div><h2 class="subproject">Papers</h2> <a name="symexp"><p class="pub"><span class="title">Higher-order Symbolic Execution via Contracts</span>.
+ <div><h2 class="subproject">Papers</h2> <p class="pub"><span class="title"><a class="title" name="symexp">Higher-order Symbolic Execution via Contracts</a></span>.
      <span>With <a href="http://www.ccs.neu.edu/home/dvanhorn">David Van Horn</a>.</span> <br />
      <a href="http://splashcon.org/2012/">Object Oriented Programming, Systems, Languages and Applications (OOPSLA)</a>, October 2012.
      <br />
      <span class="paper-resource">[ 
 <a class="refType" href="http://www.ccs.neu.edu/racket/pubs/oopsla12-thvh.pdf">PDF</a> | <a class="refType" href="http://arxiv.org/abs/1103.1362">arXiv</a>
- ]</span></p></a><p class="pub"><span class="title">Semantic Solutions to Program Analysis Problems</span>.
+ ]</span></p><p class="pub"><span class="title">Semantic Solutions to Program Analysis Problems</span>.
      <span>With <a href="http://www.ccs.neu.edu/home/dvanhorn">David Van Horn</a>.</span> <br />
      <a href="https://engineering.purdue.edu/~milind/pldi11fit/">Fun Ideas and Thoughts Session at the Conference on Programming Language Design and Implementation</a>, June 2011.
      <br />
@@ -343,13 +365,13 @@ computing.</p>
 
 <li> In Fall 2005, I taught CS U213.</li>
 
-<div><h2 class="subproject">Papers</h2> <a name="tfpie13"><p class="pub"><span class="title">From Principles to Practice with Class in the First Year</span>.
+<div><h2 class="subproject">Papers</h2> <p class="pub"><span class="title"><a class="title" name="tfpie13">From Principles to Practice with Class in the First Year</a></span>.
      <span>With <a href="http://www.ccs.neu.edu/home/dvanhorn">David Van Horn</a>.</span> <br />
      Trends in Functional Programming in Education, May 2013.
      <br />
      <span class="paper-resource">[ 
 <a class="refType" href="tfpie.pdf">PDF</a>
- ]</span></p></a></div>
+ ]</span></p></div>
 </ul></div>
 
 

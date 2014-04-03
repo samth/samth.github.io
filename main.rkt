@@ -72,12 +72,14 @@ function toggleBibTeX(elt) {
 
 @div[id: 'contents]{
 
+             @; @p{Programming language semanticists should be the obstetricians of programming languages, not their coroners.
+@; @|~| @div[id: "nameright"]{- John C. Reynolds}}}}}
+
+
 @box['name sth]{
 @div[class: "right"]{
       @p{@img[id: "photo" src: "tree.jpg" alt: "Tree" title:"Winter"]}
-      @div{@p{The most important decisions a scholar makes are what problems to work on. @|~| @div[id: "nameright"]{- James Tobin}}
-             @;{@p{Programming language semanticists should be the obstetricians of programming languages, not their coroners.
- @|~| @div[id: "nameright"]{- John C. Reynolds}}}}}
+      @div{@p[style: "font-size: 85%;"]{@i{The most important decisions a scholar makes are what problems to work on.}  - James Tobin}}}
  @div{
 
     @p{Assistant Professor @~
@@ -103,7 +105,15 @@ function toggleBibTeX(elt) {
  University Department of Computer Science}.  I'm looking for new Ph.D
  students, please @a[href: "mailto:samth@indiana.edu"]{email me} if you are interested. }
 
-@p{Our paper on @a[href: "http://www.cs.indiana.edu/~lkuper/papers/effectzoo-draft.pdf"]{extending LVars with new effects} will
+@p{I'm organizing @a[href: "http://ifl2014.github.io/"]{IFL 2014} at
+Northeastern University in Boston.}
+
+@p{Our paper on @a[href: "#pycket-dyla"]{Pycket}, an experimental JIT
+compiler for Racket, will appear at
+@a[href: "http://www.lifl.fr/dyla14/"]{DYLA 2014}.}
+
+
+@p{Our paper on @a[href: "#effectzoo"]{extending LVars with new effects} will
 appear at @a[href: "http://conferences.inf.ed.ac.uk/pldi2014/"]{PLDI 2014}.}
 
 

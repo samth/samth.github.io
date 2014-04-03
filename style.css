@@ -91,7 +91,7 @@ ul { padding-left: 1em; }
 li { margin-bottom: 0.5ex; }
 img.validator { border: none; }
 .clear { clear: both; }
-.pub .title { font-style: italic; }
+.pub .title { font-style: italic; color: black; }
 .right { float: right;	 
          width: 200px;
 	 margin-top: -10px;

@@ -127,42 +127,65 @@
   )
 
 (defpapers macro-papers
+    ("Meta-tracing makes a fast Racket"
+     (list cfbolz krono jseik)
+     "Workshop on Dynamic Languages and Applications (DYLA)"
+     "June 2014"
+     `(("PDF" "pycket-dyla.pdf")
+       ("GitHub" "https://github.com/samth/pycket"))
+     #:tag 'pycket-dyla)
+
+    ("Taming the Parallel Effect Zoo: Extensible Deterministic Parallelism with LVish"
+     (list lkuper atodd rrnewton)
+     "Conference on Programming Languages Design and Implementation (PLDI)"
+     "June 2014"
+     `(("PDF" "effectzoo-pldi14.pdf")
+       ("LVish" "https://hackage.haskell.org/package/lvish"))
+     #:tag 'effectzoo)
+
     ("The Network as a Language Construct"
      (list tonyg MF)
      esop-14
      "April 2014"
-     `(("To Appear" #f))
+     `(("PDF" "http://www.ccs.neu.edu/racket/pubs/esop14-gjthf.pdf")
+       ("Web Page" "http://www.ccs.neu.edu/home/tonyg/esop2014/")
+       ("Marketplace" "http://tonyg.github.io/marketplace/"))
      #:tag 'network-calc)
     ("Chaperones and Impersonators: Runtime support for reasonable interposition"
      (list sstrickl robby mflatt)
      oopsla-12
      "October 2012"
-     (list (neu "oopsla12-sthff"))
+     (list (neu "oopsla12-sthff")
+           '("Web Page" "http://sstrickl.net/chaperones/")
+           '("Documentation" "http://docs.racket-lang.org/reference/chaperones.html"))
      #:tag 'chaperones)
     ("Optimization Coaching"
      (list stamourv MF)
      oopsla-12
      "October 2012"
-     (list (neu "oopsla12-stf"))
+     (list (neu "oopsla12-stf")
+           '("GitHub" "https://github.com/stamourv/optimization-coach"))
      #:tag 'opt-coach)
     ("Run Your Research: On the Effectiveness of Lightweight Mechanization"
      (list "Casey Klein" jbc chrdimo cce MF mflatt jay "Jon Rafkind" robby)
-           @a[href: "http://www.cse.psu.edu/popl/12/"]{Symposium on Principles of Programming Languages (POPL)}
-           "January 2012"
-           `(("PDF" "http://eecs.northwestern.edu/~robby/lightweight-metatheory/popl2012-kcdeffmrtf.pdf")
-             ("Models" "http://eecs.northwestern.edu/~robby/lightweight-metatheory/")))
+     @a[href: "http://www.cse.psu.edu/popl/12/"]{Symposium on Principles of Programming Languages (POPL)}
+     "January 2012"
+     `(("PDF" "http://eecs.northwestern.edu/~robby/lightweight-metatheory/popl2012-kcdeffmrtf.pdf")
+       ("Models" "http://eecs.northwestern.edu/~robby/lightweight-metatheory/")
+       ("Redex" "http://redex.racket-lang.org/")))
     ("Languages as Libraries"
-           (list stamourv rmc mflatt MF)
-           @a[href: "http://pldi11.cs.utah.edu/"]{Conference on Programming Language Design and Implementation (PLDI)}
-           "June 2011"
-           `(,(neu "pldi11-thacff")
-             ,(acm "1993514")))
+     (list stamourv rmc mflatt MF)
+     @a[href: "http://pldi11.cs.utah.edu/"]{Conference on Programming Language Design and Implementation (PLDI)}
+     "June 2011"
+     `(,(neu "pldi11-thacff")
+       ,(acm "1993514")))
     ("Extensible Pattern Matching in an Extensible Language"
      null
      ""
      "October 2010"
      `(("PDF" "match-ifl-full.pdf")
-       ("arXiv" "http://arxiv.org/abs/1106.2578"))
+       ("arXiv" "http://arxiv.org/abs/1106.2578")
+       ("Documentation" "http://docs.racket-lang.org/reference/match.html"))
      #:type 'preprint)
     ("Extensible Pattern Matching in an Extensible Language"
      null
@@ -241,9 +264,13 @@
      [(paper title _ _ _ _ _) title]))
 
 (define (format-paper pr)
+  (define title 
+    (if (paper-tag pr)
+        (a class: 'title name: (paper-tag pr) (format-title pr))
+        (format-title pr)))
   (define pub
     @p[class: 'pub]{
-      @span[class: 'title (format-title pr)].
+      @span[class: 'title title].
 	   @(format-coauthors (paper-co pr)) @~
 	   @(paper-loc pr)@(if (equal? "" (paper-loc pr)) "" ",") @(paper-date pr). 
 	   @~
@@ -254,9 +281,8 @@
 			  @a[class: 'refType href: (second r) (first r)])
 		" | ")
 	      @list[" ]"]}})
-  (if (paper-tag pr)
-      (a name: (paper-tag pr) pub)
-      pub))
+
+  pub)
 
 (define (papers ps)
   @div{@h2[class: 'subproject]{Papers} @(map format-paper ps)})
