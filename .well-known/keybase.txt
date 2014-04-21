@@ -1,0 +1,61 @@
+https://keybase.io/samth
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://samth.github.io
+  * I am samth (https://keybase.io/samth) on keybase.
+  * I have a public key with fingerprint 616B 3763 7903 2187 AD7B  98B8 AC95 CABB 56D0 1F08
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "616b376379032187ad7b98b8ac95cabb56d01f08",
+            "host": "keybase.io",
+            "key_id": "AC95CABB56D01F08",
+            "uid": "f7b1f7f3e9c6220f768aec6165467600",
+            "username": "samth"
+        },
+        "service": {
+            "hostname": "samth.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1398117596,
+    "expire_in": 157680000,
+    "prev": "1f1d3cadb5bc594371ab717251a19098a69d52bf5d136b0d9aa9085a3ca4588a",
+    "seqno": 10,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1.4.14 (GNU/Linux)
+
+owFNUVtIFFEYnnUzL1QE+SCZFGNJ4mJzdpzbpuhqWaEV2YUCaT1nLruTObPOjpbZ
+5kOgWGBSZgQZhGCElqaGlaBBoraSpZZU+liB20umCEZWZ6yg8/Jz/u/2//wNa+1E
+hK39eqjv2OvN0bbRZ/OIOHy0caaKRLpUSbqqyBJ5pSiq5pUNv6FqJukiWcAimmNp
+TqBoJ+A5KHFI4BEPRYERIUIMK1FAoXjSQfr0gKXANggG5DRVxz388agS7rpzBSbX
+nZPDsLsokLfCL18BFA4BhVNoWRBZp5NSOJaHsohjmXSWYynKIgZkQ4OlMmYHYKnp
+I4MOErcqVFG2BrZy/4fTvKrpK0d/BvAbuqmL+mkM+kzTH3BZYrPSb7HPyMjz18eD
+VE3Ci2NFhWwEVF0jXQAzRVO1jAEt8ABwjMA6SPmsXzVkj2oxGDwthZ+VI1dgS6AA
+iRahhBgkMkI6zQGIOMA5GQCBQAk8ZAWJcSKFkQDNIkoSIBQonoFYk87wPCStzco0
+HXtjUxN6raVUrwbNckMmg3W2TasIWwSxOjLCuh0RG7P+30WXH0T9pFHPqa9ZmcE7
+Q5Oj8akDXUKbEB70DoTi8xPmozPct2ZBwf13amdf2VMwsDicH1VzY8P2yT3Pi5KN
+Sw+bd5aODM+F7I/79XBxZ8f78bErQycU8a0aMhpv2z58DzYVjX9O6IIXUg5li1Ov
+sm1R9WPl97YuLrfGZA2+TIyebjqf8c3xZqplNC5ZaVmoD61HLwIHukP5MuGdKg6r
+rduWqom7BWvKiIYdSbFXE9ue0PtIZy+zN9yRt/vgZTAx0Z1S5y4819v+aKbfXttd
+2/MxPJsXN/vpy7rmm/aFi9fGJrRUmhn5pWyczFzgtZKl6R9J++eqj9REjnScjD2+
+pbmw8Tc=
+=5Kk1
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/samth
