@@ -7,7 +7,7 @@
    @a[href: "http://splashcon.org/2012/"]{Object Oriented Programming, Systems, Languages and Applications (OOPSLA)})
 
 @(define esop-13
-   @a[href: "http://http://www.ccs.neu.edu/esop2013/"]{European Symposium on Programming (ESOP)})
+   @a[href: "http://www.ccs.neu.edu/esop2013/"]{European Symposium on Programming (ESOP)})
 
 @(define esop-14
    @a[href: "http://flint.cs.yale.edu/esop2014/"]{European Symposium on Programming (ESOP)})
