@@ -125,7 +125,8 @@ Vasily Krilichev.}
 M. Vitousek, Matteo Cimini, Jeremy Siek, and Ronald Garcia.}
 
 @p{I am on the Program Committee for 
-     @a[href: "http://conf.researchr.org/home/pldi2015"]{PLDI 2015}.}
+     @a[href: "http://conf.researchr.org/home/pldi2015"]{PLDI 2015}
+     and the External Review Committee for POPL 2015.}
 
 @p{I organized @a[href: "http://ifl2014.github.io/"]{IFL 2014} at
 Northeastern University in Boston.}
