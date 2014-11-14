@@ -101,10 +101,10 @@ function toggleBibTeX(elt) {
 }
  
 @box['news "News"]{
-@p{@b{I have joined the faculty of the 
-@a[href: "http://www.soic.indiana.edu/"]{Indiana
- University Department of Computer Science}.  I'm looking for new Ph.D
- students, please @a[href: "mailto:samth@cs.indiana.edu"]{email me} if you are interested. }}
+@p{@b{I'm looking for new Ph.D
+ students at 
+@a[href: "http://www.cs.indiana.edu/"]{Indiana
+ University Computer Science}, please @a[href: "mailto:samth@cs.indiana.edu"]{email me} if you are interested. }}
 
 @p{New draft: @a[href: "pycket-draft.pdf"]{@i{Pycket: a tracing
 JIT  for a functional language}}, with Carl Friedrich Bolz,
