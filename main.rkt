@@ -7,7 +7,8 @@
 @(define (js . args) @script[type: "text/javascript" @(apply literal args) "\n"])
 
 @(define (box id title . args)
-   (apply div id: id class: "box" @h1[id: (if (eq? id 'name) 'topname "") class: 'boxtitle title]
+   (apply div id: id class: "box" @h1[id: (if (eq? id 'name) 'topname "")
+                                      class: 'boxtitle title]
           args))
 
 @(define (project id title . body)
@@ -100,42 +101,43 @@ function toggleBibTeX(elt) {
 }
  
 @box['news "News"]{
-@p{I have joined the faculty of the 
+@p{@b{I have joined the faculty of the 
 @a[href: "http://www.soic.indiana.edu/"]{Indiana
  University Department of Computer Science}.  I'm looking for new Ph.D
- students, please @a[href: "mailto:samth@indiana.edu"]{email me} if you are interested. }
+ students, please @a[href: "mailto:samth@cs.indiana.edu"]{email me} if you are interested. }}
 
-@p{I'm organizing @a[href: "http://ifl2014.github.io/"]{IFL 2014} at
+@p{New draft: @a[href: "pycket-draft.pdf"]{@i{Pycket: a tracing
+JIT  for a functional language}}, with Carl Friedrich Bolz,
+Spenser Bauman, Jeremy Siek, Tobias Pape, Robert Hirschfeld, and
+Vasily Krilichev.}
+
+@p{New draft: @a[href:
+                       "parallel-typecheck-draft.pdf"]{@i{Parallel
+                                                          Type-checking
+                                                          with
+                                                          Saturating
+                                                          LVars}},
+                       with Peter Fogg and Ryan Newton.}
+
+@p{I am on the Program Committee for 
+     @a[href: "http://conf.researchr.org/home/pldi2015"]{PLDI 2015}.}
+
+@p{I organized @a[href: "http://ifl2014.github.io/"]{IFL 2014} at
 Northeastern University in Boston.}
 
 @p{Our paper on @a[href: "#pycket-dyla"]{Pycket}, an experimental JIT
-compiler for Racket, will appear at
+compiler for Racket, appeared at
 @a[href: "http://www.lifl.fr/dyla14/"]{DYLA 2014}.}
 
 
-@p{Our paper on @a[href: "#effectzoo"]{extending LVars with new effects} will
-appear at @a[href: "http://conferences.inf.ed.ac.uk/pldi2014/"]{PLDI 2014}.}
+@p{Our paper on @a[href: "#effectzoo"]{extending LVars with new effects} appeared 
+ at @a[href: "http://conferences.inf.ed.ac.uk/pldi2014/"]{PLDI 2014}.}
 
-
-@p{I will be on the Program Committee for @;{@a[href: ""]{ILC 2014} and}
-     @a[href: "http://www.dynamic-languages-symposium.org/dls-14/"]{DLS 2014} and
-the External Review Committee for @a[href: "http://popl.mpi-sws.org/2015/"]{POPL 2015}.}
 
 @p{Our paper on the @a[href: "#network-calc"]{network calculus}, a
 formalization of the ideas behind
-@a[href: "http://tonyg.github.io/marketplace/"]{Marketplace}, will
-appear at @a[href: "http://flint.cs.yale.edu/esop2014/"]{ESOP 2014}}
-
-@p{Our paper on a @a[href: "#tfpie13"]{new approach} to teaching
-object-oriented programming in the first year was published in the
-proceedings of @a[href: "http://arxiv.org/html/1312.2216v1"]{TFPIE
-2013}.}
-
-
-@p{Our paper on @a[href: "#cont"]{types and contracts for delimited
-control} appeared at
-@a[href: "http://www.ccs.neu.edu/esop2013/"]{ESOP 2013}.}
-
+@a[href: "http://tonyg.github.io/marketplace/"]{Marketplace}, 
+appeared at @a[href: "http://flint.cs.yale.edu/esop2014/"]{ESOP 2014}}
 
 
 }
@@ -237,7 +239,11 @@ student paper.}
 
 @box['activities "Activities"]{
 @ul{
+@li{@span{PLDI 2015}, Program Committee}
 @li{@span{IFL 2014}, Chair}
+@li{@span{POPL 2015}, External Review Committee}
+@li{@span{DLS 2014}, Program Committee}
+@li{@span{ICFP Student Research Competition 2014}, Program Committee}
 @li{@a[href: "http://splashcon.org/2013/"]{OOPSLA 2013}, Program Committee}
 @li{@a[href: "http://www.icfpconference.org/icfp2012/index.html"]{ICFP 2012}, Program Committee}
 @li{@a[href: "http://wrigstad.com/stop/"]{STOP 2012}, Chair}
@@ -251,7 +257,15 @@ student paper.}
 @box['teaching "Teaching"]{ 
 
 @ul{I'm teaching @a[href:
-"http://homes.soic.indiana.edu/classes/fall2013/csci/p532-samth/"]{P532} in Fall 2013.}
+"http://www.cs.indiana.edu/classes/c211/"]{C211} in Fall 2014.}
+
+@ul{I taught @a[href:
+"http://homes.soic.indiana.edu/classes/spring2014/csci/p632-samth/"]{P632}
+in Spring 2014.}
+
+@ul{I taught @a[href:
+"http://homes.soic.indiana.edu/classes/fall2013/csci/p532-samth/"]{P532}
+in Fall 2013.}
 
 @ul{
 @li{ In Spring 2011, Spring 2012, and Spring 2013, I taught a new honors section of
