@@ -119,6 +119,11 @@ Vasily Krilichev.}
                                                           LVars}},
                        with Peter Fogg and Ryan Newton.}
 
+@p{New draft: @a[href:
+                 "http://wphomes.soic.indiana.edu/jsiek/files/2013/06/paper.pdf"]{
+@i{Monotonic References for efficient gradual typing}} with Michael
+M. Vitousek, Matteo Cimini, Jeremy Siek, and Ronald Garcia.}
+
 @p{I am on the Program Committee for 
      @a[href: "http://conf.researchr.org/home/pldi2015"]{PLDI 2015}.}
 
