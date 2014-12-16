@@ -6,6 +6,9 @@
 @(define oopsla-12
    @a[href: "http://splashcon.org/2012/"]{Object Oriented Programming, Systems, Languages and Applications (OOPSLA)})
 
+@(define icfp-14
+   @a[href: "http://icfpconference.org/2014/"]{International Conference on Functional Programming (ICFP)})
+
 @(define esop-13
    @a[href: "http://www.ccs.neu.edu/esop2013/"]{European Symposium on Programming (ESOP)})
 
@@ -225,6 +228,14 @@
      ("Proceedings" "http://homepages.inf.ed.ac.uk/wadler/fool/program/7.html"))))
 
 (defpapers analysis-papers
+  ("Soft Contract Verification"
+   (list "Phil Nguyen" dvh)
+   icfp-14
+   "September 2014"
+   (list '("ACM" "http://dl.acm.org/authorize?N83790")
+	 '("arXiv" "http://arxiv.org/abs/1307.6239"))
+   #:tag 'scv)
+
   ("Higher-order Symbolic Execution via Contracts"
    (list dvh)
    oopsla-12

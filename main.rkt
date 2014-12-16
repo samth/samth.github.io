@@ -106,23 +106,22 @@ function toggleBibTeX(elt) {
 @a[href: "http://www.cs.indiana.edu/"]{Indiana
  University Computer Science}, please @a[href: "mailto:samth@cs.indiana.edu"]{email me} if you are interested. }}
 
+@p{@b{New paper}: @a[href:
+                 "http://wphomes.soic.indiana.edu/jsiek/files/2013/06/paper.pdf"]{
+@i{Monotonic References for efficient gradual typing}} with Michael
+M. Vitousek, Matteo Cimini, Jeremy Siek, and Ronald Garcia;
+ to appear at @a[href: "http://conf.researchr.org/home/esop-2015"]{ESOP 2015}}
+
+
 @p{New draft: @a[href: "pycket-draft.pdf"]{@i{Pycket: a tracing
 JIT  for a functional language}}, with Carl Friedrich Bolz,
 Spenser Bauman, Jeremy Siek, Tobias Pape, Robert Hirschfeld, and
 Vasily Krilichev.}
 
-@p{New draft: @a[href:
-                       "parallel-typecheck-draft.pdf"]{@i{Parallel
-                                                          Type-checking
-                                                          with
-                                                          Saturating
-                                                          LVars}},
-                       with Peter Fogg and Ryan Newton.}
+@p{New draft: @a[href: "parallel-typecheck-draft.pdf"]{
+@i{Parallel Type-checking with Saturating LVars}},
+       with Peter Fogg and Ryan Newton.}
 
-@p{New draft: @a[href:
-                 "http://wphomes.soic.indiana.edu/jsiek/files/2013/06/paper.pdf"]{
-@i{Monotonic References for efficient gradual typing}} with Michael
-M. Vitousek, Matteo Cimini, Jeremy Siek, and Ronald Garcia.}
 
 @p{I am on the Program Committee for 
      @a[href: "http://conf.researchr.org/home/pldi2015"]{PLDI 2015}
