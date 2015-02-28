@@ -115,11 +115,11 @@ Vasily Krilichev.}
 @i{Parallel Type-checking with Saturating LVars}},
        with Peter Fogg and Ryan Newton.}
 
-@;{@p{New draft: @a[href: "typed-clojure-draft.pdf"]{
+@p{New draft: @a[href: "typed-clojure-draft.pdf"]{
 @i{Practical Optional Typechecking for Clojure}},
        with Ambrose Bonnaire-Sargeant and Rowan Davies.}
 
-@p{New draft: @a[href: "contract-monitoring-draft.pdf"]{
+@;{@p{New draft: @a[href: "contract-monitoring-draft.pdf"]{
 @i{Contract Monitoring Semantics as Patterns of Communication}},
        with Cameron Swords and Amr Sabry.}
 }
