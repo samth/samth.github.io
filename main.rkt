@@ -119,10 +119,10 @@ Vasily Krilichev.}
 @i{Practical Optional Typechecking for Clojure}},
        with Ambrose Bonnaire-Sargeant and Rowan Davies.}
 
-@;{@p{New draft: @a[href: "contract-monitoring-draft.pdf"]{
+@p{New draft: @a[href: "contract-monitoring-draft.pdf"]{
 @i{Contract Monitoring Semantics as Patterns of Communication}},
        with Cameron Swords and Amr Sabry.}
-}
+
 
 @p{@b{New paper}: @a[href:
                  "http://wphomes.soic.indiana.edu/jsiek/files/2013/06/paper.pdf"]{
