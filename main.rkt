@@ -116,6 +116,12 @@ function toggleBibTeX(elt) {
 @i{The Racket Manifesto}} with @|MF|, @|robby|, @|mflatt|, @|sk|, @|eli|, @|jay|;
  to appear at @a[href: "http://snapl.org/2015/index.html"]{SNAPL 2015}}
 
+                   @p{@b{New paper}: @a[href:
+                 "https://dl.dropboxusercontent.com/u/10275252/monotonic-references.pdf"]{
+@i{Monotonic References for efficient gradual typing}} with Michael
+M. Vitousek, Matteo Cimini, Jeremy Siek, and Ronald Garcia;
+ to appear at @a[href: "http://conf.researchr.org/home/esop-2015"]{ESOP 2015}}
+
                    
 @p{New draft: @a[href: "pycket-draft.pdf"]{@i{Pycket: a tracing
 JIT  for a functional language}}, with Carl Friedrich Bolz,
@@ -135,11 +141,6 @@ Vasily Krilichev.}
        with Cameron Swords and Amr Sabry.}
 
 
-@p{@b{New paper}: @a[href:
-                 "https://dl.dropboxusercontent.com/u/10275252/monotonic-references.pdf"]{
-@i{Monotonic References for efficient gradual typing}} with Michael
-M. Vitousek, Matteo Cimini, Jeremy Siek, and Ronald Garcia;
- to appear at @a[href: "http://conf.researchr.org/home/esop-2015"]{ESOP 2015}}
 
 
 
