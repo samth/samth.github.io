@@ -34,3 +34,5 @@
 (define lkuper "Lindsey Kuper")
 (define krono "Tobias Pape")
 (define atodd "Aaron Todd")
+(define eli "Eli Barzilay")
+(define sk "Shriram Krishnamurthi")

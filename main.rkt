@@ -106,6 +106,12 @@ function toggleBibTeX(elt) {
 @a[href: "http://www.cs.indiana.edu/"]{Indiana
  University Computer Science}, please @a[href: "mailto:samth@cs.indiana.edu"]{email me} if you are interested. }}
 
+ @p{@b{New paper}: @a[href:
+                 "#manifesto"]{
+@i{The Racket Manifesto}} with @|MF|, @|robby|, @|mflatt|, @|sk|, @|eli|, @|jay|;
+ to appear at @a[href: "http://snapl.org/2015/index.html"]{SNAPL 2015}}
+
+                   
 @p{New draft: @a[href: "pycket-draft.pdf"]{@i{Pycket: a tracing
 JIT  for a functional language}}, with Carl Friedrich Bolz,
 Spenser Bauman, Jeremy Siek, Tobias Pape, Robert Hirschfeld, and

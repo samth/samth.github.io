@@ -3,6 +3,9 @@
 (provide (all-defined-out))
 (require scribble/html "people.rkt" "utils.rkt")
 
+@(define snapl-15
+   @a[href: "http://snapl.org/2015/index.html"]{Summit on Advances in Programming Languages (SNAPL)})
+
 @(define oopsla-12
    @a[href: "http://splashcon.org/2012/"]{Object Oriented Programming, Systems, Languages and Applications (OOPSLA)})
 
@@ -130,7 +133,15 @@
   )
 
 (defpapers macro-papers
-    ("Meta-tracing makes a fast Racket"
+  ("The Racket Manifesto"
+   (list MF robby mflatt  sk  eli jay)
+   snapl-15
+   "May 2015"
+   (list (neu "manifesto")
+         '("HTML" "http://www.ccs.neu.edu/home/matthias/manifesto/"))
+   #:tag 'manifesto)
+  
+  ("Meta-tracing makes a fast Racket"
      (list cfbolz krono jseik)
      "Workshop on Dynamic Languages and Applications (DYLA)"
      "June 2014"
