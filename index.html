@@ -31,10 +31,10 @@ _gaq.push(['_trackPageview']);
  <div>
 <p>Assistant Professor <br />
 <a href="http://racket-lang.org/people.html">PLT</a> &amp;
- <a href="http://lambda.soic.indiana.edu">PL</a> @
+ <a href="http://wonks.github.io">PL</a> @
 <a href="http://www.soic.indiana.edu/">School of Informatics &amp; Computing</a><br />
 <a href="http://www.indiana.edu/">Indiana University</a></p></div>
- <p>Office: <a href="https://www.soic.indiana.edu/about/maps.shtml">Lindley Hall</a>, Room 215E<br />
+ <p>Office: <a href="https://www.soic.indiana.edu/about/maps.shtml">Lindley Hall</a>, Room 230C<br />
 Email: <a href="mailto:samth@cs.indiana.edu">samth@cs.indiana.edu</a><br />
 Blog: <a href="http://scriptstoprograms.wordpress.com/">Scripts to Programs</a><br />
 Microblogging: <a href="http://twitter.com/samth/">@samth</a><br />
@@ -50,7 +50,11 @@ Curriculum Vitae: <a href="cv.pdf">pdf</a></p>
 <a href="http://www.cs.indiana.edu/">Indiana
 University Computer Science</a>, please <a href="mailto:samth@cs.indiana.edu">email me</a> if you are interested. </b></p>
 
- <p><b>New paper</b>: <a href="#manifesto"><i>The Racket Manifesto</i></a> with <a href="http://www.ccs.neu.edu/home/matthias">Matthias Felleisen</a>, <a href="http://www.eecs.northwestern.edu/~robby">Robert Bruce Findler</a>, <a href="http://www.cs.utah.edu/~mflatt">Matthew Flatt</a>, Shriram Krishnamurthi, Eli Barzilay, <a href="http://jeapostrophe.github.io/">Jay McCarthy</a>;
+
+ <p><b>New paper</b>: <a href="#ecoop15"><i>Towards Practical Gradual Typing</i></a> with <a href="http://www.ccs.neu.edu/home/asumu">Asumu Takikawa</a>, Earl Dean, Daniel Felty, <a href="http://www.ccs.neu.edu/home/matthias">Matthias Felleisen</a>, <a href="http://www.eecs.northwestern.edu/~robby">Robert Bruce Findler</a>, <a href="http://www.cs.utah.edu/~mflatt">Matthew Flatt</a>;
+to appear at <a href="http://conf.researchr.org/home/ecoop-2015">ECOOP 2015</a></p>
+
+<p><b>New paper</b>: <a href="#manifesto"><i>The Racket Manifesto</i></a> with <a href="http://www.ccs.neu.edu/home/matthias">Matthias Felleisen</a>, <a href="http://www.eecs.northwestern.edu/~robby">Robert Bruce Findler</a>, <a href="http://www.cs.utah.edu/~mflatt">Matthew Flatt</a>, Shriram Krishnamurthi, Eli Barzilay, <a href="http://jeapostrophe.github.io/">Jay McCarthy</a>;
 to appear at <a href="http://snapl.org/2015/index.html">SNAPL 2015</a></p>
 
 
@@ -69,7 +73,7 @@ Vasily Krilichev.</p>
     with Cameron Swords and Amr Sabry.</p>
 
 
-<p><b>New paper</b>: <a href="http://wphomes.soic.indiana.edu/jsiek/files/2013/06/paper.pdf"><i>Monotonic References for efficient gradual typing</i></a> with Michael
+<p><b>New paper</b>: <a href="https://dl.dropboxusercontent.com/u/10275252/monotonic-references.pdf"><i>Monotonic References for efficient gradual typing</i></a> with Michael
 M. Vitousek, Matteo Cimini, Jeremy Siek, and Ronald Garcia;
  to appear at <a href="http://conf.researchr.org/home/esop-2015">ESOP 2015</a></p>
 
@@ -105,18 +109,32 @@ appeared at <a href="http://flint.cs.yale.edu/esop2014/">ESOP 2014</a></p>
 
 <div id="research" class="box"><h1 id="" class="boxtitle">Research Projects</h1>
 <p>My research focuses on the design and implementation of programming
-  systems.  I'm particularly interested in programming languages that
-  support the evolution of software.  I'm currently working with the
- <a href="http://www.darpa.mil/Our_Work/I2O/Programs/Clean-slate_design_of_Resilient_Adaptive_Secure_Hosts_%28CRASH%29.aspx">DARPA CRASH</a> program on <a href="http://racket-lang.org">Racket</a> and with
-<a href="https://mozillalabs.com/">Mozilla Labs</a> on <a href="http://ecmascript.org">JavaScript</a>.</p>
+systems.  I'm particularly interested in programming languages that
+support the evolution of software.  I primarily work on
+<a href="http://racket-lang.org">Racket</a> and
+<a href="https://github.com/racket/typed-racket/">Typed Racket</a> as
+well as with <a href="https://mozilla.org/research/">Mozilla
+Research</a> on <a href="http://ecmascript.org">JavaScript</a>.</p>
 
 <div id="typed" class="project"><h1 class="projecttitle">Typed Racket</h1><p class="projectdesc">I created and
-  maintain <a href="http://docs.racket-lang.org/ts-guide/">Typed
+  maintain <a href="https://github.com/racket/typed-racket/">Typed
 Racket</a>, a statically-typed dialect
   of <a href="http://racket-lang.org">Racket</a> that allows
   existing untyped Racket programs to be enriched with
 types.</p>
-<div><h2 class="subproject">Papers</h2> <p class="pub"><span class="title"><a class="title" name="cont">Constraining Delimited Control with Contracts</a></span>.
+<div><h2 class="subproject">Papers</h2> <p class="pub"><span class="title"><a class="title" name="ecoop15">Towards Practical Gradual Typing</a></span>.
+     <span>With <a href="http://www.ccs.neu.edu/home/asumu">Asumu Takikawa</a>, Daniel Felty, Earl Dean, <a href="http://www.cs.utah.edu/~mflatt">Matthew Flatt</a>, <a href="http://www.eecs.northwestern.edu/~robby">Robert Bruce Findler</a> and <a href="http://www.ccs.neu.edu/home/matthias">Matthias Felleisen</a>.</span> <br />
+     <a href="http://2015.ecoop.org">European Conference on Object-Oriented Programming (ECOOP)</a>, July 2015.
+     <br />
+     <span class="paper-resource">[ 
+<a class="refType" href="http://docs.racket-lang.org/ts-reference/Typed_Classes.html">Documentation</a>
+ ]</span></p><p class="pub"><span class="title"><a class="title" name="esop15">Monotonic References for Efficient Gradual Typing</a></span>.
+     <span>With Jeremy G. Siek, Michael M. Vitousek, Matteo Cimini and Ronald Garcia.</span> <br />
+     <a href="http://conf.researchr.org/home/esop-2015">European Symposium on Programming (ESOP)</a>, April 2015.
+     <br />
+     <span class="paper-resource">[ 
+<a class="refType" href="https://dl.dropboxusercontent.com/u/10275252/monotonic-references.pdf">PDF</a>
+ ]</span></p><p class="pub"><span class="title"><a class="title" name="cont">Constraining Delimited Control with Contracts</a></span>.
      <span>With <a href="http://www.ccs.neu.edu/home/asumu">Asumu Takikawa</a> and <a href="http://www.ccs.neu.edu/home/sstrickl">T. Stephen Strickland</a>.</span> <br />
      <a href="http://www.ccs.neu.edu/esop2013/">European Symposium on Programming (ESOP)</a>, March 2013.
      <br />
@@ -229,7 +247,7 @@ to type checking.</p>
      <span class="paper-resource">[ 
 <a class="refType" href="http://www.ccs.neu.edu/racket/pubs/manifesto.pdf">PDF</a> | <a class="refType" href="http://www.ccs.neu.edu/home/matthias/manifesto/">HTML</a>
  ]</span></p><p class="pub"><span class="title"><a class="title" name="pycket-dyla">Meta-tracing makes a fast Racket</a></span>.
-     <span>With Carl Friedrich Bolz, Tobias Pape and Jeremy Siek.</span> <br />
+     <span>With Carl Friedrich Bolz, Tobias Pape and Jeremy G. Siek.</span> <br />
      Workshop on Dynamic Languages and Applications (DYLA), June 2014.
      <br />
      <span class="paper-resource">[ 

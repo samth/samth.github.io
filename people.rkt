@@ -29,10 +29,14 @@
 (define tonyg @a[href: "http://homepages.kcbbs.gen.nz/tonyg/"]{Tony Garnock-Jones})
 
 (define cfbolz "Carl Friedrich Bolz")
-(define jseik "Jeremy Siek")
+(define jsiek "Jeremy G. Siek")
 (define rrnewton "Ryan Newton")
 (define lkuper "Lindsey Kuper")
 (define krono "Tobias Pape")
 (define atodd "Aaron Todd")
 (define eli "Eli Barzilay")
 (define sk "Shriram Krishnamurthi")
+(define rxg "Ronald Garcia")
+
+(define matteo "Matteo Cimini")
+(define vitousek "Michael M. Vitousek")

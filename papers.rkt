@@ -12,11 +12,15 @@
 @(define icfp-14
    @a[href: "http://icfpconference.org/2014/"]{International Conference on Functional Programming (ICFP)})
 
-@(define esop-13
-   @a[href: "http://www.ccs.neu.edu/esop2013/"]{European Symposium on Programming (ESOP)})
+@(define ECOOP "European Conference on Object-Oriented Programming (ECOOP)")
+@(define ecoop-15 @a[href: "http://2015.ecoop.org" ECOOP])
 
-@(define esop-14
-   @a[href: "http://flint.cs.yale.edu/esop2014/"]{European Symposium on Programming (ESOP)})
+@(define ESOP "European Symposium on Programming (ESOP)")
+@(define esop-15 @a[href: "http://conf.researchr.org/home/esop-2015" ESOP])
+
+@(define esop-13 @a[href: "http://www.ccs.neu.edu/esop2013/" ESOP])
+
+@(define esop-14 @a[href: "http://flint.cs.yale.edu/esop2014/" ESOP])
 
 @(define (acm id)
    `("ACM DL"
@@ -42,6 +46,20 @@
    title co loc date resources tag))
 
 (defpapers tr-papers
+  ("Towards Practical Gradual Typing"
+   (list asumu "Daniel Felty" "Earl Dean" mflatt robby MF)
+   ecoop-15
+   "July 2015"
+   (list '("Documentation" "http://docs.racket-lang.org/ts-reference/Typed_Classes.html"))
+   #:tag 'ecoop15)
+
+  ("Monotonic References for Efficient Gradual Typing"
+   (list jsiek vitousek matteo rxg)
+   esop-15
+   "April 2015"
+   (list '("PDF" "https://dl.dropboxusercontent.com/u/10275252/monotonic-references.pdf"))
+   #:tag 'esop15)
+
   ("Constraining Delimited Control with Contracts"
    (list asumu sstrickl)
    esop-13
@@ -142,7 +160,7 @@
    #:tag 'manifesto)
   
   ("Meta-tracing makes a fast Racket"
-     (list cfbolz krono jseik)
+     (list cfbolz krono jsiek)
      "Workshop on Dynamic Languages and Applications (DYLA)"
      "June 2014"
      `(("PDF" "pycket-dyla.pdf")

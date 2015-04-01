@@ -85,10 +85,10 @@ function toggleBibTeX(elt) {
 
     @p{Assistant Professor @~
        @a[href: "http://racket-lang.org/people.html"]{PLT} &
-        @a[href: "http://lambda.soic.indiana.edu"]{PL} @"@"
+        @a[href: "http://wonks.github.io"]{PL} @"@"
        @a[href: "http://www.soic.indiana.edu/"]{School of Informatics & Computing}@~
        @a[href: "http://www.indiana.edu/"]{Indiana University}}}
- @p{Office: @a[href:"https://www.soic.indiana.edu/about/maps.shtml"]{Lindley Hall}, Room 215E@~
+ @p{Office: @a[href:"https://www.soic.indiana.edu/about/maps.shtml"]{Lindley Hall}, Room 230C@~
     Email: @a[href:"mailto:samth@cs.indiana.edu" "samth@cs.indiana.edu"]@~
     Blog: @a[href:"http://scriptstoprograms.wordpress.com/" "Scripts to Programs"]@~
     Microblogging: @a[href: "http://twitter.com/samth/" "@samth"]@~
@@ -106,7 +106,12 @@ function toggleBibTeX(elt) {
 @a[href: "http://www.cs.indiana.edu/"]{Indiana
  University Computer Science}, please @a[href: "mailto:samth@cs.indiana.edu"]{email me} if you are interested. }}
 
- @p{@b{New paper}: @a[href:
+
+ @p{@b{New paper}: @a[href: "#ecoop15"]{
+@i{Towards Practical Gradual Typing}} with @|asumu|, Earl Dean, Daniel Felty, @|MF|, @|robby|, @|mflatt|;
+ to appear at @a[href: "http://conf.researchr.org/home/ecoop-2015"]{ECOOP 2015}}
+                   
+@p{@b{New paper}: @a[href:
                  "#manifesto"]{
 @i{The Racket Manifesto}} with @|MF|, @|robby|, @|mflatt|, @|sk|, @|eli|, @|jay|;
  to appear at @a[href: "http://snapl.org/2015/index.html"]{SNAPL 2015}}
@@ -131,7 +136,7 @@ Vasily Krilichev.}
 
 
 @p{@b{New paper}: @a[href:
-                 "http://wphomes.soic.indiana.edu/jsiek/files/2013/06/paper.pdf"]{
+                 "https://dl.dropboxusercontent.com/u/10275252/monotonic-references.pdf"]{
 @i{Monotonic References for efficient gradual typing}} with Michael
 M. Vitousek, Matteo Cimini, Jeremy Siek, and Ronald Garcia;
  to appear at @a[href: "http://conf.researchr.org/home/esop-2015"]{ESOP 2015}}
@@ -199,14 +204,16 @@ student paper.}
 @box['research "Research Projects"]{
 
 @p{My research focuses on the design and implementation of programming
-  systems.  I'm particularly interested in programming languages that
-  support the evolution of software.  I'm currently working with the
- @a[href: "http://www.darpa.mil/Our_Work/I2O/Programs/Clean-slate_design_of_Resilient_Adaptive_Secure_Hosts_%28CRASH%29.aspx"]{DARPA CRASH} program on @a[href: "http://racket-lang.org"]{Racket} and with
-@a[href: "https://mozillalabs.com/"]{Mozilla Labs} on @a[href: "http://ecmascript.org"]{JavaScript}.}
+systems.  I'm particularly interested in programming languages that
+support the evolution of software.  I primarily work on
+@a[href: "http://racket-lang.org"]{Racket} and
+@a[href: "https://github.com/racket/typed-racket/"]{Typed Racket} as
+well as with @a[href: "https://mozilla.org/research/"]{Mozilla
+Research} on @a[href: "http://ecmascript.org"]{JavaScript}.}
 
 @project['typed "Typed Racket"]{
 @pdesc{I created and
-        maintain @a[href: "http://docs.racket-lang.org/ts-guide/"]{Typed
+        maintain @a[href: "https://github.com/racket/typed-racket/"]{Typed
         Racket}, a statically-typed dialect
         of @racket that allows
         existing untyped Racket programs to be enriched with
