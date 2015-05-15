@@ -50,7 +50,11 @@
    (list asumu "Daniel Felty" "Earl Dean" mflatt robby MF)
    ecoop-15
    "July 2015"
-   (list '("Documentation" "http://docs.racket-lang.org/ts-reference/Typed_Classes.html"))
+   (list (neu "ecoop2015-takikawa-et-al.pdf")
+         '("Artifact"
+           "http://www.ccs.neu.edu/home/racket/ecoop2015/")
+         '("Documentation"
+           "http://docs.racket-lang.org/ts-reference/Typed_Classes.html"))
    #:tag 'ecoop15)
 
   ("Monotonic References for Efficient Gradual Typing"
