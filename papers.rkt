@@ -50,7 +50,7 @@
    (list asumu "Daniel Felty" "Earl Dean" mflatt robby MF)
    ecoop-15
    "July 2015"
-   (list (neu "ecoop2015-takikawa-et-al.pdf")
+   (list (neu "ecoop2015-takikawa-et-al")
          '("Artifact"
            "http://www.ccs.neu.edu/home/racket/ecoop2015/")
          '("Documentation"
