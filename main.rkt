@@ -83,7 +83,7 @@ function toggleBibTeX(elt) {
       @div{@p[style: "font-size: 85%;"]{@i{The most important decisions a scholar makes are what problems to work on.}  - @a[href: "http://www.tobinproject.org/about/james-tobin"]{James Tobin}}}}
  @div{
 
-    @p{Assistant Professor @~
+    @p{Associate Professor @~
        @a[href: "http://racket-lang.org/people.html"]{PLT} &
         @a[href: "http://wonks.github.io"]{PL} @"@"
        @a[href: "http://www.soic.indiana.edu/"]{School of Informatics & Computing}@~
