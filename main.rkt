@@ -89,7 +89,7 @@ function toggleBibTeX(elt) {
        @a[href: "http://www.soic.indiana.edu/"]{School of Informatics & Computing}@~
        @a[href: "http://www.indiana.edu/"]{Indiana University}}}
  @p{Office: @a[href:"https://www.soic.indiana.edu/about/maps.shtml"]{Lindley Hall}, Room 230C@~
-    Email: @a[href:"mailto:samth@cs.indiana.edu" "samth@cs.indiana.edu"]@~
+    Email: @a[href:"mailto:samth@iu.edu" "samth@iu.edu"]@~
     Blog: @a[href:"http://scriptstoprograms.wordpress.com/" "Scripts to Programs"]@~
     Microblogging: @a[href: "http://twitter.com/samth/" "@samth"]@~
     Curriculum Vitae: @a[href: "cv.pdf"]{pdf}}
@@ -103,8 +103,8 @@ function toggleBibTeX(elt) {
 @box['news "News"]{
 @p{@b{I'm looking for new Ph.D
  students at 
-@a[href: "http://www.cs.indiana.edu/"]{Indiana
- University Computer Science}, please @a[href: "mailto:samth@cs.indiana.edu"]{email me} if you are interested. }}
+@a[href: "http://cs.indiana.edu/"]{Indiana
+ University Computer Science}, please @a[href: "mailto:samth@iu.edu"]{email me} if you are interested. }}
 
 
  @p{@b{New paper}: @a[href: "#ecoop15"]{
