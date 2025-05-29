@@ -40,3 +40,21 @@
 
 (define matteo "Matteo Cimini")
 (define vitousek "Michael M. Vitousek")
+
+;; New people mentioned frequently in recent papers
+(define phuc @a[href: "https://pcnguyen.github.io/"]{Phuc C. Nguyen})
+(define spall @a[href: "https://github.com/SarahSpall"]{Sarah Spall})
+(define bgreenman @a[href: "https://www.ccs.neu.edu/home/types/"]{Ben Greenman})
+(define akent @a[href: "https://andmkent.com/"]{Andrew M. Kent})
+(define cameron-moy "Cameron Moy")
+(define rajan-walia "Rajan Walia")
+(define yuquan-fu "Yuquan Fu")
+(define chaitanya "Chaitanya S. Koparkar")
+(define ambrose @a[href: "https://ambrosebs.com/"]{Ambrose Bonnaire-Sergeant})
+(define rowan-davies "Rowan Davies")
+(define thomas-gilray @a[href: "http://www.cs.umd.edu/~tgilray/"]{Thomas Gilray})
+(define michael-vollmer "Michael Vollmer")
+(define neil-mitchell @a[href: "https://ndmitchell.com/"]{Neil Mitchell})
+(define chung-chieh-shan @a[href: "https://homes.sice.indiana.edu/ccshan/"]{Chung-chieh Shan})
+(define praveen-narayanan "Praveen Narayanan")
+(define jacques-carette "Jacques Carette")

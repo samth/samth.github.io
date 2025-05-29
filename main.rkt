@@ -28,21 +28,6 @@ function toggleBibTeX(elt) {
         (pre.style.display == "block") ? "none" : "block";
 }})
 
-@(define analytics
-   @js{
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-19575479-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-})
-
-
 @(define sidebar
 @div[id: 'sidebar]{
 @div[id: 'sidebarcontent]{
@@ -57,14 +42,12 @@ function toggleBibTeX(elt) {
 @html{
  @head{
    @title[sth]
-   @meta[name: "verify-v1"
-	 content: "1VWrH93RsveZVebOS9YtZ9P8a6r4e2syuwL80ueE4+0="]
+
    @meta[http-equiv: "Content-Type" content: "text/html" charset: "UTF-8"]
    @css{http://fonts.googleapis.com/css?family=PT+Sans}
    @css{http://fonts.googleapis.com/css?family=Paprika}
    @css{http://fonts.googleapis.com/css?family=Nobile}
    @css{style.css}
-   @|analytics|
    }
 
 @body{
@@ -79,24 +62,23 @@ function toggleBibTeX(elt) {
 
 @box['name sth]{
 @div[class: "right"]{
-      @p{@img[id: "photo" src: "tree.jpg" alt: "Tree" title:"Winter"]}
-      @div{@p[style: "font-size: 85%;"]{@i{The most important decisions a scholar makes are what problems to work on.}  - @a[href: "http://www.tobinproject.org/about/james-tobin"]{James Tobin}}}}
+   @p{@img[id: "photo" src: "tree.jpg" alt: "Tree" title:"Winter"]}
+   @div{@p[style: "font-size: 85%;"]{@i{The most important decisions a scholar makes are what problems to work on.}  - @a[href: "http://www.tobinproject.org/about/james-tobin"]{James Tobin}}}}
  @div{
 
-    @p{Assistant Professor @~
-       @a[href: "http://racket-lang.org/people.html"]{PLT} &
-        @a[href: "http://wonks.github.io"]{PL} @"@"
-       @a[href: "http://www.soic.indiana.edu/"]{School of Informatics & Computing}@~
-       @a[href: "http://www.indiana.edu/"]{Indiana University}}}
- @p{Office: @a[href:"https://www.soic.indiana.edu/about/maps.shtml"]{Lindley Hall}, Room 230C@~
+    @p{Associate Professor @~
+    @a[href: "http://racket-lang.org/people.html"]{PLT} &
+     @a[href: "http://wonks.github.io"]{PL} @"@"
+    @a[href: "http://cs.indiana.edu/"]{Department of Computer Science}@~
+    @a[href: "http://www.indiana.edu/"]{Indiana University}}}
+ @p{Office: @a[href:"https://cs.indiana.edu/about/facilities.html"]{Luddy Hall}, Room 3022@~
     Email: @a[href:"mailto:samth@iu.edu" "samth@iu.edu"]@~
-    Blog: @a[href:"http://scriptstoprograms.wordpress.com/" "Scripts to Programs"]@~
-    Microblogging: @a[href: "http://twitter.com/samth/" "@samth"]@~
+   Microblogging: @a[href: "http://twitter.com/samth/" "@samth"], @a[href: "https://bsky.app/profile/samth.bsky.social" "@samth.bsky.social"]@~
     Curriculum Vitae: @a[href: "cv.pdf"]{pdf}}
- @p{Papers: @a[href: "http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/t/Tobin=Hochstadt:Sam.html"]{DBLP},
-            @a[href: "http://scholar.google.com/citations?user=vMSSQbAAAAAJ"]{Google Scholar},
-            @a[href: "http://arxiv.org/a/tobinhochstadt_s_1"]{arXiv},
-            @a[href: "http://portal.acm.org/author_page.cfm?id=81319502825"]{ACM}}
+ @p{Papers: @a[href: "https://dblp.uni-trier.de/pid/56/3287.html"]{DBLP},
+      @a[href: "http://scholar.google.com/citations?user=vMSSQbAAAAAJ"]{Google Scholar},
+      @a[href: "http://arxiv.org/a/tobinhochstadt_s_1"]{arXiv},
+      @a[href: "http://portal.acm.org/author_page.cfm?id=81319502825"]{ACM}}
  @p{Software: @a[href: "http://github.com/samth/"]{GitHub}}
 }
  
@@ -106,66 +88,28 @@ function toggleBibTeX(elt) {
 @a[href: "http://cs.indiana.edu/"]{Indiana
  University Computer Science}, please @a[href: "mailto:samth@iu.edu"]{email me} if you are interested. }}
 
+@p{@b{New paper}: @a[href: "#gc-serialized"]{
+@i{Garbage Collection for Mostly Serialized Heaps}} with @|chaitanya| and @|rrnewton|;
+appeared at @a[href: "https://ismm24.sigplan.org/"]{ISMM 2024}}
 
- @p{@b{New paper}: @a[href: "#ecoop15"]{
-@i{Towards Practical Gradual Typing}} with @|asumu|, Earl Dean, Daniel Felty, @|MF|, @|robby|, @|mflatt|;
- to appear at @a[href: "http://conf.researchr.org/home/ecoop-2015"]{ECOOP 2015}}
-                   
-@p{@b{New paper}: @a[href:
-                 "#manifesto"]{
-@i{The Racket Manifesto}} with @|MF|, @|robby|, @|mflatt|, @|sk|, @|eli|, @|jay|;
- to appear at @a[href: "http://snapl.org/2015/index.html"]{SNAPL 2015}}
+@p{@b{New paper}: @a[href: "#rhombus"]{
+@i{Rhombus: A New Spin on Macros without All the Parentheses}} with @|mflatt| and others;
+appeared at @a[href: "https://2023.splashcon.org/track/splash-2023-oopsla"]{OOPSLA 2023}}
 
-                   @p{@b{New paper}: @a[href:
-                 "https://dl.dropboxusercontent.com/u/10275252/monotonic-references.pdf"]{
-@i{Monotonic References for efficient gradual typing}} with Michael
-M. Vitousek, Matteo Cimini, Jeremy Siek, and Ronald Garcia;
- to appear at @a[href: "http://conf.researchr.org/home/esop-2015"]{ESOP 2015}}
+@p{@b{New papers}: @a[href: "#sham"]{
+@i{Sham: A DSL for Fast DSLs}} with @|rajan-walia| and @a[href: "#type-checking-extracted"]{
+@i{Type Checking Extracted Methods}} with @|yuquan-fu|;
+both appeared in @a[href: "https://programming-journal.org/"]{Art, Science, and Engineering of Programming} 2022}
 
-                   
-@p{New draft: @a[href: "pycket-draft.pdf"]{@i{Pycket: a tracing
-JIT  for a functional language}}, with Carl Friedrich Bolz,
-Spenser Bauman, Jeremy Siek, Tobias Pape, Robert Hirschfeld, and
-Vasily Krilichev.}
+@p{@b{New paper}: @a[href: "#forward-builds"]{
+@i{Forward build systems, formally}} with @|spall| and @|neil-mitchell|;
+appeared at @a[href: "https://popl22.sigplan.org/home/CPP-2022"]{CPP 2022}}
 
-@p{New draft: @a[href: "parallel-typecheck-draft.pdf"]{
-@i{Parallel Type-checking with Saturating LVars}},
-       with Peter Fogg and Ryan Newton.}
+@p{@b{New paper}: @a[href: "#corpse-reviver"]{
+@i{Corpse reviver: sound and efficient gradual typing via contract verification}} with @|cameron-moy|, @|phuc|, and @|dvh|;
+appeared at @a[href: "https://popl21.sigplan.org/"]{POPL 2021}}
 
-@p{New draft: @a[href: "typed-clojure-draft.pdf"]{
-@i{Practical Optional Typechecking for Clojure}},
-       with Ambrose Bonnaire-Sargeant and Rowan Davies.}
-
-@p{New draft: @a[href: "contract-monitoring-draft.pdf"]{
-@i{Contract Monitoring Semantics as Patterns of Communication}},
-       with Cameron Swords and Amr Sabry.}
-
-
-
-
-
-
-@p{I am on the Program Committee for 
-     @a[href: "http://conf.researchr.org/home/pldi2015"]{PLDI 2015}
-     and the External Review Committee for POPL 2015.}
-
-@p{I organized @a[href: "http://ifl2014.github.io/"]{IFL 2014} at
-Northeastern University in Boston.}
-
-@p{Our paper on @a[href: "#pycket-dyla"]{Pycket}, an experimental JIT
-compiler for Racket, appeared at
-@a[href: "http://www.lifl.fr/dyla14/"]{DYLA 2014}.}
-
-
-@p{Our paper on @a[href: "#effectzoo"]{extending LVars with new effects} appeared 
- at @a[href: "http://conferences.inf.ed.ac.uk/pldi2014/"]{PLDI 2014}.}
-
-
-@p{Our paper on the @a[href: "#network-calc"]{network calculus}, a
-formalization of the ideas behind
-@a[href: "http://tonyg.github.io/marketplace/"]{Marketplace}, 
-appeared at @a[href: "http://flint.cs.yale.edu/esop2014/"]{ESOP 2014}}
-
+@p{Our recent work includes advances in gradual typing, build systems, DSL construction, and garbage collection for specialized heaps.}
 
 }
 
@@ -236,6 +180,24 @@ Research} on @a[href: "http://ecmascript.org"]{JavaScript}.}
        @(papers analysis-papers)
        @(talks analysis-talks)}
 
+@project['build-systems "Build Systems"]{
+      @pdesc{I work on formal foundations and practical implementations
+      of build systems, focusing on correct dependency tracking and 
+      efficient incremental builds.}
+       @(papers build-papers)}
+
+@project['dsl "Domain-Specific Languages"]{
+      @pdesc{I develop techniques and tools for creating efficient
+      domain-specific languages, particularly for high-performance
+      computing and probabilistic programming.}
+       @(papers dsl-papers)}
+
+@project['systems "Systems and Performance"]{
+      @pdesc{I work on garbage collection, memory management,
+      and performance optimization for functional languages
+      and parallel systems.}
+       @(papers systems-papers)}
+
 
 @project['javascript "JavaScript"]{
  @pdesc{In collaboration
@@ -268,6 +230,15 @@ Research} on @a[href: "http://ecmascript.org"]{JavaScript}.}
 
 @box['activities "Activities"]{
 @ul{
+@li{@span{ICFP 2024}, External Review Committee}
+@li{@span{PLDI 2023}, Program Committee}
+@li{@span{ICFP 2022}, Program Committee}
+@li{@span{POPL 2021}, Program Committee}
+@li{@span{ICFP 2020}, Program Committee}
+@li{@span{PLDI 2019}, Program Committee}
+@li{@span{ICFP 2018}, Program Committee}
+@li{@span{PLDI 2017}, Program Committee}
+@li{@span{ICFP 2016}, Program Committee}
 @li{@span{PLDI 2015}, Program Committee}
 @li{@span{IFL 2014}, Chair}
 @li{@span{POPL 2015}, External Review Committee}
@@ -285,25 +256,16 @@ Research} on @a[href: "http://ecmascript.org"]{JavaScript}.}
 
 @box['teaching "Teaching"]{ 
 
-@ul{I'm teaching @a[href:
-"http://www.cs.indiana.edu/classes/c211/"]{C211} in Fall 2014.}
-
-@ul{I taught @a[href:
-"http://homes.soic.indiana.edu/classes/spring2014/csci/p632-samth/"]{P632}
-in Spring 2014.}
-
-@ul{I taught @a[href:
-"http://homes.soic.indiana.edu/classes/fall2013/csci/p532-samth/"]{P532}
-in Fall 2013.}
+@p{I regularly teach graduate and undergraduate courses in programming languages,
+including @a[href: "http://www.cs.indiana.edu/classes/c311/"]{C311 (Programming Languages)} 
+and @a[href: "http://www.cs.indiana.edu/classes/c211/"]{C211 (Introduction to Computer Science)}.}
 
 @ul{
-@li{ In Spring 2011, Spring 2012, and Spring 2013, I taught a new honors section of
+@li{ I have taught honors sections of
 @a[href: "http://www.ccs.neu.edu/course/cs2510h/"]{CS 2510} with
-@a[href: "http://www.ccs.neu.edu/home/dvanhorn/"]{David Van Horn}.}
+@a[href: "http://www.ccs.neu.edu/home/dvanhorn/"]{David Van Horn} while at Northeastern.}
 
-@li{ In Spring 2009, I taught @a[href: "211-09/"]{CS U211}.  }
-
-@li{ In Fall 2005, I taught CS U213.}
+@li{ I have taught various courses including CS U211 and CS U213.}
 
 @(papers edu-papers)
 
