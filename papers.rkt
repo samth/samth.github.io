@@ -192,16 +192,46 @@
    @a[href: "http://www.dcl.hpi.uni-potsdam.de/dls2006/openconf.php"]{Dynamic Languages Symposium (DLS)}
    "October 2006"
    `(,(neu "dls06-tf") 
-     ,(acm "1176617.1176755")))
-  )
+     ,(acm "1176617.1176755")))    )
 
-(defpapers macro-papers
+(defpapers dsl-papers
   ("Rhombus: A New Spin on Macros without All the Parentheses"
    (list mflatt "Taylor Allred" "Nia Angle" "Stephen De Gabrielle" robby "Jack Firth" "Kiran Gopinathan" bgreenman "Siddhartha Kasivajhula" "Alex Knauth" jay "Sam Phillips" "Sorawee Porncharoenwase" "Jens Axel Søgaard")
    @a[href: "https://2023.splashcon.org/track/splash-2023-oopsla"]{Object Oriented Programming, Systems, Languages and Applications (OOPSLA)}
    "October 2023"
    (list '("ACM" "https://doi.org/10.1145/3622818"))
    #:tag 'rhombus)
+
+  ("Sham: A DSL for Fast DSLs"
+   (list rajan-walia chung-chieh-shan)
+   "Art, Science, and Engineering of Programming"
+   "2022"
+   (list '("Journal" "https://doi.org/10.22152/programming-journal.org/2022/6/4")
+         '("arXiv" "https://arxiv.org/abs/2005.09028"))
+   #:tag 'sham)
+
+  ("Forward build systems, formally"
+   (list spall neil-mitchell)
+   @a[href: "https://popl22.sigplan.org/home/CPP-2022"]{Certified Programs and Proofs (CPP)}
+   "January 2022"
+   (list '("ACM" "https://doi.org/10.1145/3497775.3503687")
+         '("arXiv" "https://arxiv.org/abs/2202.05328"))
+   #:tag 'forward-builds)
+
+  ("Build scripts with perfect dependencies"
+   (list spall neil-mitchell)
+   @a[href: "https://2020.splashcon.org/track/splash-2020-oopsla"]{Object Oriented Programming, Systems, Languages and Applications (OOPSLA)}
+   "November 2020"
+   (list '("ACM" "https://doi.org/10.1145/3428237")
+         '("arXiv" "https://arxiv.org/abs/2007.12737"))
+   #:tag 'perfect-deps)
+
+  ("From high-level inference algorithms to efficient code"
+   (list rajan-walia praveen-narayanan jacques-carette chung-chieh-shan)
+   @a[href: "https://icfp19.sigplan.org/"]{International Conference on Functional Programming (ICFP)}
+   "August 2019"
+   (list '("ACM" "https://doi.org/10.1145/3341702"))
+   #:tag 'inference-algorithms)
 
   ("Rebuilding racket on chez scheme (experience report)"
    (list mflatt "Caner Derici" "R. Kent Dybvig" "Andrew W. Keep" "Gustavo E. Massaccesi" spall "Jon Zeppieri")
@@ -256,98 +286,70 @@
      ("Web Page" "http://www.ccs.neu.edu/home/tonyg/esop2014/")
      ("Marketplace" "http://tonyg.github.io/marketplace/"))
    #:tag 'network-calc)
-    ("Chaperones and Impersonators: Runtime support for reasonable interposition"
-     (list sstrickl robby mflatt)
-     oopsla-12
-     "October 2012"
-     (list (neu "oopsla12-sthff")
-           '("Web Page" "http://sstrickl.net/chaperones/")
-           '("Documentation" "http://docs.racket-lang.org/reference/chaperones.html"))
-     #:tag 'chaperones)
-    ("Optimization Coaching"
-     (list stamourv MF)
-     oopsla-12
-     "October 2012"
-     (list (neu "oopsla12-stf")
-           '("GitHub" "https://github.com/stamourv/optimization-coach"))
-     #:tag 'opt-coach)
-    ("Run Your Research: On the Effectiveness of Lightweight Mechanization"
-     (list "Casey Klein" jbc chrdimo cce MF mflatt jay "Jon Rafkind" robby)
-     @a[href: "http://www.cse.psu.edu/popl/12/"]{Symposium on Principles of Programming Languages (POPL)}
-     "January 2012"
-     `(("PDF" "http://eecs.northwestern.edu/~robby/lightweight-metatheory/popl2012-kcdeffmrtf.pdf")
-       ("Models" "http://eecs.northwestern.edu/~robby/lightweight-metatheory/")
-       ("Redex" "http://redex.racket-lang.org/")))
-    ("Languages as Libraries"
-     (list stamourv rmc mflatt MF)
-     @a[href: "http://pldi11.cs.utah.edu/"]{Conference on Programming Language Design and Implementation (PLDI)}
-     "June 2011"
-     `(,(neu "pldi11-thacff")
-       ,(acm "1993514")))
-    ("Extensible Pattern Matching in an Extensible Language"
-     null
-     ""
-     "October 2010"
-     `(("PDF" "match-ifl-full.pdf")
-       ("arXiv" "http://arxiv.org/abs/1106.2578")
-       ("Documentation" "http://docs.racket-lang.org/reference/match.html"))
-     #:type 'preprint)
-    ("Extensible Pattern Matching in an Extensible Language"
-     null
-     @a[href: "http://www.cs.uu.nl/wiki/bin/view/IFL2010/WebHome"]{Symposium on Implementation and Application of Functional Languages}
-     "September 2010"
-     `(("PDF" "ifl-2010-abstract.pdf")
-       ("Utrecht Technical Report" "http://www.cs.uu.nl/research/techreps/UU-CS-2010-020.html"))
-     #:type 'abstract)
-    ("Where are you going with those types?"
-     (list stamourv mflatt MF)
-     @a[href: "http://www.cs.uu.nl/wiki/bin/view/IFL2010/WebHome"]{Symposium on Implementation and Application of Functional Languages}
-     "September 2010"
-     `(("PDF" "http://www.ccs.neu.edu/home/stamourv/ifl10.pdf")                
-       ("Utrecht Technical Report" "http://www.cs.uu.nl/research/techreps/UU-CS-2010-020.html"))
-     #:type 'abstract)
+
+  ("Chaperones and Impersonators: Runtime support for reasonable interposition"
+   (list sstrickl robby mflatt)
+   oopsla-12
+   "October 2012"
+   (list (neu "oopsla12-sthff")
+         '("Web Page" "http://sstrickl.net/chaperones/")
+         '("Documentation" "http://docs.racket-lang.org/reference/chaperones.html"))
+   #:tag 'chaperones)
+
+  ("Optimization Coaching"
+   (list stamourv MF)
+   oopsla-12
+   "October 2012"
+   (list (neu "oopsla12-stf")
+         '("GitHub" "https://github.com/stamourv/optimization-coach"))
+   #:tag 'opt-coach)
+
+  ("Run Your Research: On the Effectiveness of Lightweight Mechanization"
+   (list "Casey Klein" jbc chrdimo cce MF mflatt jay "Jon Rafkind" robby)
+   @a[href: "http://www.cse.psu.edu/popl/12/"]{Symposium on Principles of Programming Languages (POPL)}
+   "January 2012"
+   `(("PDF" "http://eecs.northwestern.edu/~robby/lightweight-metatheory/popl2012-kcdeffmrtf.pdf")
+     ("Models" "http://eecs.northwestern.edu/~robby/lightweight-metatheory/")
+     ("Redex" "http://redex.racket-lang.org/")))
+
+  ("Languages as Libraries"
+   (list stamourv rmc mflatt MF)
+   @a[href: "http://pldi11.cs.utah.edu/"]{Conference on Programming Language Design and Implementation (PLDI)}
+   "June 2011"
+   `(,(neu "pldi11-thacff")
+     ,(acm "1993514")))
+
+  ("Extensible Pattern Matching in an Extensible Language"
+   null
+   ""
+   "October 2010"
+   `(("PDF" "match-ifl-full.pdf")
+     ("arXiv" "http://arxiv.org/abs/1106.2578")
+     ("Documentation" "http://docs.racket-lang.org/reference/match.html"))
+   #:type 'preprint)
+
+  ("Extensible Pattern Matching in an Extensible Language"
+   null
+   @a[href: "http://www.cs.uu.nl/wiki/bin/view/IFL2010/WebHome"]{Symposium on Implementation and Application of Functional Languages}
+   "September 2010"
+   `(("PDF" "ifl-2010-abstract.pdf")
+     ("Utrecht Technical Report" "http://www.cs.uu.nl/research/techreps/UU-CS-2010-020.html"))
+   #:type 'abstract)
+
+  ("Where are you going with those types?"
+   (list stamourv mflatt MF)
+   @a[href: "http://www.cs.uu.nl/wiki/bin/view/IFL2010/WebHome"]{Symposium on Implementation and Application of Functional Languages}
+   "September 2010"
+   `(("PDF" "http://www.ccs.neu.edu/home/stamourv/ifl10.pdf")                
+     ("Utrecht Technical Report" "http://www.cs.uu.nl/research/techreps/UU-CS-2010-020.html"))
+   #:type 'abstract)
     
-    ("Advanced Macrology and the Implementation of Typed Scheme"
-     (list rmc mflatt)
-     @a[href: "http://www.schemeworkshop.org/2007/"]{Workshop on Scheme and Functional Programming}
-     "September 2007"
-     `(,(neu "scheme2007-cft")
-       ("Proceedings" "http://www.schemeworkshop.org/2007/programme.html")))
-    )
-
-(defpapers build-papers
-  ("Forward build systems, formally"
-   (list spall neil-mitchell)
-   @a[href: "https://popl22.sigplan.org/home/CPP-2022"]{Certified Programs and Proofs (CPP)}
-   "January 2022"
-   (list '("ACM" "https://doi.org/10.1145/3497775.3503687")
-         '("arXiv" "https://arxiv.org/abs/2202.05328"))
-   #:tag 'forward-builds)
-
-  ("Build scripts with perfect dependencies"
-   (list spall neil-mitchell)
-   @a[href: "https://2020.splashcon.org/track/splash-2020-oopsla"]{Object Oriented Programming, Systems, Languages and Applications (OOPSLA)}
-   "November 2020"
-   (list '("ACM" "https://doi.org/10.1145/3428237")
-         '("arXiv" "https://arxiv.org/abs/2007.12737"))
-   #:tag 'perfect-deps)
-  )
-
-(defpapers dsl-papers
-  ("Sham: A DSL for Fast DSLs"
-   (list rajan-walia chung-chieh-shan)
-   "Art, Science, and Engineering of Programming"
-   "2022"
-   (list '("Journal" "https://doi.org/10.22152/programming-journal.org/2022/6/4")
-         '("arXiv" "https://arxiv.org/abs/2005.09028"))
-   #:tag 'sham)
-
-  ("From high-level inference algorithms to efficient code"
-   (list rajan-walia praveen-narayanan jacques-carette chung-chieh-shan)
-   @a[href: "https://icfp19.sigplan.org/"]{International Conference on Functional Programming (ICFP)}
-   "August 2019"
-   (list '("ACM" "https://doi.org/10.1145/3341702"))
-   #:tag 'inference-algorithms)
+  ("Advanced Macrology and the Implementation of Typed Scheme"
+   (list rmc mflatt)
+   @a[href: "http://www.schemeworkshop.org/2007/"]{Workshop on Scheme and Functional Programming}
+   "September 2007"
+   `(,(neu "scheme2007-cft")
+     ("Proceedings" "http://www.schemeworkshop.org/2007/programme.html")))
   )
 
 (defpapers verification-papers
@@ -391,7 +393,7 @@ ented Languages (FOOL)}
    "January 2005"
    `(("PDF" "fool05-tha.pdf")
      ("Proceedings" "http://homepages.inf.ed.ac.uk/wadler/fool/program/7.html"))))
-     
+
 (defpapers analysis-papers
   ("Size-change termination as a contract: dynamically and statically enforcing termination for higher-order programs"
    (list phuc thomas-gilray dvh)

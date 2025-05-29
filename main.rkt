@@ -167,30 +167,23 @@ Research} on @a[href: "http://ecmascript.org"]{JavaScript}.}
 @(talks tr-talks)
 }
 
-@project['metaprogramming "Building Languages"]{
-      @pdesc{Developing @racket, I have helped to build a programmable
+@project['metaprogramming "Domain-Specific Languages and Build Systems"]{
+      @pdesc{I develop techniques and tools for creating efficient
+      domain-specific languages, particularly for high-performance
+      computing and probabilistic programming. I also work on formal 
+      foundations and practical implementations of build systems, 
+      focusing on correct dependency tracking and efficient incremental builds.
+      Additionally, developing @racket, I have helped to build a programmable
       programming language that allows developers to create
       custom languages for everything from pattern matching
       to type checking.}
-@(papers macro-papers) @(talks macro-talks)}
+       @(papers dsl-papers)}
 
 @project['analysis "Analysis and Verification"]{
       @pdesc{I am developing  analysis and verification
       techniques for modular programs with rich specifications.}
        @(papers analysis-papers)
        @(talks analysis-talks)}
-
-@project['build-systems "Build Systems"]{
-      @pdesc{I work on formal foundations and practical implementations
-      of build systems, focusing on correct dependency tracking and 
-      efficient incremental builds.}
-       @(papers build-papers)}
-
-@project['dsl "Domain-Specific Languages"]{
-      @pdesc{I develop techniques and tools for creating efficient
-      domain-specific languages, particularly for high-performance
-      computing and probabilistic programming.}
-       @(papers dsl-papers)}
 
 @project['systems "Systems and Performance"]{
       @pdesc{I work on garbage collection, memory management,
