@@ -167,13 +167,10 @@ Research} on @a[href: "http://ecmascript.org"]{JavaScript}.}
 @(talks tr-talks)
 }
 
-@project['metaprogramming "Domain-Specific Languages and Build Systems"]{
+@project['metaprogramming "Domain-Specific Languages"]{
       @pdesc{I develop techniques and tools for creating efficient
       domain-specific languages, particularly for high-performance
-      computing and probabilistic programming. I also work on formal 
-      foundations and practical implementations of build systems, 
-      focusing on correct dependency tracking and efficient incremental builds.
-      Additionally, developing @racket, I have helped to build a programmable
+      computing and probabilistic programming. Additionally, developing @racket, I have helped to build a programmable
       programming language that allows developers to create
       custom languages for everything from pattern matching
       to type checking.}
@@ -188,7 +185,9 @@ Research} on @a[href: "http://ecmascript.org"]{JavaScript}.}
 @project['systems "Systems and Performance"]{
       @pdesc{I work on garbage collection, memory management,
       and performance optimization for functional languages
-      and parallel systems.}
+      and parallel systems. I also work on formal 
+      foundations and practical implementations of build systems, 
+      focusing on correct dependency tracking and efficient incremental builds.}
        @(papers systems-papers)}
 
 

@@ -210,22 +210,6 @@
          '("arXiv" "https://arxiv.org/abs/2005.09028"))
    #:tag 'sham)
 
-  ("Forward build systems, formally"
-   (list spall neil-mitchell)
-   @a[href: "https://popl22.sigplan.org/home/CPP-2022"]{Certified Programs and Proofs (CPP)}
-   "January 2022"
-   (list '("ACM" "https://doi.org/10.1145/3497775.3503687")
-         '("arXiv" "https://arxiv.org/abs/2202.05328"))
-   #:tag 'forward-builds)
-
-  ("Build scripts with perfect dependencies"
-   (list spall neil-mitchell)
-   @a[href: "https://2020.splashcon.org/track/splash-2020-oopsla"]{Object Oriented Programming, Systems, Languages and Applications (OOPSLA)}
-   "November 2020"
-   (list '("ACM" "https://doi.org/10.1145/3428237")
-         '("arXiv" "https://arxiv.org/abs/2007.12737"))
-   #:tag 'perfect-deps)
-
   ("From high-level inference algorithms to efficient code"
    (list rajan-walia praveen-narayanan jacques-carette chung-chieh-shan)
    @a[href: "https://icfp19.sigplan.org/"]{International Conference on Functional Programming (ICFP)}
@@ -261,7 +245,7 @@
    (list (neu "manifesto")
          '("HTML" "http://www.ccs.neu.edu/home/matthias/manifesto/"))
    #:tag 'manifesto)
-  
+
   ("Meta-tracing makes a fast Racket"
    (list cfbolz krono jsiek)
    "Workshop on Dynamic Languages and Applications (DYLA)"
@@ -369,6 +353,22 @@
    "June 2024"
    (list '("ACM" "https://doi.org/10.1145/3652024.3665512"))
    #:tag 'gc-serialized)
+
+  ("Forward build systems, formally"
+   (list spall neil-mitchell)
+   @a[href: "https://popl22.sigplan.org/home/CPP-2022"]{Certified Programs and Proofs (CPP)}
+   "January 2022"
+   (list '("ACM" "https://doi.org/10.1145/3497775.3503687")
+         '("arXiv" "https://arxiv.org/abs/2202.05328"))
+   #:tag 'forward-builds)
+
+  ("Build scripts with perfect dependencies"
+   (list spall neil-mitchell)
+   @a[href: "https://2020.splashcon.org/track/splash-2020-oopsla"]{Object Oriented Programming, Systems, Languages and Applications (OOPSLA)}
+   "November 2020"
+   (list '("ACM" "https://doi.org/10.1145/3428237")
+         '("arXiv" "https://arxiv.org/abs/2007.12737"))
+   #:tag 'perfect-deps)
 
   ("Parallel type-checking with haskell using saturating LVars and stream generators"
    (list rrnewton "Ömer S. Ağacan" "Peter P. Fogg")
