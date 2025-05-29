@@ -222,15 +222,6 @@ Research} on @a[href: "http://ecmascript.org"]{JavaScript}.}
 
 @box['activities "Activities"]{
 @ul{
-@li{@span{ICFP 2024}, External Review Committee}
-@li{@span{PLDI 2023}, Program Committee}
-@li{@span{ICFP 2022}, Program Committee}
-@li{@span{POPL 2021}, Program Committee}
-@li{@span{ICFP 2020}, Program Committee}
-@li{@span{PLDI 2019}, Program Committee}
-@li{@span{ICFP 2018}, Program Committee}
-@li{@span{PLDI 2017}, Program Committee}
-@li{@span{ICFP 2016}, Program Committee}
 @li{@span{PLDI 2015}, Program Committee}
 @li{@span{IFL 2014}, Chair}
 @li{@span{POPL 2015}, External Review Committee}
