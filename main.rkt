@@ -47,12 +47,12 @@ function toggleBibTeX(elt) {
    @css{http://fonts.googleapis.com/css?family=PT+Sans}
    @css{http://fonts.googleapis.com/css?family=Paprika}
    @css{http://fonts.googleapis.com/css?family=Nobile}
-   @css{style.css}
+   @css{modern_academic_css.css}
    }
 
 @body{
 
-@|sidebar|
+
 
 @div[id: 'contents]{
 
@@ -109,7 +109,9 @@ appeared at @a[href: "https://popl22.sigplan.org/home/CPP-2022"]{CPP 2022}}
 @i{Corpse reviver: sound and efficient gradual typing via contract verification}} with @|cameron-moy|, @|phuc|, and @|dvh|;
 appeared at @a[href: "https://popl21.sigplan.org/"]{POPL 2021}}
 
-@p{Our recent work includes advances in gradual typing, build systems, DSL construction, and garbage collection for specialized heaps.}
+@p{Our recent work includes advances in gradual typing, domain-specific languages,
+ JIT compilers,  and program verifiers, among other areas of
+  PL design and implementation.}
 
 }
 
@@ -234,18 +236,18 @@ Research} on @a[href: "http://ecmascript.org"]{JavaScript}.}
 
 @box['teaching "Teaching"]{ 
 
-@p{I regularly teach graduate and undergraduate courses in programming languages @a[href: "http://www.cs.indiana.edu/classes/c211/"]{C211 (Introduction to Computer Science)}.}
+@p{I regularly teach graduate and undergraduate courses in programming languages, especially @a[href: "http://www.cs.indiana.edu/classes/c211/"]{C211 (Introduction to Computer Science)}.}
 
 @(papers edu-papers)
 
-}}
+}
 
 @;@box['software "Software"]{}
 
 @box['life "Personal"]{
 @p{
-  In the rest of my life, I play @a[href:"http://www.usaultimate.org/"]{Ultimate} and I 
-@a[href:"http://www.outdoors.org"]{go outside}.  }
+  In the rest of my life, I play @a[href:"https://bloomingtonultimate.org/"]{Ultimate} and I 
+@a[href:"https://sycamorelandtrust.org/"]{go outside}.  }
 
 @p{My wife, Katie Edmonds, is a Scientist in the 
 @a[href:"http://www.chem.indiana.edu/"]{IU Chemistry} Department.}}
@@ -253,5 +255,5 @@ Research} on @a[href: "http://ecmascript.org"]{JavaScript}.}
 
 
 @; the end
-}
+}}
 }}
