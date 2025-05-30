@@ -255,5 +255,5 @@ Research} on @a[href: "http://ecmascript.org"]{JavaScript}.}
 
 
 @; the end
-}}
+}
 }}
