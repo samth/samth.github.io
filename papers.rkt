@@ -46,6 +46,15 @@
    title co loc date resources tag))
 
 (defpapers tr-papers
+
+("Type Checking Extracted Methods"
+   (list yuquan-fu)
+   "Art, Science, and Engineering of Programming"
+   "2022"
+   (list '("Journal" "https://doi.org/10.22152/programming-journal.org/2022/6/6")
+         '("arXiv" "https://arxiv.org/abs/2010.03608"))
+   #:tag 'type-checking-extracted)
+
   ("Corpse reviver: sound and efficient gradual typing via contract verification"
    (list cameron-moy phuc dvh)
    @a[href: "https://popl21.sigplan.org/"]{Symposium on Principles of Programming Languages (POPL)}
@@ -336,15 +345,6 @@
      ("Proceedings" "http://www.schemeworkshop.org/2007/programme.html")))
   )
 
-(defpapers verification-papers
-  ("Type Checking Extracted Methods"
-   (list yuquan-fu)
-   "Art, Science, and Engineering of Programming"
-   "2022"
-   (list '("Journal" "https://doi.org/10.22152/programming-journal.org/2022/6/6")
-         '("arXiv" "https://arxiv.org/abs/2010.03608"))
-   #:tag 'type-checking-extracted)
-  )
 
 (defpapers systems-papers
   ("Garbage Collection for Mostly Serialized Heaps"

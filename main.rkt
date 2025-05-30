@@ -234,9 +234,7 @@ Research} on @a[href: "http://ecmascript.org"]{JavaScript}.}
 
 @box['teaching "Teaching"]{ 
 
-@p{I regularly teach graduate and undergraduate courses in programming languages,
-including @a[href: "http://www.cs.indiana.edu/classes/c311/"]{C311 (Programming Languages)} 
-and @a[href: "http://www.cs.indiana.edu/classes/c211/"]{C211 (Introduction to Computer Science)}.}
+@p{I regularly teach graduate and undergraduate courses in programming languages @a[href: "http://www.cs.indiana.edu/classes/c211/"]{C211 (Introduction to Computer Science)}.}
 
 @ul{
 @li{ I have taught honors sections of
