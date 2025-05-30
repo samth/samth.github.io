@@ -374,25 +374,8 @@
    (list rrnewton "Ömer S. Ağacan" "Peter P. Fogg")
    @a[href: "https://ppopp16.sigplan.org/"]{Symposium on Principles and Practice of Parallel Programming (PPoPP)}
    "March 2016"
-   (list '("ACM" "https://doi.org/10.1145/2851141.2851142"))
-   #:tag 'parallel-typing)
+   (list '("ACM" "https://doi.org/10.1145/2851141.2851142"))   #:tag 'parallel-typing)
   )
-
-(defpapers fortress-papers
-  ("The Fortress Language Specification"
-   @list["Eric Allen" "David Chase" "Joe Hallett" "Victor Luchangco" "Jan-Willem Maessen" "Suky
-oung Ryu" "Guy Steele"]
-   "Sun Microsystems Technical Report, Version 1.0"
-   "2008"
-   `(("PDF" "fortress-spec.pdf")))
-
-  ("A Core Calculus of Metaclasses"
-   @list["Eric Allen"]
-   @a[href: "http://homepages.inf.ed.ac.uk/wadler/fool/"]{Workshop on Foundations of Object-Ori
-ented Languages (FOOL)}
-   "January 2005"
-   `(("PDF" "fool05-tha.pdf")
-     ("Proceedings" "http://homepages.inf.ed.ac.uk/wadler/fool/program/7.html"))))
 
 (defpapers analysis-papers
   ("Size-change termination as a contract: dynamically and statically enforcing termination for higher-order programs"
@@ -440,13 +423,26 @@ ented Languages (FOOL)}
      ["arXiv" "http://arxiv.org/abs/1105.0106"])))
              
 
-(defpapers js-papers
+(defpapers industry-papers
   ("Modules for JavaScript"
    (list dherman)
    ""
    "April 2011"
    `(["PDF" "js-modules.pdf"])
-   #:type 'preprint))
+   #:type 'preprint)
+
+  ("The Fortress Language Specification"
+   @list["Eric Allen" "David Chase" "Joe Hallett" "Victor Luchangco" "Jan-Willem Maessen" "Sukyoung Ryu" "Guy Steele"]
+   "Sun Microsystems Technical Report, Version 1.0"
+   "2008"
+   `(("PDF" "fortress-spec.pdf")))
+
+  ("A Core Calculus of Metaclasses"
+   @list["Eric Allen"]
+   @a[href: "http://homepages.inf.ed.ac.uk/wadler/fool/"]{Workshop on Foundations of Object-Oriented Languages (FOOL)}
+   "January 2005"
+   `(("PDF" "fool05-tha.pdf")
+     ("Proceedings" "http://homepages.inf.ed.ac.uk/wadler/fool/program/7.html"))))
 
 (defpapers edu-papers
   ("From Principles to Practice with Class in the First Year"

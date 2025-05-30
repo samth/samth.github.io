@@ -191,14 +191,19 @@ Research} on @a[href: "http://ecmascript.org"]{JavaScript}.}
        @(papers systems-papers)}
 
 
-@project['javascript "JavaScript"]{
- @pdesc{In collaboration
-      with @a[href:"https://mozillalabs.com/"]{Mozilla Research} and ECMA Technical Committee 39, I
-      am working on the next version of the JavaScript language,
+@project['industry "Industry Collaboration"]{
+ @pdesc{I have collaborated with industry partners on programming language design and implementation. 
+      In collaboration with @a[href:"https://mozillalabs.com/"]{Mozilla Research} and ECMA Technical Committee 39, I
+      worked on the next version of the JavaScript language,
       focusing on making JavaScript an effective language for building
-      large-scale web applications.}
-  @(papers js-papers)
-  @div{@h2[class: 'subproject]{Proposals}
+      large-scale web applications. I also worked with
+      @a[href: "http://labs.oracle.com/projects/plrg/"]{Sun Labs
+      Programming Language Research Group} to
+      develop @a[href: "http://projectfortress.java.net/"]{Fortress}, a
+      new language for high-performance, multicore and scientific
+      computing.}
+  @(papers industry-papers)
+  @div{@h2[class: 'subproject]{JavaScript Proposals}
   @p{@a[href: "http://wiki.ecmascript.org/doku.php?id=harmony:modules"]{Modules} and
       @a[href: "http://wiki.ecmascript.org/doku.php?id=harmony:module_loaders"]{Module Loaders}. 
       With @|dherman|.
@@ -208,16 +213,6 @@ Research} on @a[href: "http://ecmascript.org"]{JavaScript}.}
      @~ Draft from September 2011.}
   }
  @(talks js-talks)}
-
-@project['fortress "Fortress"]{
-    @pdesc{@literal{In conjunction with
-    the <a href="http://labs.oracle.com/projects/plrg/">Sun Labs
-    Programming Language Research Group</a>, I helped to
-    develop <a href="http://projectfortress.java.net/">Fortress</a>, a
-    new language for high-performance, multicore and scientific
-    computing.}}
-     @(papers fortress-papers)
-     }
 }
 
 @box['activities "Activities"]{
