@@ -97,7 +97,7 @@ appeared at @a[href: "https://ismm24.sigplan.org/"]{ISMM 2024}}
 appeared at @a[href: "https://2023.splashcon.org/track/splash-2023-oopsla"]{OOPSLA 2023}}
 
 @p{@b{New papers}: @a[href: "#sham"]{
-@i{Sham: A DSL for Fast DSLs}} with @|rajan-walia| and @a[href: "#type-checking-extracted"]{
+@i{Sham: A DSL for Fast DSLs}} with @|rajan-walia| and @|chung-chieh-shan| and @a[href: "#type-checking-extracted"]{
 @i{Type Checking Extracted Methods}} with @|yuquan-fu|;
 both appeared in @a[href: "https://programming-journal.org/"]{Art, Science, and Engineering of Programming} 2022}
 
@@ -236,13 +236,6 @@ Research} on @a[href: "http://ecmascript.org"]{JavaScript}.}
 
 @p{I regularly teach graduate and undergraduate courses in programming languages @a[href: "http://www.cs.indiana.edu/classes/c211/"]{C211 (Introduction to Computer Science)}.}
 
-@ul{
-@li{ I have taught honors sections of
-@a[href: "http://www.ccs.neu.edu/course/cs2510h/"]{CS 2510} with
-@a[href: "http://www.ccs.neu.edu/home/dvanhorn/"]{David Van Horn} while at Northeastern.}
-
-@li{ I have taught various courses including CS U211 and CS U213.}
-
 @(papers edu-papers)
 
 }}
@@ -251,11 +244,11 @@ Research} on @a[href: "http://ecmascript.org"]{JavaScript}.}
 
 @box['life "Personal"]{
 @p{
-  In the rest of my life, I play @a[href:"http://www.upa.org/"]{Ultimate} and I 
+  In the rest of my life, I play @a[href:"http://www.usaultimate.org/"]{Ultimate} and I 
 @a[href:"http://www.outdoors.org"]{go outside}.  }
 
-@p{My wife, Katie Edmonds, is a post-doc in the 
-@a[href:"http://www.indiana.edu/~dpglab/"]{Giedroc lab} in the IU Chemistry Department.}}
+@p{My wife, Katie Edmonds, is a Scientist in the 
+@a[href:"http://www.chem.indiana.edu/"]{IU Chemistry} Department.}}
 
 
 
