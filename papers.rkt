@@ -445,6 +445,13 @@
      ("Proceedings" "http://homepages.inf.ed.ac.uk/wadler/fool/program/7.html"))))
 
 (defpapers edu-papers
+  ("A Pedagogically-Focused Translation Pipeline for Designing Loops in Programming"
+   (list joshua-crotts chung-chieh-shan)
+   @a[href: "https://2025.fie-conference.org/"]{Frontiers in Education (FIE)}
+   "November 2025"
+   (list '("PDF" "https://joshuacrotts.us/assets/htdl-fie.pdf"))
+   #:tag 'loops-pipeline)
+
   ("From Principles to Practice with Class in the First Year"
    (list dvh)
    "Trends in Functional Programming in Education"

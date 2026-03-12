@@ -58,3 +58,4 @@
 (define chung-chieh-shan @a[href: "https://homes.sice.indiana.edu/ccshan/"]{Chung-chieh Shan})
 (define praveen-narayanan "Praveen Narayanan")
 (define jacques-carette "Jacques Carette")
+(define joshua-crotts @a[href: "https://joshuacrotts.us/"]{L. Joshua Crotts})

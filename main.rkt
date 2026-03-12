@@ -88,6 +88,12 @@ function toggleBibTeX(elt) {
 @a[href: "http://cs.indiana.edu/"]{Indiana
  University Computer Science}, please @a[href: "mailto:samth@iu.edu"]{email me} if you are interested. }}
 
+@p{@b{Organizing @a[href: "https://icfp26.sigplan.org/"]{ICFP 2026}} at IU Indianapolis!}
+
+@p{@b{New paper}: @a[href: "#loops-pipeline"]{
+@i{A Pedagogically-Focused Translation Pipeline for Designing Loops in Programming}} with @|joshua-crotts| and @|chung-chieh-shan|;
+appeared at @a[href: "https://2025.fie-conference.org/"]{FIE 2025}}
+
 @p{@b{New paper}: @a[href: "#gc-serialized"]{
 @i{Garbage Collection for Mostly Serialized Heaps}} with @|chaitanya| and @|rrnewton|;
 appeared at @a[href: "https://ismm24.sigplan.org/"]{ISMM 2024}}
