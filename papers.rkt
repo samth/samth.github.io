@@ -452,6 +452,13 @@
    (list '("PDF" "https://joshuacrotts.us/assets/htdl-fie.pdf"))
    #:tag 'loops-pipeline)
 
+  ("Beginning Student Tables"
+   (list "Samuel Maginot" chung-chieh-shan)
+   @a[href: "https://2023.splashcon.org/home/paint-2023"]{Workshop on Programming Abstractions and Interactive Notations, Tools, and Environments (PAINT)}
+   "October 2023"
+   (list '("ACM" "https://doi.org/10.1145/3623504.3623566"))
+   #:tag 'beginning-student-tables)
+
   ("From Principles to Practice with Class in the First Year"
    (list dvh)
    "Trends in Functional Programming in Education"
