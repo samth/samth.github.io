@@ -59,3 +59,5 @@
 (define praveen-narayanan "Praveen Narayanan")
 (define jacques-carette "Jacques Carette")
 (define joshua-crotts @a[href: "https://joshuacrotts.us/"]{L. Joshua Crotts})
+(define cameron-swords "Cameron Swords")
+(define amr-sabry @a[href: "https://homes.luddy.indiana.edu/sabry/"]{Amr Sabry})

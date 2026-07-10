@@ -63,6 +63,13 @@
          '("arXiv" "http://arxiv.org/abs/2007.12630"))
    #:tag 'corpse-reviver)
 
+  ("An extended account of contract monitoring strategies as patterns of communication"
+   (list cameron-swords amr-sabry)
+   "Journal of Functional Programming"
+   "2018"
+   (list '("Cambridge" "https://doi.org/10.1017/S0956796818000047"))
+   #:tag 'contract-comm-jfp)
+
   ("Sound gradual typing: only mostly dead"
    (list "Spenser Bauman" cfbolz jsiek)
    @a[href: "https://2017.splashcon.org/track/splash-2017-OOPSLA"]{Object Oriented Programming, Systems, Languages and Applications (OOPSLA)}
@@ -97,6 +104,14 @@
    "2016"
    (list '("Springer" "https://doi.org/10.1007/978-3-319-30936-1_21"))
    #:tag 'recursive-union)
+
+  ("Expressing contract monitors as patterns of communication"
+   (list cameron-swords amr-sabry)
+   @a[href: "http://icfpconference.org/icfp2015/"]{International Conference on Functional Programming (ICFP)}
+   "September 2015"
+   (list '("ACM" "https://doi.org/10.1145/2784731.2784742")
+         '("PDF" "contract-monitoring-draft.pdf"))
+   #:tag 'contract-comm-icfp)
 
   ("Towards Practical Gradual Typing"
    (list asumu "Daniel Feltey" "Earl Dean" mflatt robby MF)
