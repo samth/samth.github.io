@@ -262,6 +262,15 @@
    (list '("ACM" "https://doi.org/10.4230/LIPIcs.ECOOP.2017.26"))
    #:tag 'tree-transforms)
 
+  ("Pycket: a tracing JIT for a functional language"
+   (list "Spenser Bauman" cfbolz "Robert Hirschfeld" "Vasily Kirilichev" krono jsiek)
+   @a[href: "http://icfpconference.org/icfp2015/"]{International Conference on Functional Programming (ICFP)}
+   "September 2015"
+   (list '("ACM" "https://doi.org/10.1145/2784731.2784740")
+         '("PDF" "pycket-draft.pdf")
+         '("GitHub" "https://github.com/samth/pycket"))
+   #:tag 'pycket-icfp)
+
   ("The Racket Manifesto"
    (list MF robby mflatt sk eli jay)
    snapl-15
