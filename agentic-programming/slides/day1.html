@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agentic Programming — Day 1</title>
+<style>
+  :root {
+    --bg: #fbfaf7;
+    --fg: #16150f;
+    --dim: #6b675b;
+    --rule: #d8d3c6;
+    --accent: #8a3324;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14140f;
+      --fg: #f2efe6;
+      --dim: #9d988a;
+      --rule: #35342c;
+      --accent: #e0714f;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font: 400 16px/1.5 "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    overflow: hidden;
+  }
+  .slide {
+    display: none;
+    height: 100vh;
+    padding: 6vh 8vw 10vh;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .slide.on { display: flex; }
+  h1 { font-size: clamp(2.2rem, 6.5vw, 5rem); line-height: 1.05; letter-spacing: -0.02em; }
+  h2 {
+    font-size: clamp(1.5rem, 3.6vw, 2.6rem);
+    letter-spacing: -0.01em;
+    padding-bottom: 0.4em;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 0.9em;
+  }
+  ul { list-style: none; }
+  li {
+    font-size: clamp(1.05rem, 2.5vw, 1.9rem);
+    line-height: 1.35;
+    margin: 0.55em 0;
+    padding-left: 1.1em;
+    position: relative;
+  }
+  li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+  }
+  .sub { color: var(--dim); font-size: clamp(1rem, 2.2vw, 1.6rem); margin-top: 1.2em; }
+  .kicker { color: var(--accent); text-transform: uppercase; letter-spacing: 0.14em;
+            font-size: clamp(0.7rem, 1.3vw, 0.95rem); font-family: ui-monospace, Menlo, monospace;
+            margin-bottom: 1.4em; }
+  dl { display: grid; grid-template-columns: max-content 1fr; gap: 0.5em 1.5em;
+       font-size: clamp(1rem, 2.3vw, 1.7rem); }
+  dt { color: var(--dim); }
+  code, .mono { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 0.9em; }
+  .big { font-size: clamp(1.6rem, 4.5vw, 3.4rem); line-height: 1.25; max-width: 22ch; }
+  a { color: inherit; text-decoration-color: var(--accent); }
+  footer {
+    position: fixed; bottom: 2.2vh; left: 8vw; right: 8vw;
+    display: flex; justify-content: space-between;
+    color: var(--dim); font-family: ui-monospace, Menlo, monospace; font-size: 0.75rem;
+    letter-spacing: 0.08em;
+  }
+</style>
+</head>
+<body>
+
+<section class="slide on">
+  <div class="kicker">CSCI-B 490 / B 629 &nbsp;·&nbsp; Fall 2026</div>
+  <h1>Agentic<br>Programming</h1>
+  <p class="sub">Sam Tobin-Hochstadt &nbsp;·&nbsp; September 1, 2026</p>
+</section>
+
+<section class="slide">
+  <h2>The course</h2>
+  <p class="big">Programming with coding agents.</p>
+  <ul>
+    <li>Ask them to build software</li>
+    <li>Constrain them with tests and tools</li>
+    <li>Review what they produce</li>
+    <li>Decide when to trust it</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Meetings</h2>
+  <dl>
+    <dt>When</dt><dd>Tue &amp; Thu, 11:10–12:25</dd>
+    <dt>Where</dt><dd>SPEA / PV A205, in person</dd>
+    <dt>Listings</dt><dd>B 490 (35283) and B 629 (35284), together</dd>
+    <dt>Term</dt><dd>Aug 24 – Dec 18</dd>
+  </dl>
+  <p class="sub">Aug 25 and Aug 27 were cancelled. Today is meeting one.</p>
+</section>
+
+<section class="slide">
+  <h2>People</h2>
+  <dl>
+    <dt>Instructor</dt><dd>Sam Tobin-Hochstadt · <span class="mono">samth@iu.edu</span></dd>
+    <dt>Office</dt><dd>Luddy 3022</dd>
+    <dt>AI</dt><dd>Fred Fu · <span class="mono">yuqfu@iu.edu</span></dd>
+    <dt>Hours</dt><dd>TBA</dd>
+  </dl>
+  <p class="sub">Email from your <span class="mono">@iu.edu</span> address.</p>
+</section>
+
+<section class="slide">
+  <h2>Prerequisites</h2>
+  <p class="big">Comfortable programming. Comfortable with dev tools.</p>
+  <p class="sub">B 490: advanced undergraduates. B 629: graduate students.</p>
+</section>
+
+<section class="slide">
+  <h2>Shape</h2>
+  <p class="big">A studio course.</p>
+  <ul>
+    <li>Write code</li>
+    <li>Read transcripts</li>
+    <li>Review agent changes</li>
+    <li>Present artifacts <em>and</em> process</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Emphasis</h2>
+  <ul>
+    <li>Use agents deliberately, not as magic</li>
+    <li>Review, test, debug, explain generated code</li>
+    <li>Build under real constraints</li>
+    <li>Record prompts, failures, repairs, evaluations</li>
+    <li>Ask what expertise means when code is cheap</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Arc</h2>
+  <ul>
+    <li>How agents work, and small programs</li>
+    <li>Evaluation — did it actually work?</li>
+    <li>Bigger programs, changing over time</li>
+    <li>Coming in cold to an existing codebase</li>
+    <li>Tools; then write your own minimal agent</li>
+    <li>Verification beyond testing</li>
+    <li>Remote tooling; factories of agents</li>
+    <li>Presentations</li>
+  </ul>
+  <p class="sub">Full schedule on the course page.</p>
+</section>
+
+<section class="slide">
+  <h2>Work</h2>
+  <ul>
+    <li><strong>Process notes</strong> — paper notebook, plus commits and transcripts</li>
+    <li><strong>Short builds</strong> — small testable artifacts</li>
+    <li><strong>Review exercises</strong> — find defects, improve tests</li>
+    <li><strong>Final project</strong> — build, evaluate, present</li>
+  </ul>
+  <p class="sub">Weights and due dates: posted with each assignment.</p>
+</section>
+
+<section class="slide">
+  <h2>Notebook</h2>
+  <p class="big">Paper. Bring it to every class.</p>
+  <ul>
+    <li>Plans, sketches, questions</li>
+    <li>Decisions and stuck points</li>
+    <li>Written while working, not after</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Tools</h2>
+  <p class="big">Codex, through IU's ChatGPT Edu.</p>
+  <ul>
+    <li>Sign in with <span class="mono">@iu.edu</span>, choose Indiana University</li>
+    <li>Not a personal account, not an API key</li>
+    <li>Request the free bump to 10,000 credits/week</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Rules</h2>
+  <ul>
+    <li>Agents write code. You still own it, and explain it.</li>
+    <li>Your writing is yours — no LLM drafting or polishing</li>
+    <li>Keep the evidence: prompts, diffs, tests, notes</li>
+    <li>No private, restricted, or credential data in any tool</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Today</h2>
+  <ul>
+    <li>Fill out the background survey</li>
+    <li>Get Codex working with your IU account</li>
+    <li>Bring a paper notebook Thursday</li>
+    <li>Baseline task</li>
+  </ul>
+  <p class="sub">Thursday: how coding agents work, and how to use them.<br>
+  <span class="mono">samth.github.io/agentic-programming/</span></p>
+</section>
+
+<footer>
+  <span id="where"></span>
+  <span>← →</span>
+</footer>
+
+<script>
+  const slides = [...document.querySelectorAll('.slide')];
+  let i = 0;
+  const where = document.getElementById('where');
+  function show(n) {
+    i = Math.max(0, Math.min(slides.length - 1, n));
+    slides.forEach((s, k) => s.classList.toggle('on', k === i));
+    where.textContent = (i + 1) + ' / ' + slides.length;
+    location.hash = i + 1;
+  }
+  addEventListener('keydown', e => {
+    if (['ArrowRight', 'ArrowDown', ' ', 'PageDown', 'n'].includes(e.key)) { show(i + 1); e.preventDefault(); }
+    if (['ArrowLeft', 'ArrowUp', 'PageUp', 'p'].includes(e.key)) { show(i - 1); e.preventDefault(); }
+    if (e.key === 'Home') show(0);
+    if (e.key === 'End') show(slides.length - 1);
+  });
+  addEventListener('click', e => show(i + (e.clientX < innerWidth / 3 ? -1 : 1)));
+  show(Math.max(0, (parseInt(location.hash.slice(1)) || 1) - 1));
+</script>
+</body>
+</html>
