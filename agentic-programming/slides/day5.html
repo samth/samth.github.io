@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic Programming &mdash; Day 5</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #fbfaf7;
+      --fg: #16150f;
+      --dim: #6b675b;
+      --rule: #d8d3c6;
+      --accent: #8a3324;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #181713;
+        --fg: #f5f1e8;
+        --dim: #aaa496;
+        --rule: #49463f;
+        --accent: #e68a73;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    }
+
+    body { overflow: hidden; }
+
+    .slide {
+      display: none;
+      width: 100vw;
+      height: 100vh;
+      padding: 6vh 8vw 10vh;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .slide.on { display: flex; }
+
+    .slide > * {
+      width: min(100%, 1050px);
+    }
+
+    h1, h2, p, ul { margin-top: 0; }
+
+    h1 {
+      margin-bottom: 0.35em;
+      font-size: clamp(2.2rem, 6vw, 5rem);
+      font-weight: 600;
+      line-height: 1.05;
+    }
+
+    h2 {
+      margin-bottom: 1em;
+      padding-bottom: 0.35em;
+      border-bottom: 1px solid var(--rule);
+      font-size: clamp(1.5rem, 3.4vw, 2.6rem);
+      font-weight: 600;
+    }
+
+    p, li {
+      font-size: clamp(1.15rem, 2.25vw, 1.8rem);
+      line-height: 1.42;
+    }
+
+    li { margin: 0.5em 0; }
+
+    .kicker {
+      margin-bottom: 0.8em;
+      color: var(--accent);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: clamp(0.8rem, 1.4vw, 1rem);
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .phrase h1 {
+      width: min(100%, 1200px);
+      margin-bottom: 0.25em;
+      font-size: clamp(3rem, 8vw, 6.5rem);
+      text-align: center;
+    }
+
+    footer {
+      position: fixed;
+      right: 2.2vw;
+      bottom: 2vh;
+      left: 2.2vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--dim);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.78rem;
+    }
+
+    button {
+      border: 0;
+      background: transparent;
+      color: inherit;
+      cursor: pointer;
+      font: inherit;
+    }
+
+    button:hover, button:focus-visible { color: var(--accent); }
+
+    @media (max-width: 700px) {
+      .slide { padding: 5vh 7vw 11vh; }
+    }
+
+    @media print {
+      @page { size: 16in 9in; margin: 0; }
+      body { overflow: visible; }
+      .slide, .slide.on {
+        display: flex;
+        break-after: page;
+      }
+      footer { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="slide on">
+      <p class="kicker">CSCI-B 490 / B 629 &middot; Day 5</p>
+      <h1>Code review</h1>
+    </section>
+
+    <section class="slide phrase">
+      <h1>You are responsible</h1>
+    </section>
+
+    <section class="slide phrase">
+      <h1>Review the artifact</h1>
+    </section>
+
+    <section class="slide phrase">
+      <h1>Start with intent</h1>
+    </section>
+
+    <section class="slide">
+      <h2>Review in passes</h2>
+      <ul>
+        <li>Intent: does the change match the request?</li>
+        <li>Behavior: which paths and states changed?</li>
+        <li>Risk: where can it fail or violate an assumption?</li>
+        <li>Evidence: what supports the claim that it works?</li>
+      </ul>
+    </section>
+
+    <section class="slide phrase">
+      <h1>Read the diff</h1>
+    </section>
+
+    <section class="slide phrase">
+      <h1>Trace control flow</h1>
+    </section>
+
+    <section class="slide phrase">
+      <h1>Trace data flow</h1>
+    </section>
+
+    <section class="slide phrase">
+      <h1>Follow failure paths</h1>
+    </section>
+
+    <section class="slide phrase">
+      <h1>Check boundaries</h1>
+    </section>
+
+    <section class="slide phrase">
+      <h1>Inspect dependencies</h1>
+    </section>
+
+    <section class="slide phrase">
+      <h1>Read the tests</h1>
+    </section>
+
+    <section class="slide phrase">
+      <h1>What is missing?</h1>
+    </section>
+
+    <section class="slide phrase">
+      <h1>Run it yourself</h1>
+    </section>
+
+    <section class="slide phrase">
+      <h1>Code review exercise</h1>
+    </section>
+  </main>
+
+  <footer>
+    <span id="count">1 / 15</span>
+    <span><button id="prev" aria-label="Previous slide">&larr;</button> <button id="next" aria-label="Next slide">&rarr;</button></span>
+  </footer>
+
+  <script>
+    const slides = [...document.querySelectorAll('.slide')];
+    const count = document.querySelector('#count');
+    let current = 0;
+
+    function show(index) {
+      current = Math.max(0, Math.min(index, slides.length - 1));
+      slides.forEach((slide, i) => slide.classList.toggle('on', i === current));
+      count.textContent = `${current + 1} / ${slides.length}`;
+      history.replaceState(null, '', `#${current + 1}`);
+    }
+
+    function move(delta) { show(current + delta); }
+
+    document.querySelector('#prev').addEventListener('click', event => {
+      event.stopPropagation();
+      move(-1);
+    });
+    document.querySelector('#next').addEventListener('click', event => {
+      event.stopPropagation();
+      move(1);
+    });
+
+    document.addEventListener('keydown', event => {
+      if (['ArrowRight', 'ArrowDown', ' ', 'PageDown', 'n'].includes(event.key)) move(1);
+      if (['ArrowLeft', 'ArrowUp', 'PageUp', 'p'].includes(event.key)) move(-1);
+      if (event.key === 'Home') show(0);
+      if (event.key === 'End') show(slides.length - 1);
+    });
+
+    document.addEventListener('click', event => {
+      if (event.clientX < window.innerWidth / 3) move(-1);
+      else move(1);
+    });
+
+    const fromHash = Number(location.hash.slice(1));
+    show(Number.isFinite(fromHash) && fromHash > 0 ? fromHash - 1 : 0);
+  </script>
+</body>
+</html>

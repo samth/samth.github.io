@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic Programming &mdash; Day 6</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #fbfaf7;
+      --fg: #16150f;
+      --dim: #6b675b;
+      --rule: #d8d3c6;
+      --accent: #8a3324;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #181713;
+        --fg: #f5f1e8;
+        --dim: #aaa496;
+        --rule: #49463f;
+        --accent: #e68a73;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    }
+
+    body { overflow: hidden; }
+
+    .slide {
+      display: none;
+      width: 100vw;
+      height: 100vh;
+      padding: 6vh 8vw 10vh;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .slide.on { display: flex; }
+
+    .slide > * { width: min(100%, 1050px); }
+
+    h1, h2, p, ul { margin-top: 0; }
+
+    h1 {
+      margin-bottom: 0.35em;
+      font-size: clamp(2.2rem, 6vw, 5rem);
+      font-weight: 600;
+      line-height: 1.05;
+    }
+
+    h2 {
+      margin-bottom: 1em;
+      padding-bottom: 0.35em;
+      border-bottom: 1px solid var(--rule);
+      font-size: clamp(1.5rem, 3.4vw, 2.6rem);
+      font-weight: 600;
+    }
+
+    p, li {
+      font-size: clamp(1.15rem, 2.25vw, 1.8rem);
+      line-height: 1.42;
+    }
+
+    li { margin: 0.5em 0; }
+
+    .kicker {
+      margin-bottom: 0.8em;
+      color: var(--accent);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: clamp(0.8rem, 1.4vw, 1rem);
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .phrase h1 {
+      width: min(100%, 1200px);
+      margin-bottom: 0.25em;
+      font-size: clamp(3rem, 8vw, 6.5rem);
+      text-align: center;
+    }
+
+    footer {
+      position: fixed;
+      right: 2.2vw;
+      bottom: 2vh;
+      left: 2.2vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--dim);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.78rem;
+    }
+
+    button {
+      border: 0;
+      background: transparent;
+      color: inherit;
+      cursor: pointer;
+      font: inherit;
+    }
+
+    button:hover, button:focus-visible { color: var(--accent); }
+
+    @media (max-width: 700px) {
+      .slide { padding: 5vh 7vw 11vh; }
+    }
+
+    @media print {
+      @page { size: 16in 9in; margin: 0; }
+      body { overflow: visible; }
+      .slide, .slide.on {
+        display: flex;
+        break-after: page;
+      }
+      footer { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="slide on">
+      <p class="kicker">CSCI-B 490 / B 629 &middot; Day 6</p>
+      <h1>Command-line coding agents</h1>
+    </section>
+
+    <section class="slide phrase">
+      <h1>Not just chat</h1>
+    </section>
+
+    <section class="slide">
+      <h2>The agent loop</h2>
+      <ul>
+        <li>Observe</li>
+        <li>Plan</li>
+        <li>Act</li>
+        <li>Check</li>
+      </ul>
+    </section>
+
+    <section class="slide phrase">
+      <h1>Observe</h1>
+    </section>
+
+    <section class="slide phrase">
+      <h1>Plan</h1>
+    </section>
+
+    <section class="slide phrase">
+      <h1>Act</h1>
+    </section>
+
+    <section class="slide phrase">
+      <h1>Check</h1>
+    </section>
+
+    <section class="slide phrase">
+      <h1>Ask</h1>
+    </section>
+
+    <section class="slide phrase">
+      <h1>Context is a resource</h1>
+    </section>
+
+    <section class="slide phrase">
+      <h1>Sessions</h1>
+    </section>
+
+    <section class="slide phrase">
+      <h1>Permissions</h1>
+    </section>
+
+    <section class="slide phrase">
+      <h1>Sandboxes</h1>
+    </section>
+
+    <section class="slide phrase">
+      <h1>Modes</h1>
+    </section>
+
+    <section class="slide phrase">
+      <h1>Instructions</h1>
+    </section>
+
+    <section class="slide phrase">
+      <h1>Skills</h1>
+    </section>
+
+    <section class="slide phrase">
+      <h1>Hooks</h1>
+    </section>
+
+    <section class="slide phrase">
+      <h1>MCP</h1>
+    </section>
+
+    <section class="slide phrase">
+      <h1>Subagents</h1>
+    </section>
+
+    <section class="slide phrase">
+      <h1>Worktrees</h1>
+    </section>
+
+    <section class="slide phrase">
+      <h1>Automation</h1>
+    </section>
+
+    <section class="slide">
+      <h2>Other surfaces</h2>
+      <ul>
+        <li>IDE</li>
+        <li>Browser</li>
+        <li>Cloud</li>
+        <li>Remote control</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Codex and Claude Code</h2>
+      <ul>
+        <li>Similar core loop</li>
+        <li>Different controls and affordances</li>
+        <li>Fast-changing products</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Today's demos</h2>
+      <ul>
+        <li>Explore and verify</li>
+        <li>Control and constrain</li>
+        <li>Extend and automate</li>
+        <li>Resume and parallelize</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <span id="count">1 / 23</span>
+    <span><button id="prev" aria-label="Previous slide">&larr;</button> <button id="next" aria-label="Next slide">&rarr;</button></span>
+  </footer>
+
+  <script>
+    const slides = [...document.querySelectorAll('.slide')];
+    const count = document.querySelector('#count');
+    let current = 0;
+
+    function show(index) {
+      current = Math.max(0, Math.min(index, slides.length - 1));
+      slides.forEach((slide, i) => slide.classList.toggle('on', i === current));
+      count.textContent = `${current + 1} / ${slides.length}`;
+      history.replaceState(null, '', `#${current + 1}`);
+    }
+
+    function move(delta) { show(current + delta); }
+
+    document.querySelector('#prev').addEventListener('click', event => {
+      event.stopPropagation();
+      move(-1);
+    });
+    document.querySelector('#next').addEventListener('click', event => {
+      event.stopPropagation();
+      move(1);
+    });
+
+    document.addEventListener('keydown', event => {
+      if (['ArrowRight', 'ArrowDown', ' ', 'PageDown', 'n'].includes(event.key)) move(1);
+      if (['ArrowLeft', 'ArrowUp', 'PageUp', 'p'].includes(event.key)) move(-1);
+      if (event.key === 'Home') show(0);
+      if (event.key === 'End') show(slides.length - 1);
+    });
+
+    document.addEventListener('click', event => {
+      if (event.clientX < window.innerWidth / 3) move(-1);
+      else move(1);
+    });
+
+    const fromHash = Number(location.hash.slice(1));
+    show(Number.isFinite(fromHash) && fromHash > 0 ? fromHash - 1 : 0);
+  </script>
+</body>
+</html>

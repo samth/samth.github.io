@@ -67,3 +67,30 @@ td {
   padding: 0.25rem 1rem 0.25rem 0;
   vertical-align: top;
 }
+
+@media screen and (max-width: 700px) {
+  .tocset {
+    float: none;
+    width: auto;
+    margin: 0 0 1rem;
+  }
+
+  .tocsub {
+    display: none;
+  }
+
+  .maincolumn {
+    width: auto;
+    margin: 0;
+  }
+
+  .main {
+    padding: 0 1rem;
+  }
+
+  .main table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+}
