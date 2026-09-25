@@ -83,8 +83,7 @@ function toggleBibTeX(elt) {
 }
  
 @box['news "News"]{
-@p{@b{I am not currently recruiting new Ph.D students} at
-@a[href: "http://cs.indiana.edu/"]{Indiana University Computer Science}.}
+@p{@b{I am not currently recruiting Ph.D students.}}
 
 @p{@b{Organizing @a[href: "https://icfp26.sigplan.org/"]{ICFP 2026}} at IU Indianapolis!}
 
